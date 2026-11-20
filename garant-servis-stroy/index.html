@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Гарант Сервис Строй — строительство домов в Оренбурге</title><meta property="og:type" content="website"><meta property="og:title" content="Гарант Сервис Строй — строительство домов в Оренбурге"><meta property="og:description" content="Проект, смета и строительство домов в Оренбурге и области. Ташкентская, 56/3, офис 202. +7 922 829-16-31"><meta property="og:image" content="https://pikold.github.io/demo-sites-3/garant-servis-stroy/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Проект, смета и строительство домов в Оренбурге и области. Ташкентская, 56/3, офис 202. +7 922 829-16-31">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{--paper:#F1F3F2;--paper2:#E6EAE8;--ink:#1B2226;--ink2:#4A5459;--line:rgba(27,34,38,.16);--grid:rgba(27,34,38,.055);--green:#2E5E52;--green2:#244B41;--red:#A2472E;--f:"Inter Tight",system-ui,sans-serif;--m:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{width:min(1360px,100% - 48px);margin:0 auto}
+.paper{background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px}
+/* демо */
+.demo{background:var(--paper2);border-bottom:1px solid var(--line);padding:7px 24px;text-align:center;font:500 12px/1.4 var(--m);letter-spacing:.04em;color:var(--ink2)}
+/* линейка прокрутки */
+.ruler{position:fixed;left:0;top:0;height:3px;width:100%;z-index:60;background:var(--red);transform-origin:0 50%;transform:scaleX(0);display:none}
+@supports (animation-timeline:scroll()){.ruler{display:block;animation:grow linear both;animation-timeline:scroll(root)}}
+@keyframes grow{to{transform:scaleX(1)}}
+/* шапка */
+.top{position:sticky;top:0;z-index:50;background:rgba(241,243,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:60px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:-.01em}
+.logo svg{flex:none}
+.nav{display:flex;gap:28px;font-size:15px}
+.nav a{text-decoration:none;color:var(--ink2);padding:8px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--ink);border-color:var(--ink)}
+.tel{font:500 15px var(--m);text-decoration:none;white-space:nowrap}
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;font:600 15px/1 var(--f);text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:background .2s,color .2s,transform .2s;white-space:nowrap}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px)}
+.btn.g{background:var(--green);border-color:var(--green);color:#fff}
+.btn.g:hover{background:var(--green2);border-color:var(--green2)}
+.btn svg{width:18px;height:18px;flex:none}
+/* первый экран — лист чертежа */
+.hero{padding:24px 0 32px}
+.sheet{position:relative;border:2px solid var(--ink);outline:1px solid var(--ink);outline-offset:6px;margin:6px;min-height:calc(100svh - 160px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1fr auto;background:rgba(241,243,242,.55)}
+.sheet-h{grid-column:1;grid-row:1/3;padding:40px;display:flex;flex-direction:column;border-right:1px solid var(--line)}
+.sheet-h .legend{margin-top:auto;padding-top:32px;display:flex;gap:24px;flex-wrap:wrap;color:var(--ink2)}
+.legend i{display:inline-block;width:28px;height:0;border-top:2px solid var(--green);vertical-align:middle;margin-right:8px}
+.legend i.r{border-top:1px solid var(--red)}.legend i.k{border-top:1.5px solid var(--ink)}
+.sheet-h .mono{color:var(--ink2)}
+h1{font-weight:600;font-size:clamp(44px,5.4vw,96px);line-height:.95;letter-spacing:-.035em;margin-top:18px;max-width:11ch}
+h1 em{font-style:normal;color:var(--green)}
+.lead{margin-top:20px;max-width:46ch;font-size:clamp(17px,1.25vw,20px);color:var(--ink2)}
+.sheet-n{position:absolute;right:28px;top:24px;text-align:right}
+.sheet-n b{display:block;font:500 13px var(--m);color:var(--red);margin-top:6px}
+.draw{grid-column:2;grid-row:1;align-self:center;padding:72px 32px 16px;min-width:0}
+.draw svg{width:100%;height:auto;max-height:48vh;display:block;margin:0 auto}
+.ln{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:ink 2.4s cubic-bezier(.6,.1,.2,1) forwards}
+.ln.t{stroke-width:.9;stroke:var(--ink2)}
+.ln.r{stroke:var(--red);stroke-width:1}
+.ln.g{stroke:var(--green);stroke-width:2.4}
+@keyframes ink{to{stroke-dashoffset:0}}
+.d1{animation-delay:.15s}.d2{animation-delay:.5s}.d3{animation-delay:.9s}.d4{animation-delay:1.3s}.d5{animation-delay:1.7s}
+.lab{font:500 13px var(--m);fill:var(--ink2);letter-spacing:.06em}
+.lab.r{fill:var(--red)}
+.fade{opacity:0;animation:op .8s 2s forwards}
+@keyframes op{to{opacity:1}}
+/* штамп */
+.stamp{grid-column:2;grid-row:2;align-self:end;justify-self:end;width:min(100%,520px);border-left:2px solid var(--ink);border-top:2px solid var(--ink);background:var(--paper);display:grid;grid-template-columns:120px minmax(0,1fr)}
+.stamp>div{padding:10px 14px;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35}
+.stamp>div:nth-child(odd){border-right:1px solid var(--line);font:500 11px/1.5 var(--m);text-transform:uppercase;letter-spacing:.08em;color:var(--ink2);padding-top:13px}
+.stamp .big{font-weight:700;font-size:19px;letter-spacing:-.01em}
+.stamp .acts{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;padding:0;border:0}
+.stamp .acts .btn{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:56px}
+.stamp .acts .btn:nth-child(2n){border-right:0}
+
+[data-status]{font:500 14px var(--m);display:inline-flex;align-items:center;gap:8px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink2)}
+[data-status].is-open::before{background:#2E8B57;box-shadow:0 0 0 4px rgba(46,139,87,.18)}
+/* секции */
+section{padding:112px 0}
+.sh{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start;margin-bottom:56px}
+.sh .mono{color:var(--red);padding-top:12px;border-top:1.5px solid var(--red)}
+h2{font-weight:600;font-size:clamp(34px,4.2vw,64px);line-height:1.02;letter-spacing:-.03em;max-width:18ch;text-wrap:balance}
+.sh p{margin-top:16px;max-width:58ch;color:var(--ink2)}
+/* ведомость услуг */
+.spec{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.spec .row{display:grid;grid-template-columns:72px minmax(0,1.1fr) minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:background .25s,padding .25s}
+.spec .row:last-child{border-bottom:0}
+.spec .row:hover{background:rgba(46,94,82,.06);padding-left:12px}
+.spec .row.hd{padding:10px 0;color:var(--ink2)}
+.spec .row.hd:hover{background:none;padding-left:0}
+.spec .pos{font:500 14px var(--m);color:var(--red)}
+.spec h3{font-weight:600;font-size:clamp(21px,2vw,28px);letter-spacing:-.015em;line-height:1.15}
+.spec p{color:var(--ink2);font-size:16px}
+.pay{margin-top:24px;color:var(--ink2);font-size:15px}
+/* проекты: лента */
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:min(720px,82vw);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(24px,(100vw - 1360px)/2) 24px;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.strip figure{scroll-snap-align:start;border:1.5px solid var(--ink);background:var(--paper);position:relative}
+.strip img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.strip figcaption{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;border-top:1.5px solid var(--ink);font:500 12px var(--m);letter-spacing:.06em;text-transform:uppercase}
+.strip figcaption span:last-child{color:var(--ink2)}
+.strip.in2{grid-auto-columns:min(380px,74vw)}
+.strip.in2 img{aspect-ratio:4/5}
+.hint{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:8px;color:var(--ink2)}
+.arrows{display:flex;gap:8px}
+.arrows button{width:48px;height:48px;border:1.5px solid var(--ink);background:none;cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.arrows button:hover{background:var(--ink);color:var(--paper)}
+.sub{margin:80px 0 24px}
+.sub h3{font-weight:600;font-size:clamp(24px,2.4vw,34px);letter-spacing:-.02em}
+.sub p{color:var(--ink2);margin-top:8px;max-width:60ch}
+/* порядок работы: sticky */
+.flow{background:var(--ink);color:var(--paper)}
+.flow .sh .mono{color:#E59A7F;border-color:#E59A7F}
+.flow .sh p{color:#B9C2C5}
+.fl{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px}
+.fig{position:sticky;top:96px;align-self:start;border:1.5px solid rgba(241,243,242,.5);padding:24px;background-image:linear-gradient(rgba(241,243,242,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(241,243,242,.05) 1px,transparent 1px);background-size:24px 24px}
+.fig svg{width:100%;height:auto;display:block}
+.fig .cap{display:flex;justify-content:space-between;margin-top:12px;color:#B9C2C5}
+.L{fill:none;stroke:var(--paper);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s cubic-bezier(.6,.1,.2,1),opacity .6s;opacity:.15}
+.L.t{stroke-width:1;stroke:#9FAAAE}.L.r{stroke:#E59A7F;stroke-width:1.2}.L.g{stroke:#7FB8A6;stroke-width:2.6}
+.Lf{opacity:0;transition:opacity .8s}
+.fig[data-s="1"] .s1,.fig[data-s="2"] :is(.s1,.s2),.fig[data-s="3"] :is(.s1,.s2,.s3),.fig[data-s="4"] :is(.s1,.s2,.s3,.s4),.fig[data-s="5"] :is(.s1,.s2,.s3,.s4,.s5){stroke-dashoffset:0;opacity:1}
+.fig[data-s="2"] .f2,.fig[data-s="3"] .f2,.fig[data-s="4"] .f2,.fig[data-s="5"] .f2,.fig[data-s="5"] .f5{opacity:1}
+.steps{list-style:none}
+.steps li{min-height:62vh;padding:24px 0;display:flex;flex-direction:column;justify-content:center;border-top:1px solid rgba(241,243,242,.18);opacity:.38;transition:opacity .5s}
+.steps li.on{opacity:1}
+.steps .mono{color:#E59A7F}
+.steps h3{font-weight:600;font-size:clamp(28px,3vw,44px);letter-spacing:-.025em;margin:12px 0 14px;line-height:1.05}
+.steps p{color:#C9D0D2;max-width:44ch;font-size:18px}
+/* отзывы */
+.rv{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:64px;align-items:start}
+.score{border:2px solid var(--ink);padding:28px}
+.score b{display:block;font-weight:600;font-size:clamp(72px,8vw,128px);line-height:.9;letter-spacing:-.05em}
+.score p{margin-top:16px;color:var(--ink2)}
+.score a{display:inline-block;margin-top:16px;font:500 13px var(--m);color:var(--green)}
+.notes{display:grid;gap:0;border-top:1.5px solid var(--ink)}
+.note{display:grid;grid-template-columns:64px minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid var(--line)}
+.note svg{width:48px;height:48px}
+.note h3{font-weight:600;font-size:clamp(21px,2vw,26px);letter-spacing:-.015em;line-height:1.2}
+.note p{color:var(--ink2);margin-top:8px;max-width:62ch}
+/* расчёт */
+.calc{background:var(--paper2);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.cg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:start}
+.q{border:0;margin-bottom:28px}
+.q legend,.q label.t{display:block;font:500 12px var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{min-height:46px;display:inline-flex;align-items:center;padding:0 16px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer;font-size:15px;font-weight:500;transition:border-color .2s,background .2s,color .2s}
+.opts label:hover{border-color:var(--ink)}
+.opts input:checked+label{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.opts input:focus-visible+label{outline:2px solid var(--red);outline-offset:2px}
+.rng{display:flex;align-items:center;gap:20px}
+.rng input{flex:1;accent-color:var(--green);height:44px}
+.rng output{font:500 20px var(--m);min-width:96px;text-align:right}
+.plan{position:sticky;top:96px;border:2px solid var(--ink);background:var(--paper)}
+.plan>svg{display:block;width:100%;height:auto}
+.plan .ps{padding:18px 20px;border-top:1.5px solid var(--ink);display:grid;gap:14px}
+.plan .ps p{font:500 13px/1.6 var(--m);color:var(--ink2)}
+.plan .btn{width:100%}
+.pv{transition:all .45s cubic-bezier(.4,.1,.2,1)}
+/* контакты */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0;border:2px solid var(--ink)}
+.ci{padding:36px}
+.ci dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px 20px;margin:24px 0 28px}
+.ci dt{font:500 12px/1.9 var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.ci dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.ci dd a:hover{border-color:var(--ink)}
+.ci .bs{display:flex;flex-wrap:wrap;gap:8px}
+.map{border-left:2px solid var(--ink);min-height:440px;position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35)}
+.fin{padding:120px 0 140px;text-align:left}
+.fin h2{max-width:16ch;font-size:clamp(40px,5.6vw,92px)}
+.fin .bs{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+footer{border-top:1px solid var(--line);padding:28px 0 96px;color:var(--ink2);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.fcall{display:none}
+/* появления */
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@supports (animation-timeline:view()){
+ .strip figure img{animation:zoom linear both;animation-timeline:view(inline);animation-range:entry 0% exit 100%}
+ @keyframes zoom{from{transform:scale(1.08) translateX(-2%)}to{transform:scale(1.08) translateX(2%)}}
+ .strip figure{overflow:hidden}
+}
+@media (max-width:1100px){
+ .sheet{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;min-height:0}
+ .sheet-h,.draw,.stamp{grid-column:1;grid-row:auto}.sheet-h{border-right:0;padding-bottom:0}.sheet-h .legend{display:none}.stamp{width:100%}.sheet-n{display:none}
+ .draw{padding:24px 16px 8px}.draw svg{max-height:none}
+ .stamp{border-left:0}
+ .fl,.cg,.rv{grid-template-columns:minmax(0,1fr);gap:40px}
+ .fig{top:72px;z-index:2;background-color:var(--ink)}
+ .steps li{min-height:46vh}
+ .plan{position:relative;top:0}
+ .ct{grid-template-columns:minmax(0,1fr)}.map{border-left:0;border-top:2px solid var(--ink);min-height:360px}
+ .nav{display:none}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .wrap{width:calc(100% - 32px)}
+ .hero{padding:14px 0 24px}
+ .sheet{margin:4px;outline-offset:4px}
+ .sheet-h{padding:22px 18px 0}
+ .sheet-n{display:none}
+ h1{font-size:clamp(40px,11.5vw,56px)}
+ .stamp{grid-template-columns:96px minmax(0,1fr)}
+ .stamp>div{padding:10px 12px}
+ .stamp .acts .btn{font-size:14px;padding:0 10px}
+ section{padding:72px 0}
+ .sh{grid-template-columns:minmax(0,1fr);gap:16px;margin-bottom:36px}
+ .sh .mono{justify-self:start}
+ .spec .row{grid-template-columns:44px minmax(0,1fr);gap:8px 14px}
+ .spec .row p{grid-column:2}
+ .spec .row.hd{display:none}
+ .strip{padding:4px 16px 20px;gap:14px}
+ .fig{padding:12px;top:64px}
+ .fig .cap{font-size:11px}
+ .steps li{min-height:auto;padding:28px 0}
+ .steps p{font-size:16px}
+ .note{grid-template-columns:44px minmax(0,1fr);gap:16px}.note svg{width:36px;height:36px}
+ .ci{padding:24px 18px}.ci dl{grid-template-columns:minmax(0,1fr);gap:2px}.ci dd{margin-bottom:12px}
+ .top .tel{display:none}
+ .fcall{display:flex;position:fixed;right:16px;bottom:16px;z-index:70;width:60px;height:60px;align-items:center;justify-content:center;background:var(--green);color:#fff;box-shadow:0 10px 30px rgba(27,34,38,.3)}
+ .fcall svg{width:24px;height:24px}
+ .arrows{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .ln,.L{stroke-dashoffset:0;opacity:1}.Lf,.fade{opacity:1}
+ .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="ruler" aria-hidden="true"></div>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Гарант Сервис Строй — наверх"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M3 16 17 4l14 12v15H3z" fill="none" stroke="#1B2226" stroke-width="2"/><path d="M12 31V21h10v10" fill="none" stroke="#2E5E52" stroke-width="2"/></svg>Гарант Сервис Строй</a>
+  <nav class="nav" aria-label="Разделы"><a href="#uslugi">Услуги</a><a href="#proekty">Проекты</a><a href="#poryadok">Порядок работы</a><a href="#raschet">Расчёт</a><a href="#kontakty">Контакты</a></nav>
+  <a class="tel" href="tel:+79228291631">+7&nbsp;922&nbsp;829-16-31</a>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero paper">
+ <div class="wrap">
+  <div class="sheet">
+   <div class="sheet-h">
+    <div>
+     <span class="mono">Оренбург и&nbsp;область · строительство домов</span>
+     <h1>Дом по&nbsp;проекту, смете <em>и&nbsp;договору</em></h1>
+     <p class="lead">Проектируем и&nbsp;строим дачные и&nbsp;жилые дома: сначала проект и&nbsp;смета, потом стройка. В&nbsp;2ГИС&nbsp;— 5,0 по&nbsp;35&nbsp;отзывам.</p>
+    </div>
+    <div class="legend mono"><span><i></i>кровля</span><span><i class="k"></i>стены</span><span><i class="r"></i>оси</span></div>
+   </div>
+   <div class="sheet-n mono">Лист 01 · Фасад<b>Схема</b></div>
+   <div class="draw" aria-hidden="true">
+    <svg viewBox="0 0 1000 440">
+     <!-- земля -->
+     <path class="ln d1" pathLength="1" d="M40 380H960"/>
+     <path class="ln t d2" pathLength="1" d="M60 392l-12 12M90 392l-12 12M120 392l-12 12M150 392l-12 12M180 392l-12 12M870 392l-12 12M900 392l-12 12M930 392l-12 12"/>
+     <!-- стены -->
+     <path class="ln d1" pathLength="1" d="M180 380V236H820V380"/>
+     <path class="ln t d2" pathLength="1" d="M180 362H820"/>
+     <!-- кровля -->
+     <path class="ln g d2" pathLength="1" d="M140 238 372 112H628L860 238Z"/>
+     <path class="ln t d3" pathLength="1" d="M372 112 430 238M628 112 570 238"/>
+     <path class="ln d3" pathLength="1" d="M566 124V82h34v56"/>
+     <!-- окна и двери -->
+     <path class="ln d3" pathLength="1" d="M226 274h86v62h-86zM269 274v62M226 305h86"/>
+     <path class="ln d3" pathLength="1" d="M420 268h160v112H420zM473 268v112M527 268v112"/>
+     <path class="ln d4" pathLength="1" d="M688 274h86v62h-86zM731 274v62M688 305h86"/>
+     <!-- терраса -->
+     <path class="ln t d4" pathLength="1" d="M400 380v-4h200v4M380 380h240"/>
+     <!-- оси -->
+     <path class="ln r d4" pathLength="1" d="M180 236v172M500 268v140M820 236v172"/>
+     <path class="ln r d5" pathLength="1" d="M180 400H820M174 406l12-12M494 406l12-12M814 406l12-12"/>
+     <circle class="ln r d5" pathLength="1" cx="180" cy="424" r="13"/><circle class="ln r d5" pathLength="1" cx="500" cy="424" r="13"/><circle class="ln r d5" pathLength="1" cx="820" cy="424" r="13"/>
+     <g class="fade"><text class="lab r" x="180" y="429" text-anchor="middle">1</text><text class="lab r" x="500" y="429" text-anchor="middle">2</text><text class="lab r" x="820" y="429" text-anchor="middle">3</text></g>
+     <!-- отметки уровней -->
+     <path class="ln t d4" pathLength="1" d="M60 380h80M60 236h80M60 112h270"/>
+     <path class="ln t d5" pathLength="1" d="M70 380l8-10h-16zM70 236l8-10h-16zM70 112l8-10h-16z"/>
+     <g class="fade"><text class="lab" x="86" y="372">±0,000</text><text class="lab" x="86" y="228">карниз</text><text class="lab" x="86" y="104">конёк</text></g>
+     <!-- дерево -->
+     <path class="ln t d5" pathLength="1" d="M915 380V300M915 300c-40-6-48-64-10-80 4-34 52-34 56 0 38 16 30 74-10 80z"/>
+    </svg>
+   </div>
+   <div class="stamp">
+    <div>Организация</div><div class="big">Гарант Сервис Строй</div>
+    <div>Адрес</div><div>Оренбург, Ташкентская улица, 56/3, офис&nbsp;202, 2&nbsp;этаж</div>
+    <div>Режим</div><div><span data-status></span><br><span style="color:var(--ink2);font-size:14px">пн–пт <span style="white-space:nowrap">09:00–20:00</span></span></div>
+    <div class="acts">
+     <a class="btn" href="tel:+79228291631"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+     <a class="btn" href="https://yandex.ru/maps/?rtext=~51.780596,55.091667" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Маршрут</a>
+     <a class="btn" href="https://wa.me/79228291631?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0." target="_blank" rel="noopener">WhatsApp</a>
+     <a class="btn g" href="#raschet">Рассчитать дом<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<section id="uslugi">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">01 · Ведомость</span><div><h2>От&nbsp;эскиза до&nbsp;проводки</h2><p>Одна компания ведёт дом целиком: проект, стройку, интерьер и&nbsp;электрику&nbsp;— без поиска подрядчиков на&nbsp;каждый этап.</p></div></div>
+  <div class="spec" data-r>
+   <div class="row hd mono"><span>Поз.</span><span>Наименование</span><span>Примечание</span></div>
+   <div class="row"><span class="pos">01</span><h3>Строительство дач и&nbsp;коттеджей</h3><p>Дачные и&nbsp;жилые одноэтажные дома, дома с&nbsp;полноценным подвалом&nbsp;— по&nbsp;отзывам клиентов.</p></div>
+   <div class="row"><span class="pos">02</span><h3>Архитектурное проектирование</h3><p>Готовые проекты на&nbsp;выбор или проект под ваш участок: планировка, виды отделки фасада, расчёты.</p></div>
+   <div class="row"><span class="pos">03</span><h3>Дизайн интерьеров</h3><p>Визуализации комнат, кухонь и&nbsp;санузлов до&nbsp;начала ремонта.</p></div>
+   <div class="row"><span class="pos">04</span><h3>Ремонт помещений</h3><p>Отделка по&nbsp;согласованному проекту.</p></div>
+   <div class="row"><span class="pos">05</span><h3>Электромонтажные работы</h3><p>Электрика в&nbsp;доме и&nbsp;квартире.</p></div>
+  </div>
+  <p class="pay mono">Оплата: наличные · карта · через банк · по&nbsp;QR-коду</p>
+ </div>
+</section>
+
+<section id="proekty" class="paper" style="padding-bottom:80px">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">02 · Проекты</span><div><h2>Фасады, которые можно выбрать и&nbsp;доработать</h2><p>Визуализации проектов из&nbsp;карточки компании. В&nbsp;отзывах пишут, что подходящий готовый проект нашёлся сразу, а&nbsp;планировку помогли подстроить под семью.</p></div></div>
+ </div>
+ <div class="strip" data-qa-skip id="s1" tabindex="0" aria-label="Проекты домов, листайте вбок">
+  <figure><img src="img/p8.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1312w" sizes="(max-width:700px) 82vw, 720px" alt="Визуализация одноэтажного дома с вальмовой кровлей и террасой" fetchpriority="high"><figcaption><span>Проект 01</span><span>одноэтажный, терраса</span></figcaption></figure>
+  <figure><img src="img/p12.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1250w" sizes="(max-width:700px) 82vw, 720px" alt="Визуализация одноэтажного дома с каменной отделкой цоколя" loading="lazy"><figcaption><span>Проект 02</span><span>одноэтажный, отделка камнем</span></figcaption></figure>
+  <figure><img src="img/p9.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1440w" sizes="(max-width:700px) 82vw, 720px" alt="Визуализация дома с мансардой и открытой террасой" loading="lazy"><figcaption><span>Проект 03</span><span>мансарда, терраса</span></figcaption></figure>
+  <figure><img src="img/p11.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1024w" sizes="(max-width:700px) 82vw, 720px" alt="Двухэтажный дом с облицовкой тёмным кирпичом" loading="lazy" style="object-position:50% 40%"><figcaption><span>Проект 04</span><span>два этажа, кирпич</span></figcaption></figure>
+ </div>
+ <div class="wrap hint"><span class="mono">Листайте →</span><div class="arrows"><button type="button" data-go="s1" data-d="-1" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-go="s1" data-d="1" aria-label="Вперёд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+
+ <div class="wrap sub" data-r><h3>Интерьеры</h3><p>Дизайн-проекты комнат: зелёная стена, дерево, светлая мебель&nbsp;— всё видно до&nbsp;покупки первой доски.</p></div>
+ <div class="strip in2" data-qa-skip id="s2" tabindex="0" aria-label="Интерьеры, листайте вбок">
+  <figure><img src="img/p2-m.jpg" alt="Гостиная с зелёной стеной и рабочим местом у окна" loading="lazy" style="object-position:40% 50%"><figcaption><span>Гостиная</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p6-m.jpg" alt="Светлая кухня с деревянной столешницей и зелёной плиткой" loading="lazy"><figcaption><span>Кухня</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p14-m.jpg" alt="Прихожая с вешалкой и видом в гостиную" loading="lazy"><figcaption><span>Прихожая</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p4-m.jpg" alt="Угловая кухня со светильником над столом" loading="lazy"><figcaption><span>Кухня</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p3-m.jpg" alt="Рабочее место у зелёной стены и шкаф-купе" loading="lazy" style="object-position:60% 50%"><figcaption><span>Кабинет</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p7-m.jpg" alt="Постирочная со встроенными шкафами" loading="lazy"><figcaption><span>Постирочная</span><span>визуализация</span></figcaption></figure>
+  <figure><img src="img/p13-m.jpg" alt="Спальня с белым шкафом и лепниной" loading="lazy" style="object-position:55% 50%"><figcaption><span>Спальня</span><span>визуализация</span></figcaption></figure>
+ </div>
+ <div class="wrap hint"><span class="mono">Листайте →</span><div class="arrows"><button type="button" data-go="s2" data-d="-1" aria-label="Назад"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-go="s2" data-d="1" aria-label="Вперёд"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+</section>
+
+<section id="poryadok" class="flow">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">03 · Порядок работы</span><div><h2>Дом строится на&nbsp;экране, пока вы&nbsp;листаете</h2><p>Общий порядок, по&nbsp;которому идёт стройка. Детали и&nbsp;сроки&nbsp;— в&nbsp;вашем договоре.</p></div></div>
+  <div class="fl">
+   <div class="fig" id="fig" data-s="1" aria-hidden="true">
+    <svg viewBox="0 0 600 420">
+     <path class="L t s1" pathLength="1" d="M60 70v300M300 70v300M540 70v300M30 100h540M30 330h540"/>
+     <path class="L r s1" pathLength="1" d="M60 392H540M54 398l12-12M294 398l12-12M534 398l12-12"/>
+     <path class="L s2" pathLength="1" d="M40 330H560"/>
+     <path class="L g s2" pathLength="1" d="M80 330v48h440v-48"/>
+     <rect class="Lf f2" x="80" y="330" width="440" height="48" fill="rgba(127,184,166,.14)"/>
+     <path class="L t s2" pathLength="1" d="M100 378l20-48M160 378l20-48M220 378l20-48M280 378l20-48M340 378l20-48M400 378l20-48M460 378l20-48"/>
+     <path class="L s3" pathLength="1" d="M90 330V210h420v120"/>
+     <path class="L t s3" pathLength="1" d="M90 250h420M90 290h420"/>
+     <path class="L g s4" pathLength="1" d="M60 212 230 120h140l170 92z"/>
+     <path class="L t s4" pathLength="1" d="M230 120l40 92M370 120l-40 92"/>
+     <path class="L s5" pathLength="1" d="M130 240h70v50h-70zM400 240h70v50h-70zM260 236h80v94h-80zM300 236v94"/>
+     <path class="L r s5" pathLength="1" d="M300 30v24M288 42h24"/>
+     <rect class="Lf f5" x="260" y="236" width="80" height="94" fill="rgba(229,154,127,.18)"/>
+    </svg>
+    <div class="cap mono"><span id="figc">Этап 1 · проект</span><span>Схема</span></div>
+   </div>
+   <ol class="steps">
+    <li data-st="1"><span class="mono">Этап 1</span><h3>Проект</h3><p>Готовый проект на&nbsp;выбор или свой. Помогают продумать планировку и&nbsp;как поставить дом на&nbsp;участке. В&nbsp;проекте&nbsp;— внешний вид в&nbsp;нескольких вариантах отделки и&nbsp;расчёты, как строить.</p></li>
+    <li data-st="2"><span class="mono">Этап 2</span><h3>Смета и&nbsp;фундамент</h3><p>Сначала смета, потом стройка. Клиенты пишут, что платили строго по&nbsp;смете, а&nbsp;фундамент&nbsp;— в&nbsp;том числе под дом с&nbsp;полноценным подвалом&nbsp;— хвалят отдельно.</p></li>
+    <li data-st="3"><span class="mono">Этап 3</span><h3>Стены</h3><p>На&nbsp;участке и&nbsp;в&nbsp;документах порядок: по&nbsp;словам заказчиков, стройку почти не&nbsp;чувствуешь.</p></li>
+    <li data-st="4"><span class="mono">Этап 4</span><h3>Кровля</h3><p>Если вы&nbsp;в&nbsp;отъезде, о&nbsp;ходе работ регулярно сообщают&nbsp;— так строили дом семье, где муж почти всю стройку был в&nbsp;командировках.</p></li>
+    <li data-st="5"><span class="mono">Этап 5</span><h3>Сдача дома</h3><p>В&nbsp;отзывах: построили в&nbsp;срок и&nbsp;по&nbsp;цене из&nbsp;договора, без проволочек.</p></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section id="otzyvy">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">04 · Отзывы</span><div><h2>За&nbsp;что хвалят</h2></div></div>
+  <div class="rv">
+   <div class="score" data-r><b>5,0</b><p>оценка в&nbsp;2ГИС по&nbsp;35&nbsp;отзывам</p><a href="https://2gis.ru/orenburg/firm/70000001037261420" target="_blank" rel="noopener">Читать в&nbsp;2ГИС →</a></div>
+   <div class="notes">
+    <div class="note" data-r><svg viewBox="0 0 48 48" fill="none" stroke="#2E5E52" stroke-width="1.6"><path d="M8 6h24l8 8v28H8z"/><path d="M32 6v8h8M14 22h20M14 28h20M14 34h12"/></svg><div><h3>Всё по&nbsp;смете и&nbsp;договору</h3><p>Пишут, что цена и&nbsp;сроки совпали с&nbsp;договором, а&nbsp;оплата шла строго по&nbsp;смете&nbsp;— без доплат по&nbsp;ходу.</p></div></div>
+    <div class="note" data-r><svg viewBox="0 0 48 48" fill="none" stroke="#2E5E52" stroke-width="1.6"><path d="M6 40h36M10 40V22l14-12 14 12v18"/><path d="M20 40V28h8v12"/></svg><div><h3>Порядок на&nbsp;участке</h3><p>Стройка организована так, что её&nbsp;почти не&nbsp;замечаешь; дачный дом, по&nbsp;словам одного хозяина, построен лучше его городского.</p></div></div>
+    <div class="note" data-r><svg viewBox="0 0 48 48" fill="none" stroke="#2E5E52" stroke-width="1.6"><circle cx="24" cy="16" r="7"/><path d="M10 42c2-9 8-13 14-13s12 4 14 13"/></svg><div><h3>Ведут от&nbsp;консультации до&nbsp;ключей</h3><p>Руководитель подробно консультирует и&nbsp;сопровождает весь процесс, вопросы решаются быстро.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="raschet" class="calc paper">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">05 · Расчёт</span><div><h2>Начертите свой дом за&nbsp;минуту</h2><p>Выберите параметры&nbsp;— эскиз меняется на&nbsp;глазах. Заявка уйдёт в&nbsp;WhatsApp, а&nbsp;смету посчитают по&nbsp;вашему участку.</p></div></div>
+  <div class="cg">
+   <form id="q" onsubmit="return false">
+    <fieldset class="q"><legend>Что нужно</legend><div class="opts">
+     <input type="radio" name="task" id="t1" value="проект и строительство" checked><label for="t1">Проект и&nbsp;стройка</label>
+     <input type="radio" name="task" id="t2" value="только проект"><label for="t2">Только проект</label>
+     <input type="radio" name="task" id="t3" value="стройка по моему проекту"><label for="t3">Стройка по&nbsp;моему проекту</label>
+    </div></fieldset>
+    <fieldset class="q"><legend>Дом</legend><div class="opts">
+     <input type="radio" name="kind" id="k1" value="жилой дом" checked><label for="k1">Жилой</label>
+     <input type="radio" name="kind" id="k2" value="дачный дом"><label for="k2">Дачный</label>
+    </div></fieldset>
+    <fieldset class="q"><legend>Этажность</legend><div class="opts">
+     <input type="radio" name="fl" id="f1" value="1" checked><label for="f1">Один этаж</label>
+     <input type="radio" name="fl" id="f2" value="m"><label for="f2">С&nbsp;мансардой</label>
+     <input type="radio" name="fl" id="f3" value="2"><label for="f3">Два этажа</label>
+    </div></fieldset>
+    <div class="q"><label class="t" for="area">Площадь, м²</label><div class="rng"><input type="range" id="area" min="40" max="250" step="5" value="110"><output id="ao" for="area">110&nbsp;м²</output></div></div>
+    <fieldset class="q"><legend>Подвал</legend><div class="opts">
+     <input type="radio" name="bs" id="b1" value="без подвала" checked><label for="b1">Не&nbsp;нужен</label>
+     <input type="radio" name="bs" id="b2" value="с подвалом"><label for="b2">Нужен</label>
+    </div></fieldset>
+    <fieldset class="q"><legend>Участок</legend><div class="opts">
+     <input type="radio" name="lot" id="l1" value="участок есть" checked><label for="l1">Есть</label>
+     <input type="radio" name="lot" id="l2" value="участок пока ищу"><label for="l2">Пока ищу</label>
+    </div></fieldset>
+   </form>
+   <div class="plan" data-r>
+    <svg viewBox="0 0 600 400" id="sk" aria-label="Эскиз вашего дома">
+     <path d="M30 330H570" stroke="#1B2226" stroke-width="1.6"/>
+     <rect class="pv" id="bsm" x="200" y="330" width="200" height="0" fill="rgba(46,94,82,.12)" stroke="#2E5E52" stroke-width="1.6"/>
+     <rect class="pv" id="w1" x="200" y="250" width="200" height="80" fill="none" stroke="#1B2226" stroke-width="1.8"/>
+     <rect class="pv" id="w2" x="200" y="250" width="200" height="0" fill="none" stroke="#1B2226" stroke-width="1.8"/>
+     <polygon class="pv" id="rf" points="180,252 300,190 420,252" fill="none" stroke="#2E5E52" stroke-width="2.4" stroke-linejoin="round"/>
+     <g id="win" stroke="#1B2226" stroke-width="1.2" fill="none"></g>
+     <path class="pv" id="dm" d="M200 352H400" stroke="#A2472E" stroke-width="1.2"/>
+     <text id="dt" x="300" y="372" text-anchor="middle" class="lab r">110 м²</text>
+    </svg>
+    <div class="ps"><p id="sum">Проект и строительство · жилой дом · один этаж · 110 м² · без подвала · участок есть</p><a class="btn g" id="wa" href="https://wa.me/79228291631" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Отправить в&nbsp;WhatsApp</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="kontakty">
+ <div class="wrap">
+  <div class="sh" data-r><span class="mono">06 · Контакты</span><div><h2>Офис на&nbsp;Ташкентской</h2></div></div>
+  <div class="ct" data-r>
+   <div class="ci">
+    <span data-status></span>
+    <dl>
+     <dt>Адрес</dt><dd>Оренбург, Ташкентская улица, 56/3<br>офис 202, 2&nbsp;этаж</dd>
+     <dt>Часы</dt><dd>Пн–пт <span style="white-space:nowrap">09:00–20:00</span><br>Сб, вс&nbsp;— выходной</dd>
+     <dt>Телефоны</dt><dd><a href="tel:+79228291631" style="white-space:nowrap">+7&nbsp;922&nbsp;829-16-31</a><br><a href="tel:+73532901631" style="white-space:nowrap">+7&nbsp;353&nbsp;290-16-31</a></dd>
+     <dt>Мессенджеры</dt><dd><a href="https://wa.me/79228291631" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/+79228291631" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.ru/garantservicestroi.tilda" target="_blank" rel="noopener">ВКонтакте</a></dd>
+    </dl>
+    <div class="bs"><a class="btn" href="tel:+79228291631">Позвонить</a><a class="btn" href="https://yandex.ru/maps/?rtext=~51.780596,55.091667" target="_blank" rel="noopener">Маршрут</a></div>
+   </div>
+   <div class="map"><iframe loading="lazy" title="Карта: Ташкентская улица, 56/3" src="https://yandex.ru/map-widget/v1/?ll=55.091667,51.780596&z=16&pt=55.091667,51.780596,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="fin paper">
+ <div class="wrap" data-r>
+  <span class="mono" style="color:var(--red)">Лист последний</span>
+  <h2 style="margin-top:20px">Начните с&nbsp;проекта&nbsp;— остальное начертим вместе</h2>
+  <div class="bs"><a class="btn g" href="https://wa.me/79228291631?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0." target="_blank" rel="noopener">Написать в&nbsp;WhatsApp</a><a class="btn" href="tel:+79228291631">Позвонить</a><a class="btn" href="#raschet">Рассчитать дом</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><span>Гарант Сервис Строй · Оренбург</span><span>Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</span></div></footer>
+<a class="fcall" href="tel:+79228291631" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+ // ленты: стрелки
+ document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){var s=document.getElementById(b.dataset.go);s.scrollBy({left:(+b.dataset.d)*s.firstElementChild.offsetWidth,behavior:'smooth'})})});
+ // sticky-схема этапов
+ var fig=document.getElementById('fig'),cap=document.getElementById('figc'),names=['','проект','смета и фундамент','стены','кровля','сдача'];
+ var lis=document.querySelectorAll('.steps li');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){lis.forEach(function(l){l.classList.remove('on')});e.target.classList.add('on');var n=e.target.dataset.st;fig.dataset.s=n;cap.textContent='Этап '+n+' · '+names[n]}})},{rootMargin:'-45% 0px -45% 0px'});lis.forEach(function(l){io.observe(l)})}else{fig.dataset.s=5;lis.forEach(function(l){l.classList.add('on')})}
+ // расчёт с живым эскизом
+ var f=document.getElementById('q'),A=document.getElementById('area'),ao=document.getElementById('ao');
+ var $=function(i){return document.getElementById(i)};
+ function val(n){var c=f.querySelector('input[name="'+n+'"]:checked');return c?c.value:''}
+ function draw(){
+  var a=+A.value,fl=val('fl'),bs=val('bs')==='с подвалом';
+  var foot=fl==='1'?a:fl==='m'?a/1.6:a/2; // площадь пятна для эскиза
+  var w=Math.round(140+Math.min(1,(foot-25)/225)*300),x=300-w/2,h=70,top=330-h;
+  $('w1').setAttribute('x',x);$('w1').setAttribute('width',w);$('w1').setAttribute('y',top);$('w1').setAttribute('height',h);
+  var w2h=fl==='2'?h:0;$('w2').setAttribute('x',x);$('w2').setAttribute('width',w);$('w2').setAttribute('y',top-w2h);$('w2').setAttribute('height',w2h);
+  var rt=top-w2h,rh=fl==='m'?Math.min(140,w*.42):Math.min(80,w*.24);
+  $('rf').setAttribute('points',(x-20)+','+(rt+2)+' '+(300)+','+(rt-rh)+' '+(x+w+20)+','+(rt+2));
+  $('bsm').setAttribute('x',x);$('bsm').setAttribute('width',w);$('bsm').setAttribute('height',bs?46:0);
+  $('dm').setAttribute('d','M'+x+' '+(bs?392:352)+'H'+(x+w));$('dt').setAttribute('y',bs?388:372);$('dt').setAttribute('x',300);
+  $('dt').textContent=a+' м²';
+  var g=$('win'),s='',n=Math.max(2,Math.round(w/110)),rows=fl==='2'?[top-w2h+18,top+18]:[top+18];
+  rows.forEach(function(y){for(var i=0;i<n;i++){var cx=x+(i+.5)*w/n;s+='<rect x="'+(cx-16)+'" y="'+y+'" width="32" height="30"/><path d="M'+cx+' '+y+'v30"/>'}});
+  if(fl==='m')s+='<rect x="288" y="'+(rt-rh*.55)+'" width="24" height="26"/>';
+  g.innerHTML=s;
+  ao.innerHTML=a+'&nbsp;м²';
+  var fln={'1':'один этаж','m':'с мансардой','2':'два этажа'}[fl];
+  var t=[val('task'),val('kind'),fln,a+' м²',val('bs'),val('lot')];
+  $('sum').textContent=t.join(' · ').replace(/^./,function(c){return c.toUpperCase()});
+  $('wa').href='https://wa.me/79228291631?text='+encodeURIComponent('Здравствуйте! Хочу рассчитать дом: '+t.join(', ')+'. Подскажите, с чего начать?');
+ }
+ f.addEventListener('input',draw);f.addEventListener('change',draw);draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","20:00"]],"tue":[["09:00","20:00"]],"wed":[["09:00","20:00"]],"thu":[["09:00","20:00"]],"fri":[["09:00","20:00"]],"sat":null,"sun":null},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>
