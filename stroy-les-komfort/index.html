@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Строй-Лес-Комфорт — беседки, бани и дачные домики в Барнауле</title><meta property="og:type" content="website"><meta property="og:title" content="Строй-Лес-Комфорт — беседки, бани и дачные домики в Барнауле"><meta property="og:description" content="Беседки, бани, дачные домики, хозблоки и дачный душ из дерева. Барнаул, Звёздная улица, 2а. Доставка на участок."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/stroy-les-komfort/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Беседки, бани, дачные домики, хозблоки и дачный душ из дерева. Барнаул, Звёздная улица, 2а. Доставка на участок.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Golos+Text:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Golos+Text:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--pine:#f1c983;--pine2:#e3ae62;--larch:#9c4f1d;--roof:#1e3a31;--roof2:#274a3e;--moss:#5d7b4c;--snow:#f4f5f1;--ink:#1b2621;--ink2:#4c5a52;--sky:#c9d8de;
+--d:'Dela Gothic One','Arial Black',Impact,sans-serif;--t:'Golos Text',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--snow);color:var(--ink);font:400 17px/1.55 var(--t);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pine2);outline-offset:3px}
+.demo{position:relative;z-index:30;background:var(--pine);color:var(--roof);font:500 13px/1.3 var(--t);text-align:center;padding:7px 16px}
+.nw{white-space:nowrap}
+/* сторителлинг */
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--roof);color:var(--snow)}
+.stage{position:sticky;top:0;align-self:start;height:100vh;max-height:1120px;overflow:hidden;background:#13251f}
+.stage figure{position:absolute;inset:0;margin:0;opacity:0;clip-path:inset(0 0 0 100%);transition:opacity .2s .5s,clip-path .9s cubic-bezier(.7,0,.2,1)}
+.stage figure.on{opacity:1;clip-path:inset(0 0 0 0);transition:opacity 0s,clip-path .9s cubic-bezier(.7,0,.2,1);z-index:2}
+.stage img{width:100%;height:100%;object-fit:cover}
+.stage figcaption{position:absolute;left:24px;bottom:24px;background:rgba(19,37,31,.82);color:var(--snow);font:500 14px var(--t);padding:8px 12px;backdrop-filter:blur(4px)}
+.stage .sv{background:linear-gradient(180deg,#c9d8de 0%,#e6ece9 62%,#cfd8c6 62%,#b9c6ab 100%);display:flex;align-items:center;justify-content:center}
+.stage .sv svg{width:78%;max-width:640px;height:auto}
+.sv .w{fill:var(--pine);stroke:#8a5a26;stroke-width:2}
+.sv .w2{fill:var(--pine2);stroke:#8a5a26;stroke-width:2}
+.sv .rf{fill:var(--roof2)}
+.sv .dk{fill:#5b3a20}
+.sv .gl{fill:#e9eef0;stroke:#8a5a26;stroke-width:2}
+.sv .pipe{fill:#3c3f3d}
+.sv .smoke{fill:none;stroke:#fff;stroke-width:6;stroke-linecap:round;opacity:.75;stroke-dasharray:10 18;animation:smoke 3s linear infinite}
+@keyframes smoke{to{stroke-dashoffset:-56}}
+.count{position:absolute;right:24px;top:24px;z-index:5;font:400 15px var(--d);color:var(--snow);background:rgba(19,37,31,.82);padding:8px 12px;letter-spacing:.04em}
+.bar{position:absolute;left:0;top:0;bottom:0;width:6px;z-index:5;background:rgba(255,255,255,.15)}
+.bar i{position:absolute;left:0;top:0;width:100%;height:100%;background:var(--pine);transform-origin:top;transform:scaleY(var(--p,0))}
+@supports (animation-timeline:scroll()){.bar i{animation:grow linear both;animation-timeline:--story;animation-range:contain 0% contain 100%}.story{view-timeline:--story block}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.chapters{padding:0 clamp(24px,5vw,88px)}
+.ch{min-height:min(100vh,1120px);display:flex;flex-direction:column;justify-content:center;padding:72px 0;max-width:600px}
+.ch .k{font:400 14px var(--d);color:var(--pine);letter-spacing:.08em;margin-bottom:18px;display:flex;gap:14px;align-items:center}
+.ch .k:after{content:"";flex:0 0 56px;height:3px;background:var(--pine)}
+.ch h2{font:400 clamp(34px,3.6vw,58px)/1.02 var(--d);letter-spacing:-.01em;text-wrap:balance;color:var(--snow)}
+.ch p{margin-top:18px;color:#cfd9d2;font-size:18px;max-width:46ch}
+.ch .say{margin-top:24px;padding:18px 20px;background:var(--roof2);border-left:4px solid var(--pine);color:#e7ede8;font-size:16px}
+.ch .say b{display:block;font:600 12px var(--t);letter-spacing:.08em;text-transform:uppercase;color:var(--pine);margin-bottom:6px}
+.ch .inl{display:none}
+/* hero chapter */
+.hero{justify-content:space-between;padding:28px 0 40px}
+.brand{display:flex;align-items:center;gap:12px;font:400 17px var(--d);letter-spacing:.02em;color:var(--pine)}
+.brand svg{flex:none}
+.hero h1{font:400 clamp(40px,4.4vw,76px)/.98 var(--d);letter-spacing:-.015em;color:var(--snow);text-wrap:balance}
+.hero h1 span{color:var(--pine)}
+.hero .lead{margin-top:20px;color:#d5ded8;font-size:clamp(17px,1.25vw,20px);max-width:44ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font-size:15px;color:#cfd9d2}
+[data-status].is-open{color:#a9d78f}
+[data-status].is-open:before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:currentColor;margin-right:8px}
+[data-status].is-closed{color:var(--pine)}
+.acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:28px;max-width:540px}
+.b{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:0 20px;text-decoration:none;font:600 17px var(--t);border:2px solid var(--pine);color:var(--snow);transition:background .2s,color .2s,transform .2s}
+.b:hover{background:var(--pine);color:var(--roof)}
+.b:active{transform:translateY(1px)}
+.b.main{background:var(--pine);color:var(--roof)}
+.b.main:hover{background:#fff}
+.b i{font-style:normal;transition:transform .2s}
+.b:hover i{transform:translateX(4px)}
+.scroll{margin-top:28px;font-size:14px;color:#9fb2a7;display:flex;align-items:center;gap:10px}
+.scroll:before{content:"";width:2px;height:28px;background:var(--pine);animation:drop 1.6s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(.2);transform-origin:bottom}}
+/* секции на светлом */
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+section{padding:clamp(72px,9vw,128px) 0}
+.eyebrow{font:400 13px var(--d);letter-spacing:.1em;color:var(--larch);margin-bottom:16px}
+.h2{font:400 clamp(32px,3.8vw,60px)/1.02 var(--d);letter-spacing:-.01em;color:var(--roof);text-wrap:balance;max-width:18ch}
+/* что строим — ряды */
+.list{margin-top:48px;border-top:3px solid var(--roof)}
+.list li{list-style:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.3fr) auto;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(30,58,49,.2);transition:padding .25s}
+.list li:hover{padding-left:12px}
+.list b{font:400 clamp(22px,2vw,30px)/1.1 var(--d);color:var(--roof)}
+.list p{color:var(--ink2)}
+.list a{font-weight:600;color:var(--larch);text-decoration:none;white-space:nowrap;padding:10px 0}
+.list a:hover{text-decoration:underline}
+.side{margin-top:22px;color:var(--ink2);font-size:15px}
+/* отзывы */
+.praise{background:var(--pine);color:var(--roof)}
+.pg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:clamp(24px,5vw,72px);align-items:start}
+.rate{font:400 clamp(100px,12vw,180px)/.8 var(--d);letter-spacing:-.04em}
+.rate+p{margin-top:16px;font-weight:500}
+.rate+p a{color:var(--roof)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:rgba(30,58,49,.25);border:2px solid rgba(30,58,49,.25)}
+.cards li{list-style:none;background:var(--pine);padding:24px 24px 28px}
+.cards li:first-child{grid-column:1/-1;background:var(--roof);color:var(--snow)}
+.cards li:first-child p{color:#d5ded8;font-size:19px}
+.cards b{display:block;font:400 21px/1.15 var(--d);margin-bottom:10px}
+.cards p{color:#3f3a2c;font-size:16px}
+/* участок */
+.plotS{background:var(--snow)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.items{display:grid;gap:10px}
+.it{border:2px solid rgba(30,58,49,.2);background:#fff;transition:border-color .2s}
+.it.on{border-color:var(--roof)}
+.it>label{display:flex;align-items:center;gap:14px;min-height:56px;padding:0 16px;cursor:pointer;font-weight:600;font-size:18px}
+.it>label input{width:22px;height:22px;accent-color:var(--roof);flex:none}
+.it>label small{margin-left:auto;font-weight:400;color:var(--ink2);font-size:14px}
+.sz{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 16px 16px}
+.it.on .sz{display:grid}
+.st{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;border:1px solid rgba(30,58,49,.3)}
+.st button{height:44px;border:0;background:var(--snow);font:600 20px var(--t);color:var(--roof);cursor:pointer}
+.st button:hover{background:var(--pine)}
+.st output{text-align:center;font-weight:600;font-size:16px}
+.st output small{display:block;font-weight:400;font-size:11px;color:var(--ink2);line-height:1}
+.extra{display:grid;gap:14px;margin-top:20px}
+.extra label{display:grid;gap:6px;font-weight:600;font-size:15px}
+.extra input,.extra select{height:52px;border:2px solid rgba(30,58,49,.25);padding:0 14px;font:400 17px var(--t);background:#fff;color:var(--ink);width:100%}
+.extra input:focus,.extra select:focus{border-color:var(--roof);outline:none}
+.board{position:sticky;top:20px;background:var(--roof);color:var(--snow);padding:20px}
+.board svg{width:100%;height:auto;display:block;background:#2c4f42}
+.board .grass{fill:#2c4f42}
+.board .fence{fill:none;stroke:var(--pine);stroke-width:2;stroke-dasharray:6 4}
+.board .bd{fill:var(--pine);stroke:#7d4a17;stroke-width:1.5}
+.board .bd.sh{fill:#e3ae62}
+.board .tx{font:600 10px var(--t);fill:var(--roof)}
+.board .tx2{font:500 9px var(--t);fill:#d5ded8}
+.board .tree{fill:#3f6a57}
+.msg{margin-top:16px;font-size:15px;line-height:1.5;color:#d5ded8;min-height:72px}
+.board .b{margin-top:16px;width:100%}
+.note{margin-top:12px;font-size:13px;color:#9fb2a7}
+/* порядок */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:44px;counter-reset:s}
+.steps li{list-style:none;padding:0 20px 0 0;position:relative}
+.steps li:before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:52px;height:52px;background:var(--roof);color:var(--pine);font:400 20px var(--d);margin-bottom:18px;position:relative;z-index:1}
+.steps li:after{content:"";position:absolute;left:52px;right:0;top:25px;height:3px;background:repeating-linear-gradient(90deg,var(--pine2) 0 14px,transparent 14px 20px)}
+.steps li:last-child:after{display:none}
+.steps b{display:block;font:400 19px/1.15 var(--d);color:var(--roof);margin-bottom:8px}
+.steps p{color:var(--ink2);font-size:15px;max-width:24ch}
+/* контакты */
+.contacts{background:var(--roof);color:var(--snow)}
+.cg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0;margin-top:44px;border:2px solid var(--roof2)}
+.info{padding:clamp(20px,3vw,40px);display:grid;gap:22px;align-content:start}
+.info dt{font:400 12px var(--d);letter-spacing:.08em;color:var(--pine);margin-bottom:4px}
+.info dd{font-size:17px;color:#e2e8e4}
+.info dd a{text-decoration:none;border-bottom:1px solid rgba(241,201,131,.5)}
+.info dd a:hover{border-color:var(--pine)}
+.contacts .h2{color:var(--snow)}
+.contacts .eyebrow{color:var(--pine)}
+.map{min-height:460px;background:#13251f}
+.map iframe{width:100%;height:100%;min-height:460px;border:0;display:block}
+.fin{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:end;padding-top:clamp(64px,8vw,110px)}
+.fin .h2{font-size:clamp(34px,4.6vw,72px);max-width:none}
+.fin .acts{margin-top:0}
+footer{background:#13251f;color:#9fb2a7;font-size:14px;padding:24px 0 100px}
+.fab{display:none}
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:32px}.steps li:nth-child(3):after{display:none}}
+@media (max-width:900px){
+ .story{grid-template-columns:minmax(0,1fr)}
+ .stage{display:none}
+ .ch{min-height:0;padding:56px 0;max-width:none}
+ .ch .inl{display:block;margin:0 0 28px;width:100%;aspect-ratio:4/3;object-fit:cover}
+ .ch .inl.svg{background:linear-gradient(180deg,#c9d8de 0%,#e6ece9 62%,#cfd8c6 62%,#b9c6ab 100%);display:flex;align-items:center;justify-content:center}
+ .ch .inl.svg svg{width:80%;height:auto}
+ .hero{padding:24px 0 48px}
+ .hero .inl{margin:24px 0 0}
+ .hero .scroll{display:none}
+ .list li{grid-template-columns:minmax(0,1fr);gap:6px}
+ .pg,.pgrid,.cg,.fin{grid-template-columns:minmax(0,1fr)}
+ .board{position:static}
+ .cards{grid-template-columns:minmax(0,1fr)}
+ .map{min-height:340px}.map iframe{min-height:340px}
+ .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:40;align-items:center;gap:8px;height:56px;padding:0 22px;background:var(--pine);color:var(--roof);text-decoration:none;font:600 17px var(--t);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .acts{grid-template-columns:minmax(0,1fr)}
+ .steps{grid-template-columns:minmax(0,1fr)}.steps li{display:grid;grid-template-columns:52px minmax(0,1fr);column-gap:16px;padding:0 0 24px}.steps li:before{grid-row:1/3;margin:0}.steps li:after{left:25px;top:52px;bottom:0;right:auto;width:3px;height:auto;background:repeating-linear-gradient(180deg,var(--pine2) 0 10px,transparent 10px 16px)}.steps li:nth-child(3):after{display:block}.steps li:last-child:after{display:none}
+ .sz{grid-template-columns:minmax(0,1fr)}
+ .ch p{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div>
+
+<main>
+<div class="story" id="top">
+ <div class="stage" aria-hidden="true">
+  <div class="bar"><i></i></div>
+  <div class="count"><span id="cn">01</span> / 05</div>
+  <figure class="on" data-i="0"><img src="img/p10.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1440w" sizes="100vw" alt="" width="1440" height="1080" style="object-position:40% 60%"><figcaption>Беседка на&nbsp;дачном участке</figcaption></figure>
+  <figure data-i="1"><img src="img/p5.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1280w" sizes="100vw" alt="" loading="lazy" width="1280" height="1280"><figcaption>Беседка с&nbsp;решётками из&nbsp;сосны</figcaption></figure>
+  <figure data-i="2" class="sv"><svg viewBox="0 0 400 300"><path class="smoke" d="M300 70c-10-14 10-22 0-38s10-24 0-34"/><rect class="pipe" x="290" y="62" width="18" height="40"/><path class="rf" d="M60 130 200 52 340 130 324 138 200 70 76 138Z"/><rect class="w" x="80" y="128" width="240" height="132"/><g stroke="#8a5a26" stroke-width="2" opacity=".55"><path d="M80 150h240M80 172h240M80 194h240M80 216h240M80 238h240"/></g><rect class="dk" x="130" y="168" width="52" height="92"/><rect class="gl" x="226" y="170" width="56" height="44"/><path d="M254 170v44M226 192h56" stroke="#8a5a26" stroke-width="2"/><rect class="w2" x="64" y="258" width="272" height="12"/></svg><figcaption>Баня&nbsp;— схема</figcaption></figure>
+  <figure data-i="3"><img src="img/p8.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1280w" sizes="100vw" alt="" loading="lazy" width="1280" height="960" style="object-position:28% 50%"><figcaption>Дачный домик из&nbsp;дерева</figcaption></figure>
+  <figure data-i="4"><img src="img/p9.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1280w" sizes="100vw" alt="" loading="lazy" width="1280" height="1280" style="object-position:50% 40%"><figcaption>Дачный душ</figcaption></figure>
+ </div>
+ <div class="chapters">
+  <header class="ch hero" data-i="0">
+   <div class="brand"><svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3 33 14H3Z" fill="#f1c983"/><rect x="7" y="16" width="22" height="17" fill="none" stroke="#f1c983" stroke-width="3"/><path d="M7 22h22M7 28h22" stroke="#f1c983" stroke-width="2"/></svg>Строй-Лес-Комфорт</div>
+   <div>
+    <h1>Беседки, бани и&nbsp;дачные домики <span>из&nbsp;дерева</span></h1>
+    <img class="inl" src="img/p10-m.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1440w" sizes="100vw" alt="Деревянная беседка с решётками на дачном участке" width="900" height="675">
+    <p class="lead">Строим для дачи в&nbsp;Барнауле и&nbsp;по&nbsp;Алтайскому краю: беседки, бани, домики, хозблоки, душ и&nbsp;туалет. Привозим на&nbsp;участок.</p>
+    <div class="meta"><span>Барнаул, Звёздная ул., 2а</span><span data-status></span></div>
+    <div class="acts">
+     <a class="b main" href="#plot">Рассчитать стоимость <i>→</i></a>
+     <a class="b" href="https://wa.me/79831728594?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D1%83%20%D0%BD%D0%B0%20%D0%B4%D0%B0%D1%87%D1%83." target="_blank" rel="noopener">Написать в&nbsp;WhatsApp <i>→</i></a>
+     <a class="b" href="tel:+79831728594">Позвонить <i>→</i></a>
+     <a class="b" href="https://yandex.ru/maps/?rtext=~53.34717,83.604138" target="_blank" rel="noopener">Маршрут <i>→</i></a>
+    </div>
+   </div>
+   <div class="scroll">Листайте: участок собирается по&nbsp;шагам</div>
+  </header>
+
+  <article class="ch" data-i="1">
+   <span class="k">01 · Беседки</span>
+   <img class="inl" src="img/p5-m.jpg" alt="Беседка с решётками из светлой сосны" loading="lazy" width="900" height="900">
+   <h2>Беседка, в&nbsp;которой помещается вся семья</h2>
+   <p>Открытые и&nbsp;с&nbsp;решётками, со&nbsp;столом и&nbsp;скамьями внутри. Размер и&nbsp;форму обсуждаем под ваш участок.</p>
+   <div class="say"><b>Из отзывов</b>Заказчики пишут, что беседку сделали в&nbsp;срок и&nbsp;учли все пожелания, включая нестандартные решения.</div>
+  </article>
+
+  <article class="ch" data-i="2">
+   <span class="k">02 · Бани</span>
+   <div class="inl svg" aria-hidden="true"><svg viewBox="0 0 400 300"><path d="M60 130 200 52 340 130 324 138 200 70 76 138Z" fill="#274a3e"/><rect x="80" y="128" width="240" height="132" fill="#f1c983" stroke="#8a5a26" stroke-width="2"/><rect x="130" y="168" width="52" height="92" fill="#5b3a20"/><rect x="226" y="170" width="56" height="44" fill="#e9eef0" stroke="#8a5a26" stroke-width="2"/><rect x="290" y="62" width="18" height="40" fill="#3c3f3d"/></svg></div>
+   <h2>Баня, которая держит жар</h2>
+   <p>Строим бани для дачи, в&nbsp;том числе каркасные. Материалы помогают выбрать.</p>
+   <div class="say"><b>Из отзывов</b>Про бани пишут чаще всего одно и&nbsp;то же: построили быстро и&nbsp;в&nbsp;срок, баня жаркая и&nbsp;хорошо держит тепло, мастера спокойно ответили на&nbsp;все вопросы.</div>
+  </article>
+
+  <article class="ch" data-i="3">
+   <span class="k">03 · Домики и&nbsp;хозблоки</span>
+   <img class="inl" src="img/p8-m.jpg" alt="Дачный домик из дерева с окном и металлической дверью" loading="lazy" width="900" height="675" style="object-position:28% 50%">
+   <h2>Дачный домик, а&nbsp;не&nbsp;бытовка</h2>
+   <p>Дачные домики, модульные постройки, хозблоки и&nbsp;дровники&nbsp;— по&nbsp;вашим размерам и&nbsp;дизайну.</p>
+   <div class="say"><b>Из отзывов</b>Одни купили домик зимой и&nbsp;теперь проводят на&nbsp;даче выходные круглый год. Другие собрали модульный дом из&nbsp;двух модулей с&nbsp;кухней, комнатой и&nbsp;беседкой&nbsp;— и&nbsp;пишут, что это ощущается как настоящий дом.</div>
+  </article>
+
+  <article class="ch" data-i="4">
+   <span class="k">04 · Душ и&nbsp;туалет</span>
+   <img class="inl" src="img/p9-m.jpg" alt="Дачный душ из дерева на металлическом каркасе" loading="lazy" width="900" height="900">
+   <h2>Дачный душ, о&nbsp;котором пишут отзывы</h2>
+   <p>Летний душ, туалет, скамейки&nbsp;— небольшие постройки, без которых дача не&nbsp;дача.</p>
+   <div class="say"><b>Из отзывов</b>Душ хвалят за&nbsp;продуманность: не&nbsp;протекает, вода быстро греется, конструкция простая и&nbsp;удобная.</div>
+  </article>
+ </div>
+</div>
+
+<!-- что строим -->
+<section>
+ <div class="wrap">
+  <div class="eyebrow" data-r>Что строим</div>
+  <h2 class="h2" data-r>Всё для дачи&nbsp;— от&nbsp;скамейки до&nbsp;дома</h2>
+  <ul class="list" data-r>
+   <li><b>Беседки</b><p>Деревянные, с&nbsp;решётками, столом и&nbsp;скамьями</p><a href="#plot" data-pick="gaz">В&nbsp;расчёт →</a></li>
+   <li><b>Бани</b><p>Для дачи, в&nbsp;том числе каркасные</p><a href="#plot" data-pick="ban">В&nbsp;расчёт →</a></li>
+   <li><b>Дачные и&nbsp;модульные домики</b><p>Быстровозводимые постройки для сезонного проживания</p><a href="#plot" data-pick="hou">В&nbsp;расчёт →</a></li>
+   <li><b>Хозблоки и&nbsp;дровники</b><p>По&nbsp;индивидуальным размерам</p><a href="#plot" data-pick="hoz">В&nbsp;расчёт →</a></li>
+   <li><b>Душ и&nbsp;туалет</b><p>Дачный душ, туалет, скамейки</p><a href="#plot" data-pick="dush">В&nbsp;расчёт →</a></li>
+  </ul>
+  <p class="side" data-r>Ещё у&nbsp;нас есть пиломатериалы и&nbsp;погонажные изделия.</p>
+ </div>
+</section>
+
+<!-- отзывы -->
+<section class="praise">
+ <div class="wrap pg">
+  <div data-r>
+   <div class="eyebrow" style="color:var(--roof)">Оценка в&nbsp;2ГИС</div>
+   <div class="rate">4,9</div>
+   <p>151 оценка · <a href="https://2gis.ru/barnaul/firm/70000001066786368" target="_blank" rel="noopener">читать отзывы</a></p>
+  </div>
+  <ul class="cards" data-r>
+   <li><b>Василий идёт навстречу</b><p>В&nbsp;отзывах часто называют Василия: обсуждает всё досконально, ищет вариант под бюджет и&nbsp;сам может привезти и&nbsp;помочь выгрузить.</p></li>
+   <li><b>Быстро и&nbsp;в&nbsp;срок</b><p>Бани, беседки и&nbsp;хозблоки сдают к&nbsp;обещанному сроку&nbsp;— это повторяется из&nbsp;отзыва в&nbsp;отзыв.</p></li>
+   <li><b>Под ваши размеры</b><p>Хозблоки, дровники и&nbsp;туалеты делают по&nbsp;индивидуальным размерам и&nbsp;помогают с&nbsp;выбором материалов.</p></li>
+  </ul>
+ </div>
+</section>
+
+<!-- участок -->
+<section class="plotS" id="plot">
+ <div class="wrap">
+  <div class="eyebrow" data-r>Расчёт</div>
+  <h2 class="h2" data-r>Соберите свой участок</h2>
+  <div class="pgrid">
+   <div>
+    <div class="items" id="items">
+     <div class="it" data-k="gaz" data-n="Беседка" data-w="3" data-l="4"><label><input type="checkbox"> Беседка <small>Ш × Д, м</small></label><div class="sz"></div></div>
+     <div class="it" data-k="ban" data-n="Баня" data-w="3" data-l="4"><label><input type="checkbox"> Баня <small>Ш × Д, м</small></label><div class="sz"></div></div>
+     <div class="it" data-k="hou" data-n="Дачный домик" data-w="2.4" data-l="6"><label><input type="checkbox"> Дачный домик <small>Ш × Д, м</small></label><div class="sz"></div></div>
+     <div class="it" data-k="hoz" data-n="Хозблок" data-w="2" data-l="3"><label><input type="checkbox"> Хозблок или дровник <small>Ш × Д, м</small></label><div class="sz"></div></div>
+     <div class="it" data-k="dush" data-n="Душ" data-w="1" data-l="1" data-fix="1"><label><input type="checkbox"> Дачный душ</label></div>
+     <div class="it" data-k="wc" data-n="Туалет" data-w="1" data-l="1" data-fix="1"><label><input type="checkbox"> Туалет</label></div>
+    </div>
+    <div class="extra">
+     <label>Куда везти<input id="where" type="text" placeholder="Например, СНТ или район" autocomplete="off"></label>
+     <label>Когда нужно<select id="when"><option>как можно скорее</option><option>в этом сезоне</option><option>к следующему лету</option><option>пока узнаю цену</option></select></label>
+    </div>
+   </div>
+   <div class="board">
+    <svg id="map" viewBox="0 0 320 220" role="img" aria-label="Схема участка с выбранными постройками"></svg>
+    <p class="msg" id="msg" aria-live="polite"></p>
+    <a class="b main" id="send" href="https://wa.me/79831728594" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp <i>→</i></a>
+    <p class="note">Размеры примерные&nbsp;— стоимость посчитают по&nbsp;вашему списку.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- порядок -->
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="eyebrow" data-r>Как работаем</div>
+  <h2 class="h2" data-r>Пять шагов до&nbsp;постройки на&nbsp;участке</h2>
+  <ol class="steps" data-r>
+   <li><b>Заявка</b><p>Звонок, WhatsApp или список с&nbsp;этой страницы.</p></li>
+   <li><b>Обсуждение</b><p>Размеры, материалы, пожелания по&nbsp;дизайну.</p></li>
+   <li><b>Расчёт</b><p>Считаем стоимость под ваш вариант.</p></li>
+   <li><b>Строим</b><p>Изготавливаем постройку.</p></li>
+   <li><b>Доставка</b><p>Привозим и&nbsp;устанавливаем на&nbsp;участке.</p></li>
+  </ol>
+ </div>
+</section>
+
+<!-- контакты -->
+<section class="contacts" id="contacts">
+ <div class="wrap">
+  <div class="eyebrow">Контакты</div>
+  <h2 class="h2">Звёздная улица, 2а, Барнаул</h2>
+  <div class="cg">
+   <dl class="info">
+    <div><dt>Сейчас</dt><dd><span data-status></span></dd></div>
+    <div><dt>Часы</dt><dd>Пн–пт <span class="nw">9:00–18:00</span><br>Сб–вс <span class="nw">10:00–15:00</span></dd></div>
+    <div><dt>Телефоны</dt><dd><a class="nw" href="tel:+79831728594">+7&nbsp;983&nbsp;172-85-94</a><br><a class="nw" href="tel:+79134364959">+7&nbsp;913&nbsp;436-49-59</a><br><a class="nw" href="tel:+79039586889">+7&nbsp;903&nbsp;958-68-89</a></dd></div>
+    <div><dt>Написать</dt><dd><a href="https://wa.me/79831728594" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/+79039586889" target="_blank" rel="noopener">Telegram</a></dd></div>
+    <div><dt>Оплата</dt><dd>Карта, наличные, QR-код, через банк</dd></div>
+   </dl>
+   <div class="map"><iframe loading="lazy" title="Строй-Лес-Комфорт на карте" src="https://yandex.ru/map-widget/v1/?ll=83.604138,53.34717&amp;z=16&amp;pt=83.604138,53.34717,pm2rdm"></iframe></div>
+  </div>
+  <div class="fin">
+   <h2 class="h2">Расскажите, что хотите поставить на&nbsp;даче</h2>
+   <div class="acts">
+    <a class="b main" href="tel:+79831728594">Позвонить <i>→</i></a>
+    <a class="b" href="https://yandex.ru/maps/?rtext=~53.34717,83.604138" target="_blank" rel="noopener">Маршрут <i>→</i></a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">Строй-Лес-Комфорт · Барнаул · Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div></footer>
+<a class="fab" href="tel:+79831728594">Позвонить</a>
+
+<script>
+(function(){
+ /* сторителлинг: смена кадра */
+ var figs=document.querySelectorAll('.stage figure'),cn=document.getElementById('cn'),chs=document.querySelectorAll('.ch'),bar=document.querySelector('.bar i'),story=document.querySelector('.story');
+ function show(i){figs.forEach(function(f){f.classList.toggle('on',+f.dataset.i===i)});cn.textContent='0'+(i+1)}
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)show(+e.target.dataset.i)})},{rootMargin:'-45% 0px -45% 0px'});chs.forEach(function(c){io.observe(c)})}
+ if(!(window.CSS&&CSS.supports&&CSS.supports('animation-timeline','scroll()'))){addEventListener('scroll',function(){var r=story.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));bar.style.setProperty('--p',p)},{passive:true})}
+ /* участок */
+ var its=[].slice.call(document.querySelectorAll('.it')),map=document.getElementById('map'),msg=document.getElementById('msg'),send=document.getElementById('send'),where=document.getElementById('where'),when=document.getElementById('when');
+ function f(n){return String(n).replace('.',',')}
+ its.forEach(function(it){
+  var sz=it.querySelector('.sz');
+  if(sz){[['w','ширина'],['l','длина']].forEach(function(p){var d=document.createElement('div');d.className='st';d.innerHTML='<button type="button" aria-label="'+p[1]+' меньше">−</button><output><small>'+p[1]+'</small><span>'+f(it.dataset[p[0]])+' м</span></output><button type="button" aria-label="'+p[1]+' больше">+</button>';var bs=d.querySelectorAll('button'),o=d.querySelector('span');function set(v){v=Math.round(Math.max(1,Math.min(12,v))*2)/2;it.dataset[p[0]]=v;o.textContent=f(v)+' м';draw()}bs[0].onclick=function(){set(+it.dataset[p[0]]-.5)};bs[1].onclick=function(){set(+it.dataset[p[0]]+.5)};sz.appendChild(d)})}
+  it.querySelector('input').addEventListener('change',function(){it.classList.toggle('on',this.checked);draw()});
+ });
+ document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var it=document.querySelector('.it[data-k='+a.dataset.pick+']'),c=it.querySelector('input');if(!c.checked){c.checked=true;it.classList.add('on');draw()}})});
+ where.addEventListener('input',draw);when.addEventListener('change',draw);
+ function draw(){
+  var sel=its.filter(function(i){return i.classList.contains('on')}),s=18,x,y,row,o='';
+  function fit(){x=26;y=42;row=0;var ok=true;sel.forEach(function(it){var w=it.dataset.l*s,h=it.dataset.w*s;if(x+w>296){x=26;y+=row+22;row=0}if(x+w>296)ok=false;x+=w+16;row=Math.max(row,h)});return ok&&y+row+16<=204}
+  while(s>4&&!fit())s-=1;x=26;y=42;row=0;
+  o+='<rect class="grass" x="0" y="0" width="320" height="220"/><rect class="fence" x="12" y="12" width="296" height="196"/>';
+  o+='<circle class="tree" cx="292" cy="190" r="12"/><circle class="tree" cx="276" cy="198" r="9"/><circle class="tree" cx="30" cy="194" r="8"/>';
+  o+='<text class="tx2" x="20" y="30">ваш участок</text>';
+  sel.forEach(function(it){var w=it.dataset.l*s,h=it.dataset.w*s;if(x+w>296){x=26;y+=row+22;row=0}o+='<rect class="bd'+(it.dataset.fix?' sh':'')+'" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'"/>';o+='<text class="tx2" x="'+x+'" y="'+(y+h+12)+'">'+it.dataset.n+(it.dataset.fix?'':' '+f(it.dataset.w)+'×'+f(it.dataset.l))+'</text>';x+=w+16;row=Math.max(row,h)});
+  if(!sel.length)o+='<text class="tx2" x="160" y="116" text-anchor="middle">Отметьте постройки слева</text>';
+  map.innerHTML=o;
+  var list=sel.map(function(it){return it.dataset.n.toLowerCase()+(it.dataset.fix?'':' '+f(it.dataset.w)+' × '+f(it.dataset.l)+' м')});
+  var t='Здравствуйте! Хочу рассчитать для дачи: '+(list.length?list.join('; '):'пока не выбрал(а), нужна консультация')+'.'+(where.value.trim()?' Куда: '+where.value.trim()+'.':'')+' Когда: '+when.value+'.';
+  msg.textContent=t;send.href='https://wa.me/79831728594?text='+encodeURIComponent(t);
+ }
+ its[0].querySelector('input').checked=true;its[0].classList.add('on');draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","18:00"]],"tue":[["09:00","18:00"]],"wed":[["09:00","18:00"]],"thu":[["09:00","18:00"]],"fri":[["09:00","18:00"]],"sat":[["10:00","15:00"]],"sun":[["10:00","15:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>
