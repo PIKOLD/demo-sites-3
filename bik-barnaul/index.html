@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>БИК-Барнаул — водопровод, канализация и буровые работы в Барнауле</title><meta property="og:type" content="website"><meta property="og:title" content="БИК-Барнаул — водопровод, канализация и буровые работы в Барнауле"><meta property="og:description" content="БИК-Барнаул: наружное водоснабжение, канализация, отопление и буровые работы в Барнауле. Новая улица, 15. Ежедневно 7:30–19:30. Заявка в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/bik-barnaul/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="БИК-Барнаул: наружное водоснабжение, канализация, отопление и буровые работы в Барнауле. Новая улица, 15. Ежедневно 7:30–19:30. Заявка в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{--paper:#edf1f2;--card:#f8fafa;--grid:rgba(26,58,92,.075);--ink:#13263a;--blue:#2b5e8f;--line:rgba(19,38,58,.22);--yel:#f2b705;--soil:#8c6b4b;--mute:#52627a;--wa:#1f8f55;--red:#c8432b;
+--h:'IBM Plex Sans Condensed','Arial Narrow',sans-serif;--m:'IBM Plex Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 18px/1.55 var(--h);color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.wrap{width:min(100% - 40px,1360px);margin-inline:auto}
+.nb{white-space:nowrap}
+.mono{font-family:var(--m)}
+.demo{font:400 12px/1.4 var(--m);color:var(--mute);text-align:center;padding:9px 16px;border-bottom:1px dashed var(--line);background:var(--paper)}
+
+/* ---------- лист чертежа ---------- */
+.sheet{position:relative;border:1.5px solid var(--ink);margin:20px auto 0;background:rgba(237,241,242,.6)}
+.sheet::before{content:"";position:absolute;inset:6px;border:.5px solid var(--line);pointer-events:none}
+.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);align-items:end;gap:clamp(24px,4vw,64px);padding:clamp(28px,4vw,56px) clamp(20px,4vw,56px) 0}
+.tag{font:500 13px/1.3 var(--m);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.tag span+span::before{content:"/";margin-right:10px;color:var(--line)}
+h1{font:700 clamp(42px,6.2vw,104px)/.92 var(--h);letter-spacing:-.02em;text-transform:uppercase;max-width:11.5em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--blue)}
+.lead{font-size:clamp(18px,1.45vw,21px);max-width:36em;margin-top:22px;color:#2b3c52}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;font:500 16px/1 var(--h);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;color:var(--ink);background:var(--card);border:1.5px solid var(--ink);cursor:pointer;transition:background .2s,color .2s,box-shadow .2s,transform .2s}
+.btn:hover{box-shadow:4px 4px 0 var(--ink);transform:translate(-2px,-2px)}
+.btn:active{box-shadow:none;transform:none}
+.btn-y{background:var(--yel)}
+.btn-wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn-wa:hover{box-shadow:4px 4px 0 var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.status{margin-top:22px;font:400 14px/1.4 var(--m);color:var(--mute);display:flex;gap:8px 18px;flex-wrap:wrap}
+[data-status]{display:inline-flex;align-items:center;gap:8px;color:var(--ink)}
+[data-status]::before{content:"";width:9px;height:9px;background:#2f9e5b}
+[data-status].is-closed::before{background:var(--red)}
+.view{position:relative;align-self:start}
+.view figure{position:relative;border:1.5px solid var(--ink);background:var(--card);padding:8px}
+.view img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:40% 60%}
+.view figcaption,.cap{font:400 12px/1.4 var(--m);color:var(--mute);margin-top:8px;display:flex;justify-content:space-between;gap:10px}
+.view figcaption b,.cap b{color:var(--ink);font-weight:500}
+.crop{position:absolute;width:16px;height:16px;border-color:var(--blue);border-style:solid;border-width:0}
+.c1{top:-10px;left:-10px;border-top-width:1.5px;border-left-width:1.5px}.c2{top:-10px;right:-10px;border-top-width:1.5px;border-right-width:1.5px}.c3{bottom:-10px;left:-10px;border-bottom-width:1.5px;border-left-width:1.5px}.c4{bottom:-10px;right:-10px;border-bottom-width:1.5px;border-right-width:1.5px}
+.cut{margin-top:clamp(24px,3vw,40px);border-top:1px dashed var(--line);position:relative}
+.cut svg{width:100%;height:auto}
+.stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid var(--ink);font:400 13px/1.35 var(--m)}
+.stamp div{padding:12px 16px;border-right:1px solid var(--line);min-width:0}
+.stamp div:last-child{border-right:0}
+.stamp small{display:block;font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.stamp a{text-decoration:none}
+.stamp a:hover{color:var(--blue);text-decoration:underline}
+
+/* отрисовка линий: при прокрутке, с фолбэком */
+.dr .ln{stroke-dasharray:1;stroke-dashoffset:0}
+.js .dr .ln{stroke-dashoffset:1;transition:stroke-dashoffset 2.2s cubic-bezier(.4,.1,.2,1)}
+.js .dr.in .ln{stroke-dashoffset:0}
+@supports (animation-timeline:view()){
+ .js .dr.scroll .ln{transition:none;animation:draw linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
+ @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.js .cut.dr .ln{transition:none;animation:draw 2.4s .2s cubic-bezier(.4,.1,.2,1) both}
+.flow{stroke-dasharray:6 10;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-32}}
+
+/* ---------- общие секции ---------- */
+section{padding:clamp(72px,9vw,128px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:20px 40px;align-items:baseline;margin-bottom:48px}
+.sh .no{font:500 13px/1.4 var(--m);color:var(--blue);text-transform:uppercase;letter-spacing:.06em}
+.sh .no::before{content:"";display:block;height:1.5px;background:var(--ink);margin-bottom:10px;transform-origin:left}
+@supports (animation-timeline:view()){.js .sh .no::before{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 30%}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}}
+h2{font:700 clamp(32px,4vw,60px)/1 var(--h);letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance;max-width:18em}
+.sh p{grid-column:2;color:var(--mute);max-width:40em}
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js [data-r].in{opacity:1;transform:none}
+
+/* ---------- спецификация ---------- */
+.spec{width:100%;border-collapse:collapse;background:var(--card);border:1.5px solid var(--ink)}
+.spec th{font:500 12px/1.3 var(--m);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);text-align:left;padding:12px 18px;border-bottom:1.5px solid var(--ink)}
+.spec td{padding:20px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+.spec tr:last-child td{border-bottom:0}
+.spec td:first-child{font:500 14px/1.6 var(--m);color:var(--blue);width:80px}
+.spec td:nth-child(2){font:700 clamp(20px,1.8vw,26px)/1.15 var(--h);text-transform:uppercase;width:38%}
+.spec td:nth-child(3){color:var(--mute)}
+.spec tbody tr{transition:background .2s}
+.spec tbody tr:hover{background:#fff8dc}
+.pay{margin-top:18px;font:400 14px/1.5 var(--m);color:var(--mute)}
+
+/* ---------- журнал объектов ---------- */
+.log{padding-bottom:clamp(56px,7vw,96px)}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(20px,calc((100vw - 1360px)/2)) 24px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.strip figure{flex:0 0 clamp(240px,24vw,340px);scroll-snap-align:start;background:var(--card);border:1.5px solid var(--ink);padding:8px}
+.strip figure.w{flex-basis:clamp(300px,36vw,500px)}
+.strip img{width:100%;height:clamp(300px,30vw,430px);object-fit:cover}
+.strip .cap{margin:8px 2px 2px}
+.hint{font:400 13px/1 var(--m);color:var(--mute);margin-top:6px}
+
+/* ---------- отзывы ---------- */
+.praise{background:var(--ink);color:#fff;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:24px 24px}
+.praise .sh .no{color:var(--yel)}.praise .sh .no::before{background:#fff}
+.praise .sh p{color:rgba(255,255,255,.7)}
+.pr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);border:1.5px solid rgba(255,255,255,.7)}
+.pr>div{padding:28px 26px 32px;border-right:1px solid rgba(255,255,255,.2)}
+.pr>div:last-child{border-right:0;background:var(--yel);color:var(--ink);display:flex;flex-direction:column;justify-content:space-between}
+.pr .k{font:500 12px/1 var(--m);color:var(--yel);letter-spacing:.06em;margin-bottom:16px}
+.pr h3{font:700 24px/1.1 var(--h);text-transform:uppercase;margin-bottom:12px}
+.pr p{color:rgba(255,255,255,.76);font-size:17px}
+.pr .big{font:700 clamp(72px,7vw,112px)/.85 var(--h);letter-spacing:-.03em}
+.pr .big+span{font:400 13px/1.4 var(--m)}
+.pr a{color:var(--ink)}
+
+/* ---------- заявка-схема ---------- */
+.req-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);border:1.5px solid var(--ink);background:var(--card)}
+.req-f{padding:clamp(22px,3vw,40px);display:grid;gap:28px;border-right:1.5px solid var(--ink)}
+.lb{display:block;font:500 12px/1.3 var(--m);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer;position:relative}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:1.5px solid var(--line);font:500 16px/1.2 var(--h);background:#fff;transition:border-color .2s,background .2s}
+.opts label:hover span{border-color:var(--ink)}
+.opts input:checked+span{border-color:var(--ink);background:var(--yel)}
+.opts input:focus-visible+span{outline:2px solid var(--blue);outline-offset:2px}
+.len{display:flex;align-items:center;gap:16px}
+input[type=range]{flex:1;accent-color:var(--ink);height:44px;min-width:0}
+.len output{font:500 18px var(--m);min-width:92px;text-align:right}
+.chk{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:16px;cursor:pointer;min-height:44px}
+.chk input{width:20px;height:20px;accent-color:var(--ink)}
+.req-v{padding:clamp(22px,3vw,40px);display:flex;flex-direction:column;gap:20px}
+.scheme{border:1px dashed var(--line);background:var(--paper)}
+.scheme svg{width:100%;height:auto}
+.msg{font:400 14px/1.6 var(--m);white-space:pre-line;background:#fff;border:1px solid var(--line);padding:16px 18px;min-height:7.5em}
+.urgent .alarm{opacity:1}
+.alarm{opacity:0;transition:opacity .3s}
+.urgent .alarm circle{animation:pulse 1.2s ease-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pulse{from{transform:scale(.6);opacity:1}to{transform:scale(1.8);opacity:0}}
+
+/* ---------- контакты ---------- */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);border:1.5px solid var(--ink);background:var(--card)}
+.ct-i{padding:clamp(22px,3vw,40px)}
+.ct dt{font:500 12px/1.3 var(--m);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-top:18px}
+.ct dt:first-child{margin-top:0}
+.ct dd{font-size:20px;padding:4px 0 14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 20px}
+.ct dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.ct dd a:hover{border-color:var(--blue);color:var(--blue)}
+.map{border-left:1.5px solid var(--ink);min-height:420px;background:#dde3e6}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+.end{text-align:center}
+.end h2{margin:0 auto 18px}
+.end p{color:var(--mute);margin-bottom:28px}
+.end .acts{justify-content:center}
+footer{font:400 12px/1.5 var(--m);color:var(--mute);text-align:center;padding:22px 20px 100px;border-top:1px dashed var(--line)}
+.fab{display:none}
+
+@media (max-width:1000px){
+ .top{grid-template-columns:minmax(0,1fr)}
+ .view{max-width:420px}
+ .view img{aspect-ratio:4/3}
+ .stamp{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stamp div:nth-child(2){border-right:0}
+ .stamp div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .sh{grid-template-columns:minmax(0,1fr)}
+ .sh p{grid-column:1}
+ .pr{grid-template-columns:minmax(0,1fr)}
+ .pr>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.2)}
+ .req-g,.ct{grid-template-columns:minmax(0,1fr)}
+ .req-f{border-right:0;border-bottom:1.5px solid var(--ink)}
+ .map{border-left:0;border-top:1.5px solid var(--ink);min-height:340px}
+ .map iframe{min-height:340px}
+}
+@media (max-width:640px){
+ body{font-size:17px}
+ .sheet{margin-top:12px}
+ .cut{overflow:hidden}
+ .cut svg{width:170%;max-width:none;margin-left:-62%}
+ .acts .btn{flex:1 1 calc(50% - 5px)}
+ .acts .btn-y,.acts .btn-wa{flex-basis:100%}
+ .stamp{grid-template-columns:minmax(0,1fr)}
+ .stamp div{border-right:0;border-bottom:1px solid var(--line)}
+ .stamp div:last-child{border-bottom:0}
+ .spec thead{display:none}
+ .spec tr{display:grid;grid-template-columns:52px minmax(0,1fr);border-bottom:1px solid var(--line)}
+ .spec tr:last-child{border-bottom:0}
+ .spec td{border:0;padding:16px 14px 0}
+ .spec td:first-child{width:auto;grid-row:span 2;padding-right:0}
+ .spec td:nth-child(2){width:auto}
+ .spec td:nth-child(3){padding:6px 14px 16px;font-size:16px}
+ .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;align-items:center;justify-content:center;background:var(--yel);border:1.5px solid var(--ink);color:var(--ink);box-shadow:4px 4px 0 var(--ink);opacity:0;pointer-events:none;transition:opacity .3s}
+ .fab.on{opacity:1;pointer-events:auto}
+ .fab svg{width:24px;height:24px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .js [data-r]{opacity:1;transform:none}
+ .js .dr .ln{stroke-dashoffset:0}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div>
+
+<header class="wrap sheet" id="top">
+ <div class="top">
+  <div>
+   <p class="tag"><span>Барнаул</span><span>Буровые работы</span><span>Наружные сети</span></p>
+   <h1><span class="nb">Вода и стоки</span> — <em>от трубы <span class="nb">на улице</span> <span class="nb">до дома</span></em></h1>
+   <p class="lead">Наружное водоснабжение, канализация и&nbsp;отопление, буровые работы. Приезжают быстро, на&nbsp;аварии и&nbsp;отогрев — тоже.</p>
+   <div class="acts">
+    <a class="btn btn-y" href="#req">Описать задачу</a>
+    <a class="btn" href="tel:+79132330666"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a class="btn" href="https://yandex.ru/maps/?rtext=~53.372396,83.698511" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Маршрут</a>
+   </div>
+   <p class="status"><span data-status></span><span>ежедневно <span class="nb">7:30–19:30</span></span></p>
+  </div>
+  <div class="view">
+   <i class="crop c1"></i><i class="crop c2"></i><i class="crop c3"></i><i class="crop c4"></i>
+   <figure>
+    <img src="img/p13-m.jpg" alt="Буровая установка на объекте в частном секторе" width="675" height="900">
+    <figcaption><b>Вид А</b><span>буровая установка на&nbsp;объекте</span></figcaption>
+   </figure>
+  </div>
+ </div>
+
+ <div class="cut dr" aria-hidden="true">
+  <svg viewBox="0 -70 1360 320" fill="none" stroke-linecap="round">
+   <defs><pattern id="soil" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#8c6b4b" stroke-opacity=".22" stroke-width="1.2"/></pattern></defs>
+   <rect x="0" y="70" width="1360" height="180" fill="url(#soil)"/>
+   <path class="ln" pathLength="1" d="M0 70 H1360" stroke="#13263a" stroke-width="2"/>
+   <g stroke="#13263a" stroke-opacity=".5" stroke-width="1.2"><path d="M40 70 l6 -8 M52 70 l4 -7 M300 70 l6 -8 M312 70 l4 -7 M620 70 l6 -8 M632 70 l4 -7 M860 70 l6 -8 M872 70 l4 -7"/></g>
+   <!-- магистраль -->
+   <circle cx="110" cy="176" r="22" stroke="#2b5e8f" stroke-width="2.5" fill="#edf1f2"/>
+   <circle cx="110" cy="176" r="12" stroke="#2b5e8f" stroke-width="1.5"/>
+   <text x="110" y="226" font-family="IBM Plex Mono,monospace" font-size="13" fill="#52627a" text-anchor="middle">магистраль</text>
+   <!-- буровая -->
+   <g stroke="#13263a" stroke-width="2" fill="#f2b705"><path d="M250 70 v-34 h86 l18 18 v16 z"/><path d="M262 36 l46 -22" fill="none"/></g>
+   <circle cx="266" cy="70" r="7" fill="#13263a"/><circle cx="324" cy="70" r="7" fill="#13263a"/>
+   <!-- трубопровод -->
+   <path class="ln" pathLength="1" d="M132 176 H1010 Q1040 176 1040 146 V72" stroke="#2b5e8f" stroke-width="6"/>
+   <path class="flow" d="M132 176 H1010 Q1040 176 1040 146 V72" stroke="#edf1f2" stroke-width="2"/>
+   <!-- канализация -->
+   <path class="ln" pathLength="1" d="M1130 72 V150 Q1130 186 1166 186 H1262" stroke="#8c6b4b" stroke-width="5"/>
+   <rect x="1262" y="120" width="56" height="110" stroke="#13263a" stroke-width="2" fill="#edf1f2"/>
+   <path d="M1262 150 h56 M1262 180 h56 M1262 210 h56" stroke="#13263a" stroke-opacity=".4"/>
+   <text x="1290" y="110" font-family="IBM Plex Mono,monospace" font-size="13" fill="#52627a" text-anchor="middle">колодец</text>
+   <!-- дом -->
+   <path class="ln" pathLength="1" d="M990 70 V-4 L1085 -56 L1180 -4 V70" stroke="#13263a" stroke-width="2"/>
+   <path d="M1010 26 h40 v28 h-40 z M1120 26 h40 v28 h-40 z" stroke="#13263a" stroke-opacity=".5" stroke-width="1.2"/>
+   <circle cx="1040" cy="40" r="13" fill="#f2b705" stroke="#13263a"/><text x="1040" y="44" font-family="IBM Plex Mono,monospace" font-size="12" fill="#13263a" text-anchor="middle">2</text>
+   <!-- размерные линии -->
+   <g stroke="#13263a" stroke-width="1" stroke-opacity=".7">
+    <path class="ln" pathLength="1" d="M110 120 H1040"/><path d="M110 112 v16 M1040 112 v16"/>
+    <path class="ln" pathLength="1" d="M1090 72 V176"/><path d="M1082 72 h16 M1082 176 h16"/>
+   </g>
+   <rect x="500" y="108" width="140" height="24" fill="#edf1f2"/>
+   <text x="570" y="125" font-family="IBM Plex Mono,monospace" font-size="13" fill="#13263a" text-anchor="middle">трасса  L</text>
+   <text x="1104" y="130" font-family="IBM Plex Mono,monospace" font-size="13" fill="#13263a">h</text>
+   <!-- позиции -->
+   <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#13263a" text-anchor="middle">
+    <circle cx="700" cy="206" r="13" fill="#f2b705" stroke="#13263a"/><text x="700" y="210">1</text>
+    <circle cx="1190" cy="214" r="13" fill="#f2b705" stroke="#13263a"/><text x="1190" y="218">3</text>
+    <circle cx="370" cy="30" r="13" fill="#f2b705" stroke="#13263a"/><text x="370" y="34">5</text>
+   </g>
+  </svg>
+ </div>
+
+ <div class="stamp">
+  <div><small>Организация</small>БИК-Барнаул</div>
+  <div><small>Адрес</small>Барнаул, Новая улица,&nbsp;15</div>
+  <div><small>Телефоны</small><a class="nb" href="tel:+79132330666">+7 913 233-06-66</a><br><a class="nb" href="tel:+79236440666">+7 923 644-06-66</a></div>
+  <div><small>2ГИС</small>5,0 · 30&nbsp;оценок</div>
+ </div>
+</header>
+
+<main>
+<section id="works">
+ <div class="wrap">
+  <div class="sh"><span class="no">Лист 2 · Работы</span><h2 data-r>Спецификация работ</h2><p data-r>Позиции совпадают с&nbsp;номерами на&nbsp;разрезе выше. В&nbsp;правой колонке — то, что заказчики пишут в&nbsp;отзывах.</p></div>
+  <table class="spec" data-r>
+   <thead><tr><th>Поз.</th><th>Работа</th><th>Из отзывов заказчиков</th></tr></thead>
+   <tbody>
+    <tr><td>01</td><td>Наружное водоснабжение</td><td>Провели воду в&nbsp;цех. Подключили к&nbsp;центральному водопроводу сразу несколько частных домов на&nbsp;заболоченном участке.</td></tr>
+    <tr><td>02</td><td>Замена водопровода</td><td>Старый водопровод заменили на&nbsp;новый под&nbsp;ключ: от&nbsp;заказчика нужен был только доступ к&nbsp;коммуникациям, смета к&nbsp;концу работ не&nbsp;изменилась.</td></tr>
+    <tr><td>03</td><td>Канализация и&nbsp;водоотведение</td><td>Системы водоотведения и&nbsp;наружная канализация.</td></tr>
+    <tr><td>04</td><td>Наружное отопление</td><td>Наружные сети отопления.</td></tr>
+    <tr><td>05</td><td>Буровые работы</td><td>На фото с&nbsp;объектов — буровая установка в&nbsp;работе, летом и&nbsp;зимой.</td></tr>
+    <tr><td>06</td><td>Отогрев и&nbsp;аварии</td><td>Быстро приезжают на&nbsp;отогрев. Если работы по&nbsp;аварии затягиваются за&nbsp;полночь — всё равно доделывают.</td></tr>
+    <tr><td>07</td><td>Консультация по&nbsp;дренажу</td><td>Подсказывают, как решить дренаж на&nbsp;территории.</td></tr>
+   </tbody>
+  </table>
+  <p class="pay">Оплата через банк или&nbsp;переводом с&nbsp;карты.</p>
+ </div>
+</section>
+
+<section class="log" id="log">
+ <div class="wrap">
+  <div class="sh"><span class="no">Лист 3 · Объекты</span><h2 data-r>Журнал объектов</h2><p data-r>Фото с&nbsp;реальных выездов. Листайте вбок.</p></div>
+ </div>
+ <div class="strip" tabindex="0" aria-label="Фото с объектов" data-qa-skip>
+  <figure><img src="img/p2-m.jpg" loading="lazy" alt="Трубы разложены по трассе на осенней листве" width="900" height="675" style="object-position:50% 60%"><figcaption class="cap"><b>Вид Б</b><span>трубы на&nbsp;трассе</span></figcaption></figure>
+  <figure><img src="img/p5-m.jpg" loading="lazy" alt="Двое мастеров работают в котловане" width="675" height="900"><figcaption class="cap"><b>Вид В</b><span>работа в&nbsp;котловане</span></figcaption></figure>
+  <figure><img src="img/p8-m.jpg" loading="lazy" alt="Мастер у открытого колодца с прибором" width="675" height="900" style="object-position:50% 70%"><figcaption class="cap"><b>Вид Г</b><span>на&nbsp;колодце</span></figcaption></figure>
+  <figure class="w"><img src="img/p11-m.jpg" loading="lazy" alt="Буровая установка на участке в частном секторе" width="900" height="506"><figcaption class="cap"><b>Вид Д</b><span>буровая на&nbsp;участке</span></figcaption></figure>
+  <figure><img src="img/p1-m.jpg" loading="lazy" alt="Экскаватор копает траншею у дороги" width="675" height="900" style="object-position:50% 55%"><figcaption class="cap"><b>Вид Е</b><span>траншея</span></figcaption></figure>
+  <figure><img src="img/p10-m.jpg" loading="lazy" alt="Буровая установка зимой на снегу" width="669" height="900"><figcaption class="cap"><b>Вид Ж</b><span>зимний выезд</span></figcaption></figure>
+  <figure><img src="img/p14-m.jpg" loading="lazy" alt="Чёрные полиэтиленовые трубы на снегу" width="675" height="900"><figcaption class="cap"><b>Вид З</b><span>трубы, зима</span></figcaption></figure>
+  <figure><img src="img/p12-m.jpg" loading="lazy" alt="Экскаватор и буровая установка на объекте" width="506" height="900"><figcaption class="cap"><b>Вид И</b><span>экскаватор и&nbsp;буровая</span></figcaption></figure>
+  <figure><img src="img/p7-m.jpg" loading="lazy" alt="Бетонные колодезные кольца" width="675" height="900"><figcaption class="cap"><b>Вид К</b><span>кольца колодца</span></figcaption></figure>
+ </div>
+ <div class="wrap"><p class="hint">← свайп →</p></div>
+</section>
+
+<section class="praise">
+ <div class="wrap">
+  <div class="sh"><span class="no">Лист 4 · Отзывы</span><h2 data-r>За&nbsp;что благодарят заказчики</h2><p data-r>Пересказ отзывов в&nbsp;2ГИС.</p></div>
+  <div class="pr" data-r>
+   <div><p class="k">01</p><h3>Приезжают сразу</h3><p>Заявки берут мгновенно, на&nbsp;отогрев и&nbsp;аварии выезжают быстро и&nbsp;не&nbsp;бросают работу, даже если она тянется за&nbsp;полночь.</p></div>
+   <div><p class="k">02</p><h3>Смета не&nbsp;растёт</h3><p>Работу под&nbsp;ключ сдают по&nbsp;той цене, которую назвали в&nbsp;начале. Заказчику остаётся только дать доступ к&nbsp;коммуникациям.</p></div>
+   <div><p class="k">03</p><h3>Всё на&nbsp;виду</h3><p>Бригаду называют слаженной: заказчик может стоять рядом и&nbsp;видеть всю работу от&nbsp;начала до&nbsp;конца.</p></div>
+   <div><span class="big">5,0</span><span>рейтинг 2ГИС<br>30&nbsp;оценок · <a href="https://2gis.ru/barnaul/firm/70000001099845703" target="_blank" rel="noopener">открыть</a></span></div>
+  </div>
+ </div>
+</section>
+
+<section id="req">
+ <div class="wrap">
+  <div class="sh"><span class="no">Лист 5 · Заявка</span><h2 data-r>Нарисуйте задачу — схема уйдёт в&nbsp;WhatsApp</h2><p data-r>Выберите, что нужно, и&nbsp;примерное расстояние. Стоимость мастер назовёт после разговора или&nbsp;выезда.</p></div>
+  <div class="req-g" data-r>
+   <form class="req-f" id="rf" onsubmit="return false">
+    <fieldset style="border:0"><legend class="lb">Что нужно</legend>
+     <div class="opts">
+      <label><input type="radio" name="t" value="провести воду" checked><span>Провести воду</span></label>
+      <label><input type="radio" name="t" value="заменить водопровод"><span>Заменить водопровод</span></label>
+      <label><input type="radio" name="t" value="канализация"><span>Канализация</span></label>
+      <label><input type="radio" name="t" value="наружное отопление"><span>Отопление</span></label>
+      <label><input type="radio" name="t" value="буровые работы"><span>Бурение</span></label>
+      <label><input type="radio" name="t" value="отогрев / авария"><span>Отогрев, авария</span></label>
+      <label><input type="radio" name="t" value="консультация по дренажу"><span>Дренаж</span></label>
+     </div>
+    </fieldset>
+    <fieldset style="border:0"><legend class="lb">Объект</legend>
+     <div class="opts">
+      <label><input type="radio" name="o" value="частный дом" checked><span>Частный дом</span></label>
+      <label><input type="radio" name="o" value="несколько домов"><span>Несколько домов</span></label>
+      <label><input type="radio" name="o" value="цех / производство"><span>Цех, производство</span></label>
+     </div>
+    </fieldset>
+    <div><label class="lb" for="ln">Расстояние до точки подключения, примерно</label>
+     <div class="len"><input type="range" id="ln" min="5" max="300" step="5" value="40"><output id="lo" for="ln">≈ 40 м</output></div>
+     <label class="chk"><input type="checkbox" id="nk"> Не знаю — нужен выезд</label>
+    </div>
+    <label class="chk"><input type="checkbox" id="ur"> Срочно: авария прямо сейчас</label>
+   </form>
+   <div class="req-v" id="rv">
+    <div class="scheme">
+     <svg viewBox="0 0 520 220" fill="none" font-family="IBM Plex Mono,monospace">
+      <rect x="0" y="90" width="520" height="130" fill="url(#soil)"/>
+      <path d="M0 90 H520" stroke="#13263a" stroke-width="2"/>
+      <circle cx="40" cy="160" r="14" stroke="#2b5e8f" stroke-width="2.5" fill="#edf1f2"/>
+      <path id="sp" d="M54 160 H420 V92" stroke="#2b5e8f" stroke-width="5" style="transition:d .4s"/>
+      <g id="hs" stroke="#13263a" stroke-width="2" fill="#f8fafa" style="transition:transform .4s"><path id="hp" d="M380 90 V40 L420 14 L460 40 V90 Z"/></g>
+      <path id="dl" d="M40 120 H420" stroke="#13263a" stroke-opacity=".7"/>
+      <rect id="db" x="180" y="108" width="120" height="22" fill="#edf1f2"/>
+      <text id="dt" x="240" y="124" font-size="13" fill="#13263a" text-anchor="middle">≈ 40 м</text>
+      <text x="40" y="196" font-size="11" fill="#52627a" text-anchor="middle">сеть</text>
+      <g class="alarm"><circle cx="240" cy="160" r="16" fill="#c8432b" fill-opacity=".35"/><circle cx="240" cy="160" r="6" fill="#c8432b"/></g>
+     </svg>
+    </div>
+    <p class="msg" id="msg" aria-live="polite"></p>
+    <div class="acts" style="margin-top:0">
+     <a class="btn btn-wa" id="wa" href="https://wa.me/79132330666" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+     <a class="btn" href="tel:+79132330666">Позвонить</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contacts">
+ <div class="wrap">
+  <div class="sh"><span class="no">Лист 6 · Контакты</span><h2 data-r>Барнаул, Новая улица,&nbsp;15</h2></div>
+  <div class="ct" data-r>
+   <div class="ct-i"><dl>
+    <dt>Сейчас</dt><dd><span data-status></span></dd>
+    <dt>Режим</dt><dd>Ежедневно, <span class="nb">7:30–19:30</span></dd>
+    <dt>Телефоны</dt><dd><a class="nb" href="tel:+79132330666">+7 913 233-06-66</a> <a class="nb" href="tel:+79236440666">+7 923 644-06-66</a></dd>
+    <dt>Написать</dt><dd><a href="https://wa.me/79132330666" target="_blank" rel="noopener">WhatsApp</a> <a href="https://vk.ru/club201335710" target="_blank" rel="noopener">ВКонтакте</a></dd>
+    <dt>Оплата</dt><dd>Через банк, перевод с&nbsp;карты</dd>
+   </dl>
+    <div class="acts">
+     <a class="btn btn-y" href="https://yandex.ru/maps/?rtext=~53.372396,83.698511" target="_blank" rel="noopener">Маршрут</a>
+     <a class="btn" href="tel:+79132330666">Позвонить</a>
+    </div>
+   </div>
+   <div class="map"><iframe loading="lazy" title="БИК-Барнаул на карте" src="https://yandex.ru/map-widget/v1/?ll=83.698511,53.372396&z=16&pt=83.698511,53.372396,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="end">
+ <div class="wrap">
+  <h2 data-r>Прорвало, замёрзло или&nbsp;нужна новая труба?</h2>
+  <p data-r>Позвоните или&nbsp;опишите задачу — ребята перезвонят.</p>
+  <div class="acts" data-r>
+   <a class="btn btn-y" href="tel:+79132330666">Позвонить</a>
+   <a class="btn" href="#req">Описать задачу</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>БИК-Барнаул · Барнаул, Новая улица, 15 · Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</footer>
+<a class="fab" href="tel:+79132330666" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+ var fab=document.querySelector('.fab');var fs=function(){fab.classList.toggle('on',scrollY>innerHeight*.6)};addEventListener('scroll',fs,{passive:true});fs();
+ var f=document.getElementById('rf'),ln=document.getElementById('ln'),lo=document.getElementById('lo'),nk=document.getElementById('nk'),ur=document.getElementById('ur'),
+ msg=document.getElementById('msg'),wa=document.getElementById('wa'),rv=document.getElementById('rv'),sp=document.getElementById('sp'),dl=document.getElementById('dl'),dt=document.getElementById('dt'),db=document.getElementById('db'),hp=document.getElementById('hp');
+ var HOUSE={'частный дом':'M0 0 V-50 L40 -76 L80 -50 V0 Z','несколько домов':'M-40 0 V-34 L-14 -54 L12 -34 V0 Z M12 0 V-44 L44 -66 L76 -44 V0 Z','цех / производство':'M-20 0 V-60 L20 -60 L20 -44 L50 -60 L50 -44 L80 -60 V0 Z'};
+ function upd(){
+  var v=+ln.value,unk=nk.checked,o=f.querySelector('[name=o]:checked').value,t=f.querySelector('[name=t]:checked').value;
+  ln.disabled=unk;var lab=unk?'L — ?':'≈ '+v+' м';lo.textContent=unk?'—':'≈ '+v+' м';
+  var x=Math.round(110+Math.min(v,300)/300*330);
+  sp.setAttribute('d','M54 160 H'+x+' V92');dl.setAttribute('d','M40 120 H'+x);
+  var mid=(40+x)/2;db.setAttribute('x',mid-60);dt.setAttribute('x',mid);dt.textContent=lab;
+  hp.setAttribute('d',HOUSE[o]);hp.setAttribute('transform','translate('+(x-40)+' 90)');
+  rv.classList.toggle('urgent',ur.checked);
+  var s='Здравствуйте! Пишу с сайта.\nЗадача: '+t+'\nОбъект: '+o+'\nРасстояние до подключения: '+(unk?'не знаю, нужен выезд':'примерно '+v+' м')+(ur.checked?'\nСРОЧНО: авария сейчас':'')+'\nАдрес объекта: \nКогда удобно связаться?';
+  msg.textContent=s;wa.href='https://wa.me/79132330666?text='+encodeURIComponent(s);
+ }
+ f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["07:30","19:30"]],"tue":[["07:30","19:30"]],"wed":[["07:30","19:30"]],"thu":[["07:30","19:30"]],"fri":[["07:30","19:30"]],"sat":[["07:30","19:30"]],"sun":[["07:30","19:30"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

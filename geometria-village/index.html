@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Geometria Village — дом с баней и банным чаном в Оренбурге</title><meta property="og:type" content="website"><meta property="og:title" content="Geometria Village — дом с баней и банным чаном в Оренбурге"><meta property="og:description" content="Geometria Village, Оренбург, Западная улица, 18: коттедж, баня, сауна, банный чан, своя парковка. Работает круглосуточно. Заявка на даты в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/geometria-village/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Geometria Village, Оренбург, Западная улица, 18: коттедж, баня, сауна, банный чан, своя парковка. Работает круглосуточно. Заявка на даты в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Golos+Text:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Golos+Text:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--night:#0d1424;--dusk:#1b2740;--blue:#2c3b5c;--amber:#eaa35a;--ember:#d9773a;--pebble:#f1f1ec;--stone:#dcdcd4;--ink:#141a26;--mute:#5b6272;--line:rgba(20,26,38,.14);--wa:#1f8f55;
+--disp:'Unbounded',system-ui,sans-serif;--text:'Golos Text',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.6 var(--text);color:var(--ink);background:var(--pebble);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{width:min(100% - 40px,1320px);margin-inline:auto}
+.nb{white-space:nowrap}
+
+/* ---------- первый экран: полноэкранная сцена ---------- */
+.hero{--hz:55%;position:relative;min-height:100svh;color:#fff;background:var(--night);overflow:hidden;display:flex;flex-direction:column;isolation:isolate}
+.demo{position:relative;z-index:3;font-size:12px;letter-spacing:.04em;color:rgba(255,255,255,.62);padding:10px 20px;text-align:center;border-bottom:1px solid rgba(255,255,255,.1)}
+.scene{position:absolute;inset:0;z-index:-1}
+.scene svg{width:100%;height:100%}
+.sky{position:absolute;inset:0;background:linear-gradient(180deg,#0b1120 0%,#18233b calc(var(--hz) - 26%),#3a3c55 calc(var(--hz) - 12%),#a5674a calc(var(--hz) - 3%),#eaa35a var(--hz),#1a2032 calc(var(--hz) + .3%),#0e1422 100%)}
+.stars{position:absolute;inset:0 0 30% 0;background-image:radial-gradient(1.2px 1.2px at 12% 18%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 28% 9%,#fff6 50%,transparent 51%),radial-gradient(1.4px 1.4px at 47% 22%,#fff9 50%,transparent 51%),radial-gradient(1px 1px at 63% 12%,#fff5 50%,transparent 51%),radial-gradient(1.2px 1.2px at 81% 26%,#fff7 50%,transparent 51%),radial-gradient(1px 1px at 91% 8%,#fff6 50%,transparent 51%),radial-gradient(1px 1px at 6% 36%,#fff4 50%,transparent 51%),radial-gradient(1.2px 1.2px at 38% 40%,#fff5 50%,transparent 51%),radial-gradient(1px 1px at 72% 42%,#fff4 50%,transparent 51%)}
+.fig{position:absolute;bottom:calc(100% - var(--hz) - 2.2vw);right:4vw;width:min(56vw,960px);max-height:calc(var(--hz) - 40px);aspect-ratio:980/560;z-index:0}
+.steam path{fill:none;stroke:rgba(255,255,255,.35);stroke-width:2;stroke-linecap:round;stroke-dasharray:6 14;animation:steam 6s linear infinite}
+.steam path:nth-child(2){animation-duration:8s;opacity:.7}
+.steam path:nth-child(3){animation-duration:7s;opacity:.5}
+@keyframes steam{to{stroke-dashoffset:-200}}
+.win{animation:glow 5s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.75}to{opacity:1}}
+.hero-in{margin-top:auto;padding:0 0 clamp(20px,3vh,36px);position:relative;z-index:2}
+.hero-in::before{content:"";position:absolute;inset:-40px -50vw 0;background:linear-gradient(180deg,transparent,rgba(9,13,24,.55) 40%);z-index:-1;pointer-events:none}
+.kick{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:rgba(255,255,255,.78);margin-bottom:14px;align-items:center}
+.kick b{font-weight:500;color:#fff}
+[data-status]{display:inline-flex;align-items:center;gap:8px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#7ddc9c;box-shadow:0 0 0 4px rgba(125,220,156,.18)}
+[data-status].is-closed::before{background:#e98a6a;box-shadow:none}
+h1{font:700 clamp(44px,7vw,128px)/.92 var(--disp);letter-spacing:-.035em;text-transform:uppercase;overflow-wrap:anywhere}
+h1 span{display:block;font-weight:300;color:var(--amber)}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 48px;align-items:end;margin-top:22px}
+.lead{font-size:clamp(17px,1.4vw,21px);line-height:1.5;max-width:34em;color:rgba(255,255,255,.9)}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font:500 15px/1 var(--text);letter-spacing:.02em;text-decoration:none;border:1px solid rgba(255,255,255,.4);color:#fff;background:transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{background:#fff;color:var(--night);border-color:#fff}
+.btn:active{transform:translateY(1px)}
+.btn-a{background:var(--amber);border-color:var(--amber);color:var(--night)}
+.btn-a:hover{background:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.tick{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.14);overflow:hidden;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.66);background:rgba(9,13,24,.82)}
+.tick-t{display:flex;width:max-content;animation:run 46s linear infinite}
+.tick-t span{padding:12px 0;white-space:nowrap}
+.tick-t i{display:inline-block;width:7px;height:7px;margin:0 22px;border:1px solid var(--amber);transform:rotate(45deg) translateY(-2px)}
+@keyframes run{to{transform:translateX(-50%)}}
+@supports (animation-timeline:scroll()){
+ .fig{animation:drift linear both;animation-timeline:scroll(root);animation-range:0 100vh}
+ @keyframes drift{to{transform:translateY(18%) scale(1.06);opacity:.35}}
+}
+
+/* ---------- общие ---------- */
+section{padding:clamp(72px,10vw,140px) 0}
+.eyebrow{font:500 12px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;color:var(--ember);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h2{font:500 clamp(30px,4.2vw,62px)/1.04 var(--disp);letter-spacing:-.03em;text-wrap:balance;max-width:16em}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* ---------- три фигуры: sticky-сторителлинг ---------- */
+.zones{background:var(--pebble)}
+.z-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,110px);margin-top:56px}
+.z-pin{position:sticky;top:12vh;height:min(76vh,620px);display:grid;place-items:center;background:var(--night);overflow:hidden}
+.z-pin svg{width:82%;height:auto}
+.z-pin .shape{fill:none;stroke:rgba(255,255,255,.22);stroke-width:2;transition:stroke .6s,fill .6s,transform .6s;transform-box:fill-box;transform-origin:center}
+.z-pin[data-on="0"] .s0,.z-pin[data-on="1"] .s1,.z-pin[data-on="2"] .s2,.z-pin[data-on="3"] .s3{stroke:var(--amber);fill:rgba(234,163,90,.12);transform:scale(1.06)}
+.z-cap{position:absolute;left:24px;bottom:20px;right:24px;display:flex;justify-content:space-between;font:500 12px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.z-cap b{color:var(--amber);font-weight:500}
+.z-list{display:flex;flex-direction:column}
+.zone{min-height:62vh;display:flex;flex-direction:column;justify-content:center;padding:40px 0;border-top:1px solid var(--line)}
+.zone:first-child{border-top:0;padding-top:0;min-height:52vh}
+.zone .n{font:300 15px/1 var(--disp);color:var(--mute);margin-bottom:22px;display:flex;gap:14px;align-items:center}
+.zone .n svg{width:26px;height:26px;stroke:var(--ember);fill:none;stroke-width:1.6}
+.zone h3{font:500 clamp(26px,2.6vw,40px)/1.1 var(--disp);letter-spacing:-.02em;margin-bottom:16px}
+.zone p{color:var(--mute);max-width:32em}
+.zone p+p{margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font-size:14px;padding:7px 12px;border:1px solid var(--line);background:#fff}
+
+/* ---------- за что хвалят ---------- */
+.praise{background:var(--dusk);color:#fff}
+.pr-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+.score{text-align:right}
+.score b{display:block;font:300 clamp(80px,11vw,170px)/.85 var(--disp);letter-spacing:-.05em;color:var(--amber)}
+.score span{font-size:15px;color:rgba(255,255,255,.7)}
+.praise .eyebrow{color:var(--amber)}
+.pr-list{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);margin-top:64px;border-top:1px solid rgba(255,255,255,.16)}
+.pr-list li{list-style:none;padding:32px 32px 8px 0;border-right:1px solid rgba(255,255,255,.12)}
+.pr-list li+li{padding-left:32px}
+.pr-list li:last-child{border-right:0}
+.pr-list h3{font:500 20px/1.25 var(--disp);margin-bottom:12px;letter-spacing:-.01em}
+.pr-list li:first-child h3{font-size:clamp(22px,2vw,30px);color:var(--amber)}
+.pr-list p{color:rgba(255,255,255,.72);font-size:16px}
+.src{margin-top:40px;font-size:14px;color:rgba(255,255,255,.55)}
+.src a{color:rgba(255,255,255,.85)}
+
+/* ---------- заявка на даты ---------- */
+.book{background:var(--pebble)}
+.bk{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0;margin-top:52px;background:#fff;border:1px solid var(--line)}
+.bk-form{padding:clamp(24px,4vw,52px);display:grid;gap:30px}
+.f-l{font:500 12px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:12px;display:block}
+.dates{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.dates label span{display:block;font-size:14px;color:var(--mute);margin-bottom:6px}
+input[type=date]{width:100%;min-height:52px;padding:0 14px;font:500 16px var(--text);color:var(--ink);background:var(--pebble);border:1px solid var(--line);border-radius:0;-webkit-appearance:none;appearance:none}
+.step{display:flex;align-items:center;gap:0;border:1px solid var(--line);width:max-content}
+.step button{width:52px;height:52px;font:400 24px/1 var(--text);background:var(--pebble);border:0;cursor:pointer;color:var(--ink)}
+.step button:hover{background:var(--stone)}
+.step output{min-width:110px;text-align:center;font:500 18px var(--disp)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:1px solid var(--line);font-size:15px;transition:background .2s,border-color .2s,color .2s}
+.chips span::before{content:"";width:10px;height:10px;border:1px solid currentColor;transform:rotate(45deg);transition:background .2s}
+.chips input:checked+span{background:var(--night);color:#fff;border-color:var(--night)}
+.chips input:checked+span::before{background:var(--amber);border-color:var(--amber)}
+.chips input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
+.chips label:hover span{border-color:var(--ink)}
+.bk-sum{background:var(--night);color:#fff;padding:clamp(24px,4vw,52px);display:flex;flex-direction:column;gap:24px;position:relative;overflow:hidden}
+.bk-sum::after{content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;border:1px solid rgba(234,163,90,.35);border-radius:50%}
+.bk-sum .f-l{color:rgba(255,255,255,.55)}
+.ticket{font-size:17px;line-height:1.7;white-space:pre-line;color:rgba(255,255,255,.92);min-height:8em;border-left:2px solid var(--amber);padding-left:18px}
+.bk-sum .acts{margin-top:auto}
+.btn-wa{background:var(--wa);border-color:var(--wa)}
+.btn-wa:hover{background:#fff;color:var(--wa);border-color:#fff}
+.note{font-size:14px;color:rgba(255,255,255,.55)}
+
+/* ---------- контакты ---------- */
+.where{background:#fff;padding-bottom:0}
+.w-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(32px,5vw,80px);margin-top:48px;align-items:start}
+.w-info dl{display:grid;gap:0}
+.w-info dt{font:500 12px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);padding-top:20px}
+.w-info dd{font-size:19px;padding:8px 0 20px;border-bottom:1px solid var(--line)}
+.w-info dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.w-info dd a:hover{border-color:var(--ember);color:var(--ember)}
+.soc{display:flex;flex-wrap:wrap;gap:8px 20px}
+.w-info .acts{margin-top:28px}
+.w-info .btn{color:var(--ink);border-color:var(--ink)}
+.w-info .btn:hover{background:var(--ink);color:#fff}
+.w-info .btn-a{color:var(--night);border-color:var(--amber)}
+.map{aspect-ratio:4/3;min-height:340px;background:var(--stone);filter:grayscale(.35)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+/* ---------- финал ---------- */
+.end{background:var(--night);color:#fff;text-align:center;overflow:hidden;position:relative}
+.end svg.big{position:absolute;left:50%;top:50%;width:min(140vw,1400px);transform:translate(-50%,-50%);opacity:.18;pointer-events:none}
+.end h2{margin:0 auto 18px;max-width:14em}
+.end p{color:rgba(255,255,255,.72);margin-bottom:32px}
+.end .acts{justify-content:center}
+footer{background:var(--night);color:rgba(255,255,255,.45);font-size:13px;padding:24px 20px 96px;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+.fab{display:none}
+
+@media (max-width:1000px){
+ .hero-row{grid-template-columns:minmax(0,1fr)}
+ .z-grid{grid-template-columns:minmax(0,1fr)}
+ .z-pin{top:0;height:34vh;z-index:2;margin:0 -20px}
+ .z-pin svg{width:auto;height:78%}
+ .zone,.zone:first-child{min-height:0;padding:40px 0}
+ .pr-top{grid-template-columns:minmax(0,1fr)}
+ .score{text-align:left}
+ .pr-list{grid-template-columns:minmax(0,1fr)}
+ .pr-list li,.pr-list li+li{padding:28px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .bk,.w-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .hero{--hz:40%}
+ .fig{width:128vw;max-height:none;right:-6vw;bottom:calc(60% - 5vw)}
+ .hero{min-height:100svh}
+ .kick{font-size:13px}
+ .acts .btn{flex:1 1 100%}
+ .hero .acts .btn{flex:1 1 calc(50% - 5px)}
+ .hero .acts .btn-a{flex-basis:100%}
+ .dates{grid-template-columns:minmax(0,1fr)}
+ .map{aspect-ratio:1/1;min-height:0}
+ .fab{display:flex;opacity:0;pointer-events:none;transition:opacity .3s;position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;align-items:center;justify-content:center;background:var(--amber);color:var(--night);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+ .fab svg{width:24px;height:24px}
+ .fab.on{opacity:1;pointer-events:auto}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+
+<header class="hero" id="top">
+ <div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+ <div class="scene" aria-hidden="true">
+  <div class="sky"></div>
+  <div class="stars"></div>
+  <svg class="fig" viewBox="0 0 980 560" preserveAspectRatio="xMidYMax meet">
+   <defs>
+    <linearGradient id="gw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8a"/><stop offset="1" stop-color="#e98d45"/></linearGradient>
+    <linearGradient id="gp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3fa7b8" stop-opacity=".9"/><stop offset="1" stop-color="#7fd0d8" stop-opacity=".9"/></linearGradient>
+    <radialGradient id="gc" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#ffdca6"/><stop offset="1" stop-color="#d9773a"/></radialGradient>
+   </defs>
+   <!-- дом: треугольник -->
+   <path d="M330 520 L540 150 L750 520 Z" fill="#101827" stroke="#eaa35a" stroke-opacity=".55" stroke-width="2"/>
+   <path class="win" d="M540 250 L620 400 L620 520 L460 520 L460 400 Z" fill="url(#gw)"/>
+   <path d="M540 250 L540 520 M460 400 L620 400" stroke="#101827" stroke-width="4" opacity=".55"/>
+   <!-- баня: квадрат -->
+   <rect x="770" y="380" width="140" height="140" fill="#131c2e" stroke="#eaa35a" stroke-opacity=".45" stroke-width="2"/>
+   <rect class="win" x="808" y="430" width="64" height="40" fill="url(#gw)" opacity=".85"/>
+   <!-- чан: круг -->
+   <ellipse cx="200" cy="500" rx="104" ry="26" fill="#0b111d"/>
+   <circle cx="200" cy="440" r="70" fill="none" stroke="#eaa35a" stroke-opacity=".55" stroke-width="2"/>
+   <path d="M130 440 A70 70 0 0 0 270 440 Z" fill="url(#gc)" opacity=".9"/>
+   <g class="steam"><path d="M180 360 C160 330 200 310 180 270 C165 240 195 220 185 190"/><path d="M210 365 C230 335 196 312 218 276 C236 246 206 228 214 200"/><path d="M240 372 C256 350 236 330 250 304"/></g>
+   <!-- бассейн: прямоугольник -->
+   <path d="M20 540 L320 540 L300 556 L0 556 Z" fill="url(#gp)" opacity=".75"/>
+   <!-- белые камни -->
+   <g fill="#f1f1ec" opacity=".55"><circle cx="360" cy="548" r="3"/><circle cx="392" cy="552" r="2"/><circle cx="430" cy="546" r="2.5"/><circle cx="470" cy="553" r="2"/><circle cx="512" cy="548" r="3"/><circle cx="560" cy="552" r="2"/><circle cx="604" cy="546" r="2.5"/><circle cx="650" cy="552" r="2"/><circle cx="700" cy="548" r="3"/><circle cx="744" cy="553" r="2"/><circle cx="790" cy="547" r="2.5"/><circle cx="840" cy="552" r="2"/><circle cx="890" cy="548" r="3"/><circle cx="940" cy="553" r="2"/></g>
+  </svg>
+ </div>
+
+ <div class="hero-in wrap">
+  <div class="kick"><b>Оренбург</b><span>Западная улица, 18</span><span data-status></span></div>
+  <h1>Geometria<span>Village</span></h1>
+  <div class="hero-row">
+   <p class="lead">Загородный дом с&nbsp;баней, сауной и&nbsp;банным чаном — для&nbsp;семьи и&nbsp;большой компании. Даты согласуем в&nbsp;WhatsApp.</p>
+   <div class="acts">
+    <a class="btn btn-a" href="#book">Выбрать даты</a>
+    <a class="btn" href="tel:+79123536777"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a class="btn" href="https://yandex.ru/maps/?rtext=~51.745232,55.184844" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Маршрут</a>
+   </div>
+  </div>
+ </div>
+
+ <div class="tick" data-qa-skip aria-hidden="true">
+  <div class="tick-t">
+   <span>Коттедж<i></i>Баня<i></i>Сауна<i></i>Банный чан<i></i>Глэмпинг<i></i>Своя парковка<i></i>Открыто круглосуточно<i></i>5,0 в 2ГИС · 74 оценки<i></i></span>
+   <span>Коттедж<i></i>Баня<i></i>Сауна<i></i>Банный чан<i></i>Глэмпинг<i></i>Своя парковка<i></i>Открыто круглосуточно<i></i>5,0 в 2ГИС · 74 оценки<i></i></span>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="zones" id="zones">
+ <div class="wrap">
+  <p class="eyebrow" data-r>Территория</p>
+  <h2 data-r>Четыре фигуры — четыре зоны отдыха на&nbsp;одном участке</h2>
+  <div class="z-grid">
+   <div class="z-pin" data-on="0" aria-hidden="true">
+    <svg viewBox="0 0 400 400">
+     <path class="shape s0" d="M200 40 L330 270 L70 270 Z"/>
+     <rect class="shape s1" x="250" y="210" width="110" height="110"/>
+     <circle class="shape s2" cx="100" cy="270" r="62"/>
+     <rect class="shape s3" x="40" y="344" width="320" height="22"/>
+    </svg>
+    <div class="z-cap"><span>Geometria</span><b id="zc">01 / 04</b></div>
+   </div>
+   <div class="z-list">
+    <article class="zone" data-z="0">
+     <p class="n"><svg viewBox="0 0 26 26"><path d="M13 3 L24 22 L2 22 Z"/></svg>01 · Дом</p>
+     <h3>Коттедж, где всё продумано до&nbsp;мелочей</h3>
+     <p>Гости пишут про тёплый уютный дом, большую веранду и&nbsp;кухню с&nbsp;большим холодильником, в&nbsp;который помещаются запасы всей компании. Для&nbsp;детей есть отдельный стол.</p>
+     <p>В одном из&nbsp;отзывов — компания из&nbsp;15&nbsp;человек, и&nbsp;всем было удобно.</p>
+     <div class="tags"><span>Коттедж</span><span>Веранда</span><span>Своя парковка</span></div>
+    </article>
+    <article class="zone" data-z="1">
+     <p class="n"><svg viewBox="0 0 26 26"><rect x="3" y="3" width="20" height="20"/></svg>02 · Баня и&nbsp;сауна</p>
+     <h3>Небольшая, но&nbsp;по-настоящему жаркая</h3>
+     <p>Баню в&nbsp;отзывах называют отличной: тёплая и&nbsp;уютная. Её&nbsp;хвалят и&nbsp;семьи, и&nbsp;компании, которые приезжают на&nbsp;праздник.</p>
+     <div class="tags"><span>Баня</span><span>Сауна</span></div>
+    </article>
+    <article class="zone" data-z="2">
+     <p class="n"><svg viewBox="0 0 26 26"><circle cx="13" cy="13" r="10"/></svg>03 · Банный чан</p>
+     <h3>Чан — отдельный восторг</h3>
+     <p>Так о&nbsp;нём пишут гости, которые отдыхали зимой, в&nbsp;январские праздники. Одной компании хозяева в&nbsp;подарок сделали пихтовую заправку.</p>
+     <div class="tags"><span>Банный чан</span><span>Зимой тоже</span></div>
+    </article>
+    <article class="zone" data-z="3">
+     <p class="n"><svg viewBox="0 0 26 26"><rect x="2" y="10" width="22" height="7"/></svg>04 · Бассейн и&nbsp;двор</p>
+     <h3>Тёплый бассейн и&nbsp;территория с&nbsp;разными зонами</h3>
+     <p>Гости отмечают, что бассейн тёплый — купались даже в&nbsp;дождь. Вся территория обустроена: столики, белые камешки под ногами, место для&nbsp;малышей и&nbsp;для&nbsp;старшего поколения.</p>
+     <div class="tags"><span>Бассейн</span><span>Зоны отдыха</span><span>Глэмпинг</span></div>
+    </article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="praise">
+ <div class="wrap">
+  <div class="pr-top">
+   <div>
+    <p class="eyebrow" data-r>Отзывы гостей</p>
+    <h2 data-r>За&nbsp;что Geometria Village хвалят чаще всего</h2>
+   </div>
+   <div class="score" data-r><b>5,0</b><span>рейтинг в&nbsp;2ГИС · 74&nbsp;оценки</span></div>
+  </div>
+  <ul class="pr-list">
+   <li data-r><h3>Чисто и&nbsp;уютно — каждый&nbsp;раз</h3><p>Гости, которые возвращаются каждый сезон, пишут, что дом всегда убран, а&nbsp;территория красивая.</p></li>
+   <li data-r><h3>Место для&nbsp;всех возрастов</h3><p>Дети, взрослые и&nbsp;старшее поколение находят свою зону — поэтому сюда едут на&nbsp;дни рождения и&nbsp;семейные выходные.</p></li>
+   <li data-r><h3>Хозяева на&nbsp;связи</h3><p>При заезде организатор всё показывает и&nbsp;объясняет, а&nbsp;о&nbsp;мелочах заботятся сами — вплоть до&nbsp;заправки для&nbsp;чана.</p></li>
+  </ul>
+  <p class="src">По&nbsp;отзывам гостей в&nbsp;<a href="https://2gis.ru/orenburg/firm/70000001086919021" target="_blank" rel="noopener">2ГИС</a>, пересказ.</p>
+ </div>
+</section>
+
+<section class="book" id="book">
+ <div class="wrap">
+  <p class="eyebrow" data-r>Заявка на&nbsp;даты</p>
+  <h2 data-r>Соберите отдых, а&nbsp;хозяева ответят в&nbsp;WhatsApp</h2>
+  <div class="bk" data-r>
+   <form class="bk-form" id="bf" onsubmit="return false">
+    <div>
+     <span class="f-l">Даты</span>
+     <div class="dates">
+      <label><span>Заезд</span><input type="date" id="d1"></label>
+      <label><span>Выезд</span><input type="date" id="d2"></label>
+     </div>
+    </div>
+    <div>
+     <span class="f-l" id="gl">Гостей</span>
+     <div class="step" role="group" aria-labelledby="gl"><button type="button" data-g="-1" aria-label="Меньше гостей">−</button><output id="gn" aria-live="polite">6 гостей</output><button type="button" data-g="1" aria-label="Больше гостей">+</button></div>
+    </div>
+    <fieldset style="border:0">
+     <legend class="f-l">Что важно</legend>
+     <div class="chips">
+      <label><input type="checkbox" name="o" value="баня" checked><span>Баня</span></label>
+      <label><input type="checkbox" name="o" value="сауна"><span>Сауна</span></label>
+      <label><input type="checkbox" name="o" value="банный чан" checked><span>Банный чан</span></label>
+      <label><input type="checkbox" name="o" value="будут дети"><span>Будут дети</span></label>
+     </div>
+    </fieldset>
+    <fieldset style="border:0">
+     <legend class="f-l">Повод</legend>
+     <div class="chips">
+      <label><input type="radio" name="p" value="отдых с семьёй" checked><span>Семья</span></label>
+      <label><input type="radio" name="p" value="день рождения"><span>День рождения</span></label>
+      <label><input type="radio" name="p" value="отдых с друзьями"><span>Друзья</span></label>
+      <label><input type="radio" name="p" value="праздники"><span>Праздники</span></label>
+     </div>
+    </fieldset>
+   </form>
+   <div class="bk-sum">
+    <span class="f-l">Ваше сообщение</span>
+    <p class="ticket" id="tk" aria-live="polite"></p>
+    <p class="note">Свободные даты и&nbsp;стоимость хозяева назовут в&nbsp;ответ.</p>
+    <div class="acts">
+     <a class="btn btn-wa" id="wa" href="https://wa.me/79123536777" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+     <a class="btn" id="tg" href="https://t.me/+79123536777" target="_blank" rel="noopener">Telegram</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="where" id="contacts">
+ <div class="wrap">
+  <p class="eyebrow" data-r>Как добраться</p>
+  <h2 data-r>Оренбург, Западная улица,&nbsp;18</h2>
+  <div class="w-grid">
+   <div class="w-info" data-r>
+    <dl>
+     <dt>Режим</dt><dd><span data-status></span></dd>
+     <dt>Телефон</dt><dd><a class="nb" href="tel:+79123536777">+7 912 353-67-77</a></dd>
+     <dt>Написать</dt><dd class="soc"><a href="https://wa.me/79123536777" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79123536777" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/orengv" target="_blank" rel="noopener">ВКонтакте</a></dd>
+     <dt>На месте</dt><dd>Своя парковка</dd>
+    </dl>
+    <div class="acts">
+     <a class="btn btn-a" href="https://yandex.ru/maps/?rtext=~51.745232,55.184844" target="_blank" rel="noopener">Маршрут</a>
+     <a class="btn" href="tel:+79123536777">Позвонить</a>
+    </div>
+   </div>
+   <div class="map" data-r><iframe loading="lazy" title="Geometria Village на карте" src="https://yandex.ru/map-widget/v1/?ll=55.184844,51.745232&z=16&pt=55.184844,51.745232,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="end">
+ <svg class="big" viewBox="0 0 400 200" aria-hidden="true" fill="none" stroke="#eaa35a" stroke-width=".6"><path d="M200 20 L290 180 L110 180 Z"/><circle cx="80" cy="140" r="40"/><rect x="290" y="110" width="70" height="70"/></svg>
+ <div class="wrap">
+  <h2 data-r>Тёплый дом, жаркая баня и&nbsp;чан под&nbsp;звёздами</h2>
+  <p data-r>Напишите даты — и&nbsp;хозяева подскажут, что свободно.</p>
+  <div class="acts" data-r>
+   <a class="btn btn-a" href="#book">Выбрать даты</a>
+   <a class="btn" href="tel:+79123536777">Позвонить</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>Geometria Village · Оренбург, Западная улица, 18 · Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</footer>
+<a class="fab" href="tel:+79123536777" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+ // sticky-фигуры: какая зона на экране — та фигура подсвечена
+ var pin=document.querySelector('.z-pin'),zc=document.getElementById('zc');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.getAttribute('data-z');pin.setAttribute('data-on',i);zc.textContent='0'+(+i+1)+' / 04'}})},{rootMargin:'-45% 0px -45% 0px'});document.querySelectorAll('.zone').forEach(function(z){io.observe(z)})}
+ var fab=document.querySelector('.fab');var fs=function(){fab.classList.toggle('on',scrollY>innerHeight*.6)};addEventListener('scroll',fs,{passive:true});fs();
+ // заявка
+ var g=6,gn=document.getElementById('gn'),tk=document.getElementById('tk'),wa=document.getElementById('wa'),tg=document.getElementById('tg'),d1=document.getElementById('d1'),d2=document.getElementById('d2');
+ var t=new Date();var iso=function(x){return x.toISOString().slice(0,10)};d1.min=iso(t);d2.min=iso(t);
+ var word=function(n){var a=n%10,b=n%100;return a==1&&b!=11?'гость':a>=2&&a<=4&&(b<10||b>=20)?'гостя':'гостей'};
+ var ru=function(v){if(!v)return'';var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]};
+ function upd(){gn.textContent=g+' '+word(g);
+  var o=[].map.call(document.querySelectorAll('input[name=o]:checked'),function(x){return x.value});
+  var p=document.querySelector('input[name=p]:checked').value;
+  var dates=d1.value?('с '+ru(d1.value)+(d2.value?' по '+ru(d2.value):'')):'даты пока не выбрал(а)';
+  var s='Здравствуйте! Хочу забронировать Geometria Village.\nДаты: '+dates+'\nГостей: '+g+'\nПовод: '+p+(o.length?'\nВажно: '+o.join(', '):'')+'\nПодскажите, свободно ли и сколько стоит?';
+  tk.textContent=s;wa.href='https://wa.me/79123536777?text='+encodeURIComponent(s);}
+ document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){g=Math.min(30,Math.max(1,g+ +b.getAttribute('data-g')));upd()})});
+ d1.addEventListener('change',function(){d2.min=d1.value||iso(t);if(d2.value&&d2.value<d1.value)d2.value='';upd()});
+ document.getElementById('bf').addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>
