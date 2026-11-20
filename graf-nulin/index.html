@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Граф Нулин — ресторан и банкеты в центре Тулы</title><meta property="og:type" content="website"><meta property="og:title" content="Граф Нулин — ресторан и банкеты в центре Тулы"><meta property="og:description" content="Граф Нулин, Тула, Союзная улица, 1: русская и европейская кухня, винная карта, банкеты. Заявка на банкет в WhatsApp, маршрут, телефон."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/graf-nulin/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Граф Нулин, Тула, Союзная улица, 1: русская и европейская кухня, винная карта, банкеты. Заявка на банкет в WhatsApp, маршрут, телефон.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Inter+Tight:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Inter+Tight:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--page:#f5f4f1;--marble:#ebe9e4;--ink:#1d1916;--ink2:#57504a;--wine:#7a1d2c;--wine2:#5e1421;--brass:#a8834c;--green:#1f3b31;--rule:rgba(29,25,22,.16);--s:"Old Standard TT",Georgia,serif;--g:"Inter Tight",system-ui,sans-serif;--pad:clamp(20px,4vw,72px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--page);color:var(--ink);font:400 17px/1.65 var(--g);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.demo{position:relative;z-index:5;font:500 12px/1.4 var(--g);letter-spacing:.04em;text-align:center;padding:8px var(--pad);background:var(--marble);color:var(--ink2)}
+.sc{font:600 12px/1.5 var(--g);letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--s);font-weight:400;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(38px,4.6vw,72px);line-height:1.02}
+h3{font-size:clamp(24px,2vw,30px);line-height:1.15}
+em{font-family:var(--s);font-style:italic}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;font:600 15px/1 var(--g);letter-spacing:.04em;text-decoration:none;border:1.5px solid var(--ink);border-radius:0;transition:background .25s,color .25s,border-color .25s;cursor:pointer}
+.btn-w{background:var(--wine);border-color:var(--wine);color:#fff}
+.btn-w:hover{background:var(--wine2);border-color:var(--wine2)}
+.btn-o{background:transparent;color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--page)}
+.btn svg{width:18px;height:18px}
+.lnk{font:600 15px/1 var(--g);letter-spacing:.04em;text-decoration:none;display:inline-flex;align-items:center;min-height:54px;gap:8px;background:linear-gradient(var(--wine),var(--wine)) 0 calc(100% - 14px)/0 1.5px no-repeat;transition:background-size .35s}
+.lnk:hover{background-size:100% 1.5px}
+[data-status]{display:inline-flex;align-items:center;gap:8px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#a59e96}
+[data-status].is-open::before{background:#3b8f5a}
+.orn{display:flex;align-items:center;gap:14px;color:var(--brass)}
+.orn::before,.orn::after{content:"";height:1px;flex:1;background:currentColor;opacity:.6}
+.orn i{width:7px;height:7px;transform:rotate(45deg);border:1.5px solid currentColor}
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* книга: иллюстрация слева, текст справа */
+.book{display:grid;grid-template-columns:min(44vw,860px) minmax(0,1fr)}
+.plate{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--ink)}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1s ease,transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.plate img.on{opacity:1;transform:none}
+.plate::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,rgba(20,14,12,.72));pointer-events:none}
+.plate .cap{position:absolute;left:32px;right:32px;bottom:28px;z-index:2;display:flex;justify-content:space-between;align-items:baseline;gap:16px;color:#fff}
+.plate .cap em{font-size:22px}
+.plate .frame{position:absolute;inset:18px;z-index:2;border:1px solid rgba(255,255,255,.45);pointer-events:none}
+.ribbon{position:absolute;top:0;right:44px;z-index:3;width:22px;height:100%;pointer-events:none}
+.ribbon span{display:block;width:100%;height:var(--rb,22%);min-height:90px;background:var(--wine);clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 14px),0 100%);transition:height .5s}
+.text{min-width:0;position:relative}
+.run{position:sticky;top:0;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px var(--pad);background:rgba(245,244,241,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.run .sc{color:var(--ink2)}
+.run b{font:italic 400 19px/1 var(--s);letter-spacing:0;text-transform:none;color:var(--ink)}
+.run a{text-decoration:none;white-space:nowrap;font-weight:600;font-size:15px}
+.ch{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:clamp(56px,9vh,110px) var(--pad);max-width:900px;margin:0 auto}
+.ch .num{display:flex;align-items:baseline;gap:16px;color:var(--wine);margin-bottom:20px}
+.ch .num em{font-size:clamp(44px,4vw,64px);line-height:1;color:var(--wine)}
+.ch p{max-width:34em;color:var(--ink2)}
+.ch p+p{margin-top:14px}
+.drop::first-letter{float:left;font:400 4.1em/.82 var(--s);color:var(--wine);margin:.06em .12em 0 0}
+.ch h2{margin-bottom:26px}
+.facts{list-style:none;padding:0;margin-top:30px;border-top:1px solid var(--rule)}
+.facts li{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.facts li span:last-child{color:var(--ink2);text-align:right}
+.mimg{display:none}
+
+/* титул */
+.title{text-align:center;align-items:center;min-height:calc(100vh - 60px)}
+.title .sc{color:var(--ink2)}
+.title h1{font-size:clamp(64px,min(8.4vw,15vh),148px);line-height:.92;margin:26px 0 22px;letter-spacing:-.02em}
+.title h1 span{display:block;font-style:italic;color:var(--wine)}
+.title .orn{width:min(320px,70%);margin:0 auto}
+.title .sub{font:italic 400 clamp(20px,1.8vw,26px)/1.4 var(--s);color:var(--ink);max-width:22em;margin:22px auto 0}
+.title .meta{margin-top:18px;color:var(--ink2);font-size:15px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px}
+.title .cta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 22px;margin-top:30px}
+.title .nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin-top:clamp(28px,6vh,64px);font-size:15px}
+.title .nav a{text-decoration:none;color:var(--ink2);padding:10px 0}
+.title .nav a:hover{color:var(--wine)}
+
+/* отзывы */
+.score{display:flex;align-items:baseline;gap:18px;margin:6px 0 26px}
+.score b{font:400 clamp(72px,7vw,112px)/.9 var(--s);color:var(--wine)}
+.score span{color:var(--ink2);max-width:14em}
+.praise{list-style:none;padding:0;counter-reset:p}
+.praise li{position:relative;padding:20px 0 20px 56px;border-top:1px solid var(--rule)}
+.praise li::before{counter-increment:p;content:counter(p,upper-roman);position:absolute;left:0;top:20px;font:italic 400 26px/1 var(--s);color:var(--brass)}
+.praise h3{margin-bottom:6px}
+
+/* банкет */
+.plan{background:var(--green);color:#f1efe9;padding:clamp(72px,9vw,130px) 0}
+.wrap{max-width:1440px;margin:0 auto;padding:0 var(--pad)}
+.plan-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,90px);align-items:start}
+.plan .sc{color:#c9b28a}
+.plan h2{margin:14px 0 18px}
+.plan p.lead{color:#cfd6d0;max-width:30em}
+form{display:grid;gap:26px;margin-top:36px}
+fieldset{border:0;padding:0;min-width:0}
+legend,.fl{display:block;font:600 12px/1.5 var(--g);letter-spacing:.16em;text-transform:uppercase;color:#c9b28a;margin-bottom:10px;padding:0}
+input[type=date],textarea{width:100%;min-height:54px;background:transparent;border:1px solid rgba(241,239,233,.45);color:#f1efe9;font:500 17px var(--g);padding:10px 14px;border-radius:0;color-scheme:dark}
+textarea{min-height:86px;resize:vertical}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:1px solid rgba(241,239,233,.35);font-weight:500;font-size:15px;transition:background .2s,color .2s,border-color .2s}
+.chips label:hover span{border-color:#f1efe9}
+.chips input:checked+span{background:#f1efe9;color:var(--green);border-color:#f1efe9}
+.chips input:focus-visible+span{outline:3px solid var(--brass);outline-offset:2px}
+.stepper{display:inline-grid;grid-template-columns:54px 90px 54px;border:1px solid rgba(241,239,233,.45)}
+.stepper button{height:54px;background:transparent;border:0;color:#f1efe9;font:400 26px var(--g);cursor:pointer}
+.stepper button:hover{background:rgba(255,255,255,.08)}
+.stepper output{display:grid;place-items:center;font:400 30px var(--s);border-inline:1px solid rgba(241,239,233,.45)}
+.sheet{position:sticky;top:24px;background:var(--page);color:var(--ink);padding:clamp(24px,3vw,40px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.sheet .sc{color:var(--wine)}
+.sheet h3{margin:6px 0 4px}
+.hall{width:100%;height:auto;margin:18px 0 6px;background:var(--marble)}
+.hall .tb{fill:#fff;stroke:var(--ink);stroke-width:1.2}
+.hall .seat{fill:var(--wine);transition:opacity .3s}
+.hall-note{font-size:13px;color:var(--ink2)}
+.sheet dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;margin:20px 0 24px;padding-top:18px;border-top:1px solid var(--rule)}
+.sheet dt{font:600 11px/1.9 var(--g);letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.sheet dd{font-weight:500;overflow-wrap:anywhere}
+.sheet .btn{width:100%}
+.sheet small{display:block;margin-top:12px;color:var(--ink2);font-size:14px}
+.sheet .photo{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;margin-top:20px;padding-top:18px;border-top:1px solid var(--rule);font-size:14px;color:var(--ink2)}
+.sheet .photo img{width:96px;height:120px;object-fit:cover}
+
+/* адрес */
+.where{padding:clamp(72px,9vw,130px) 0}
+.where-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:stretch}
+.where h2{margin:12px 0 28px}
+.hours{list-style:none;padding:0;border-top:1px solid var(--rule);margin-bottom:24px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--rule)}
+.hours li span:last-child{white-space:nowrap}
+.addr{font:400 clamp(24px,2.2vw,32px)/1.2 var(--s);margin-bottom:8px}
+.tel{font:400 clamp(26px,2.4vw,36px)/1.2 var(--s);text-decoration:none;white-space:nowrap}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.soc{display:flex;flex-wrap:wrap;gap:4px 24px;font-weight:600;font-size:15px}
+.soc a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.soc a:hover{color:var(--wine)}
+.pay{color:var(--ink2);font-size:15px;margin-top:10px}
+.map{position:relative;min-height:520px;background:var(--marble);border:1px solid var(--rule)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map::after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.7);pointer-events:none}
+
+.final{background:var(--wine);color:#fff;text-align:center;padding:clamp(80px,10vw,150px) var(--pad)}
+.final .orn{color:#e3c9a0;width:min(320px,70%);margin:0 auto 28px}
+.final h2{max-width:14em;margin:0 auto}
+.final .tel{display:inline-block;margin:26px 0 30px;color:#fff;font-size:clamp(34px,4.4vw,64px)}
+.final .btn-o{color:#fff;border-color:#fff}
+.final .btn-o:hover{background:#fff;color:var(--wine)}
+.final .btn-w{background:#fff;color:var(--wine);border-color:#fff}
+.final .btn-w:hover{background:#f1e6e0}
+.final .btns{justify-content:center}
+footer{padding:26px var(--pad) 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;color:var(--ink2);font-size:14px}
+.fab{display:none}
+
+@supports (animation-timeline:scroll()){
+  .ribbon span{height:auto;transition:none;animation:rib linear both;animation-timeline:scroll(root)}
+  @keyframes rib{from{height:90px}to{height:100%}}
+  .ch .num em{animation:tilt linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
+  @keyframes tilt{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+}
+
+@media (max-width:1000px){
+  .book{grid-template-columns:minmax(0,1fr)}
+  .plate{display:none}
+  .mimg{display:block;margin:0 0 28px;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .title .mimg{aspect-ratio:16/10;object-position:50% 45%;margin-bottom:22px}
+  .title .nav{margin-top:24px}
+  .ch{min-height:0;padding-top:64px;padding-bottom:40px}
+  .title{min-height:0;padding-top:48px;padding-bottom:56px}
+  .plan-grid,.where-grid{grid-template-columns:minmax(0,1fr)}
+  .sheet{position:static}
+  .map{min-height:360px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .run .sc span{display:none}
+  .title h1{font-size:clamp(58px,17vw,92px)}
+  .title .cta .btn{flex:1 1 100%}
+  .row2{grid-template-columns:minmax(0,1fr)}
+  .btns .btn{flex:1 1 100%}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:20;align-items:center;justify-content:center;gap:10px;min-height:56px;background:var(--wine);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.04em;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+  .fab svg{width:18px;height:18px}
+  footer{padding-bottom:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ph" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol></svg>
+<div class="demo">Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div>
+
+<div class="book">
+  <aside class="plate" aria-hidden="true">
+    <img class="on" data-p="0" src="img/p12.jpg" srcset="img/p12-m.jpg 599w, img/p12.jpg 1198w" sizes="min(44vw, 860px)" width="1198" height="1800" alt="" style="object-position:40% 50%">
+    <img data-p="1" src="img/p6.jpg" srcset="img/p6-m.jpg 599w, img/p6.jpg 1198w" sizes="min(44vw, 860px)" width="1198" height="1800" alt="" loading="lazy">
+    <img data-p="2" src="img/p9.jpg" srcset="img/p9-m.jpg 600w, img/p9.jpg 1066w" sizes="min(44vw, 860px)" width="1066" height="1600" alt="" loading="lazy">
+    <img data-p="3" src="img/p13.jpg" srcset="img/p13-m.jpg 678w, img/p13.jpg 1356w" sizes="min(44vw, 860px)" width="1356" height="1800" alt="" loading="lazy">
+    <img data-p="4" src="img/p11.jpg" srcset="img/p11-m.jpg 678w, img/p11.jpg 1356w" sizes="min(44vw, 860px)" width="1356" height="1800" alt="" loading="lazy">
+    <img data-p="5" src="img/p14.jpg" srcset="img/p14-m.jpg 900w, img/p14.jpg 1440w" sizes="1150px" width="1440" height="1298" alt="" loading="lazy">
+    <div class="frame"></div>
+    <div class="ribbon"><span></span></div>
+    <div class="cap"><em id="cap">Зал</em><span class="sc" id="capn">Илл. I</span></div>
+  </aside>
+
+  <main class="text">
+    <div class="run"><span class="sc"><b>Граф Нулин</b><span> · <span id="runch">титул</span></span></span><a href="tel:+79190889999">+7&nbsp;919&nbsp;088-99-99</a></div>
+
+    <section class="ch title" data-ch="0" data-cap="Зал" data-n="Илл. I" id="top">
+      <img class="mimg" src="img/p12-m.jpg" width="599" height="900" alt="Зал ресторана: кожаный диван, круглое зеркало в арке, книжные полки">
+      <p class="sc">Ресторан и&nbsp;банкеты · Тула</p>
+      <h1>Граф <span>Нулин</span></h1>
+      <div class="orn"><i></i></div>
+      <p class="sub">Русская и&nbsp;европейская кухня в&nbsp;центре Тулы, рядом с&nbsp;Кремлём</p>
+      <p class="meta"><span>Союзная улица, 1</span><span data-status>Ежедневно с&nbsp;12:00</span></p>
+      <div class="cta">
+        <a class="btn btn-w" href="tel:+79190889999"><svg aria-hidden="true"><use href="#ph"/></svg>Позвонить</a>
+        <a class="btn btn-o" href="https://yandex.ru/maps/?rtext=~54.195828,37.615507" target="_blank" rel="noopener">Маршрут</a>
+        <a class="lnk" href="#plan">Собрать банкет&nbsp;→</a>
+      </div>
+      <nav class="nav" aria-label="Оглавление"><a href="#ch1">I. Кухня</a><a href="#ch2">II. Бар</a><a href="#ch3">III. Зал</a><a href="#ch4">IV. Банкеты</a><a href="#ch5">V. Гости</a></nav>
+    </section>
+
+    <section class="ch" id="ch1" data-ch="1" data-cap="Из меню" data-n="Илл. II">
+      <img class="mimg" src="img/p6-m.jpg" width="599" height="900" loading="lazy" alt="Блюдо из рыбы с соусом на белой тарелке">
+      <p class="num"><em>I</em><span class="sc">Кухня</span></p>
+      <h2>Не просто борщ</h2>
+      <p class="drop">В&nbsp;меню&nbsp;— русская и&nbsp;европейская кухня. Гости вспоминают пельмени из&nbsp;косули и&nbsp;лося и&nbsp;борщ с&nbsp;черносливом и&nbsp;мясом оленя, а&nbsp;меню называют таким, что хочется попробовать его целиком.</p>
+      <p>Пишут, что блюда здесь с&nbsp;изюминкой: и&nbsp;местная кухня, и&nbsp;популярные зарубежные блюда.</p>
+      <ul class="facts">
+        <li><span>Ланч</span><span style="white-space:nowrap">12:00–16:00</span></li>
+        <li><span>Бизнес-ланч, шашлык</span><span>в&nbsp;меню</span></li>
+        <li><span>Навынос и&nbsp;доставка</span><span>есть</span></li>
+      </ul>
+    </section>
+
+    <section class="ch" id="ch2" data-ch="2" data-cap="Бар" data-n="Илл. III">
+      <img class="mimg" src="img/p9-m.jpg" width="600" height="900" loading="lazy" alt="Кувшин с напитком и бокалы на барной стойке">
+      <p class="num"><em>II</em><span class="sc">Бар</span></p>
+      <h2>Винная карта и&nbsp;напитки к&nbsp;столу</h2>
+      <p class="drop">К&nbsp;ужину&nbsp;— вина из&nbsp;винной карты. Днём можно забежать за&nbsp;кофе или чаем с&nbsp;собой.</p>
+    </section>
+
+    <section class="ch" id="ch3" data-ch="3" data-cap="Зал" data-n="Илл. IV">
+      <img class="mimg" src="img/p13-m.jpg" width="678" height="900" loading="lazy" alt="Настольная лампа, книги и гравюры в рамах на стене">
+      <p class="num"><em>III</em><span class="sc">Зал</span></p>
+      <h2>Лампы, книги и&nbsp;гравюры на&nbsp;стенах</h2>
+      <p class="drop">Уютный зал в&nbsp;центре города. Гости, зашедшие случайно в&nbsp;праздничный день, пишут, что нашлись места и&nbsp;было уютно.</p>
+      <ul class="facts">
+        <li><span>Заказ столиков</span><span>по&nbsp;телефону</span></li>
+        <li><span>Вход с&nbsp;детской коляской</span><span>доступен</span></li>
+        <li><span>Wi‑Fi</span><span>для гостей</span></li>
+      </ul>
+    </section>
+
+    <section class="ch" id="ch4" data-ch="4" data-cap="Зал" data-n="Илл. V">
+      <img class="mimg" src="img/p11-m.jpg" width="678" height="900" loading="lazy" alt="Интерьер ресторана: пальма, витрина и гравюры">
+      <p class="num"><em>IV</em><span class="sc">Банкеты</span></p>
+      <h2>Юбилей, продуманный до&nbsp;мелочей</h2>
+      <p class="drop">Ресторан проводит банкеты. В&nbsp;отзыве о&nbsp;юбилее, отмеченном здесь в&nbsp;феврале, благодарят команду за&nbsp;атмосферу зала и&nbsp;обслуживание: официанты были внимательны и&nbsp;тактичны.</p>
+      <p style="margin-top:26px"><a class="btn btn-w" href="#plan">Собрать банкет</a></p>
+    </section>
+
+    <section class="ch" id="ch5" data-ch="5" data-cap="Десерт" data-n="Илл. VI">
+      <img class="mimg" src="img/p14-m.jpg" width="900" height="811" loading="lazy" alt="Блинный торт с ягодами на тарелке">
+      <p class="num"><em>V</em><span class="sc">Гости</span></p>
+      <h2>Что пишут о&nbsp;«Графе Нулине»</h2>
+      <div class="score"><b>4,9</b><span>средняя оценка из&nbsp;20&nbsp;оценок в&nbsp;2ГИС</span></div>
+      <ol class="praise">
+        <li><h3>Меню хочется попробовать целиком</h3><p>Необычные блюда, и&nbsp;всё, что заказывали, было вкусно&nbsp;— поэтому возвращаются ещё раз.</p></li>
+        <li><h3>Внимательные люди</h3><p>Отдельно благодарят хостес и&nbsp;официантов: доброжелательные, вежливые, с&nbsp;ними приятно общаться.</p></li>
+        <li><h3>Центр и&nbsp;уют</h3><p>Удобное место рядом с&nbsp;Кремлём: приезжие заходят пообедать не&nbsp;один раз, пока они в&nbsp;Туле.</p></li>
+      </ol>
+    </section>
+  </main>
+</div>
+
+<section class="plan" id="plan">
+  <div class="wrap plan-grid">
+    <div>
+      <p class="sc">Банкет на&nbsp;бумаге</p>
+      <h2>Соберите праздник&nbsp;— администратор ответит в&nbsp;WhatsApp</h2>
+      <p class="lead">Дата, сколько гостей, повод и&nbsp;какая кухня ближе. Схема справа растёт вместе со&nbsp;списком гостей; вместимость зала и&nbsp;меню подскажет ресторан.</p>
+      <form id="f" onsubmit="return false">
+        <div class="row2">
+          <label><span class="fl">Дата</span><input type="date" id="d"></label>
+          <fieldset><legend>Время</legend><div class="chips"><label><input type="radio" name="t" value="днём"><span>Днём</span></label><label><input type="radio" name="t" value="вечером" checked><span>Вечером</span></label></div></fieldset>
+        </div>
+        <fieldset><legend>Гостей</legend><div class="stepper"><button type="button" data-g="-1" aria-label="Меньше гостей">−</button><output id="g" aria-live="polite">20</output><button type="button" data-g="1" aria-label="Больше гостей">+</button></div></fieldset>
+        <fieldset><legend>Повод</legend><div class="chips">
+          <label><input type="radio" name="w" value="юбилей" checked><span>Юбилей</span></label>
+          <label><input type="radio" name="w" value="день рождения"><span>День рождения</span></label>
+          <label><input type="radio" name="w" value="свадьба"><span>Свадьба</span></label>
+          <label><input type="radio" name="w" value="праздник коллектива"><span>Праздник коллектива</span></label>
+          <label><input type="radio" name="w" value="другой повод"><span>Другое</span></label>
+        </div></fieldset>
+        <fieldset><legend>Кухня</legend><div class="chips">
+          <label><input type="radio" name="k" value="русская"><span>Русская</span></label>
+          <label><input type="radio" name="k" value="европейская"><span>Европейская</span></label>
+          <label><input type="radio" name="k" value="и та и другая" checked><span>И&nbsp;та, и&nbsp;другая</span></label>
+        </div></fieldset>
+        <label><span class="fl">Пожелания (необязательно)</span><textarea id="c" rows="3" placeholder="Например: нужен торт, будут дети"></textarea></label>
+      </form>
+    </div>
+    <aside class="sheet" aria-live="polite">
+      <p class="sc">Заявка на&nbsp;банкет</p>
+      <h3 id="s-title">Юбилей, 20 гостей</h3>
+      <svg class="hall" id="hall" viewBox="0 0 400 220" role="img" aria-label="Условная схема рассадки по числу гостей"></svg>
+      <p class="hall-note">Схема условная: показывает число гостей, не&nbsp;план зала.</p>
+      <dl>
+        <dt>Дата</dt><dd id="s-d">выберите дату</dd>
+        <dt>Время</dt><dd id="s-t">вечером</dd>
+        <dt>Кухня</dt><dd id="s-k">и&nbsp;та, и&nbsp;другая</dd>
+      </dl>
+      <a class="btn btn-w" id="wa" href="https://wa.me/79190889999" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+      <small>Или позвоните: <a href="tel:+79190889999" style="white-space:nowrap">+7&nbsp;919&nbsp;088-99-99</a></small>
+      <div class="photo"><img src="img/p10-m.jpg" width="600" height="900" loading="lazy" alt="Сервировка стола с закусками на подставке"><span>Сервировка с&nbsp;фото ресторана в&nbsp;2ГИС</span></div>
+    </aside>
+  </div>
+</section>
+
+<section class="where" id="where">
+  <div class="wrap where-grid">
+    <div data-r>
+      <p class="sc" style="color:var(--wine)">Адрес и&nbsp;часы</p>
+      <h2>Союзная, 1&nbsp;— в&nbsp;центре Тулы</h2>
+      <p class="addr">Тула, Союзная улица, 1</p>
+      <p style="margin-bottom:22px"><span data-status></span></p>
+      <ul class="hours">
+        <li><span>Понедельник — четверг</span><span>12:00–22:00</span></li>
+        <li><span>Пятница, суббота</span><span>12:00–24:00</span></li>
+        <li><span>Воскресенье</span><span>12:00–22:00</span></li>
+      </ul>
+      <a class="tel" href="tel:+79190889999">+7&nbsp;919&nbsp;088-99-99</a>
+      <div class="btns">
+        <a class="btn btn-w" href="https://yandex.ru/maps/?rtext=~54.195828,37.615507" target="_blank" rel="noopener">Маршрут</a>
+        <a class="btn btn-o" href="tel:+79190889999">Позвонить</a>
+      </div>
+      <div class="soc"><a href="https://wa.me/79190889999" target="_blank" rel="noopener">WhatsApp</a><a href="https://vk.ru/graf_nulin" target="_blank" rel="noopener">ВКонтакте</a><a href="https://2gis.ru/tula/firm/70000001103332547" target="_blank" rel="noopener">2ГИС</a></div>
+      <p class="pay">Оплата картой, наличными, по&nbsp;QR-коду. Средний чек по&nbsp;данным 2ГИС&nbsp;— 1&nbsp;500&nbsp;₽.</p>
+    </div>
+    <div class="map" data-r><iframe loading="lazy" title="Граф Нулин на карте" src="https://yandex.ru/map-widget/v1/?ll=37.615507,54.195828&z=16&pt=37.615507,54.195828,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="orn"><i></i></div>
+  <h2 data-r>Столик на&nbsp;вечер или банкет на&nbsp;юбилей&nbsp;— начните со&nbsp;звонка</h2>
+  <a class="tel" href="tel:+79190889999">+7&nbsp;919&nbsp;088-99-99</a>
+  <div class="btns"><a class="btn btn-w" href="tel:+79190889999"><svg aria-hidden="true"><use href="#ph"/></svg>Позвонить</a><a class="btn btn-o" href="#plan">Собрать банкет</a></div>
+</section>
+<footer><span>Граф Нулин · Тула, Союзная улица, 1</span><span>Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</span></footer>
+<a class="fab" href="tel:+79190889999"><svg aria-hidden="true"><use href="#ph"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var imgs=document.querySelectorAll('.plate img'),chs=document.querySelectorAll('[data-ch]'),cap=document.getElementById('cap'),capn=document.getElementById('capn'),run=document.getElementById('runch');
+  var names=['титул','глава I · кухня','глава II · бар','глава III · зал','глава IV · банкеты','глава V · гости'];
+  function show(n){imgs.forEach(function(i){i.classList.toggle('on',i.getAttribute('data-p')==n)});var c=chs[n];cap.textContent=c.getAttribute('data-cap');capn.textContent=c.getAttribute('data-n');run.textContent=names[n]}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)show(+e.target.getAttribute('data-ch'))})},{rootMargin:'-48% 0px -48% 0px'});chs.forEach(function(c){io.observe(c)})}
+  var $=function(i){return document.getElementById(i)},g=20,d=$('d');d.min=new Date().toISOString().slice(0,10);
+  var hall=$('hall'),NS='http://www.w3.org/2000/svg';
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e}
+  function draw(){
+    while(hall.firstChild)hall.removeChild(hall.firstChild);
+    var per=14,tables=Math.ceil(g/per),rows=tables>3?2:1,cols=Math.ceil(tables/rows),left=g;
+    var cw=360/cols,rh=200/rows;
+    for(var t=0;t<tables;t++){
+      var cx=20+cw*(t%cols)+cw/2,cy;
+      cy=10+rh*Math.floor(t/cols)+rh/2;
+      var n=Math.ceil(left/(tables-t));left-=n;var side=Math.ceil(n/2),tw=Math.max(40,Math.min(cw-30,side*16)),th=Math.min(34,rh*.3);
+      hall.appendChild(el('rect',{class:'tb',x:cx-tw/2,y:cy-th/2,width:tw,height:th,rx:2}));
+      for(var i=0;i<n;i++){var top=i<side,k=top?i:i-side,cnt=top?side:n-side,x=cx-tw/2+tw*(k+.5)/cnt;hall.appendChild(el('circle',{class:'seat',cx:x,cy:top?cy-th/2-9:cy+th/2+9,r:5}))}
+    }
+  }
+  var plural=function(n){var a=n%10,b=n%100;return a==1&&b!=11?'гость':a>=2&&a<=4&&(b<12||b>14)?'гостя':'гостей'};
+  function upd(){
+    var w=document.querySelector('[name=w]:checked').value,t=document.querySelector('[name=t]:checked').value,k=document.querySelector('[name=k]:checked').value,c=$('c').value.trim();
+    var dt=d.value?d.value.split('-').reverse().join('.'):'';
+    $('g').textContent=g;$('s-title').textContent=w.charAt(0).toUpperCase()+w.slice(1)+', '+g+' '+plural(g);
+    $('s-d').textContent=dt||'выберите дату';$('s-t').textContent=t;$('s-k').textContent=k;draw();
+    var msg='Здравствуйте! Хочу заказать банкет в «Граф Нулин».\nПовод: '+w+'\nДата: '+(dt||'уточню')+', '+t+'\nГостей: '+g+'\nКухня: '+k+(c?'\nПожелания: '+c:'')+'\nПодскажите, пожалуйста, по залу и меню.';
+    $('wa').href='https://wa.me/79190889999?text='+encodeURIComponent(msg);
+  }
+  document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){g=Math.min(80,Math.max(2,g+ +b.getAttribute('data-g')));upd()})});
+  $('f').addEventListener('input',upd);$('f').addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["12:00","22:00"]],"tue":[["12:00","22:00"]],"wed":[["12:00","22:00"]],"thu":[["12:00","22:00"]],"fri":[["12:00","24:00"]],"sat":[["12:00","24:00"]],"sun":[["12:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

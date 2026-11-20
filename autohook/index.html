@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>AutoHook — эвакуатор 24/7 в Туле · демо</title><meta property="og:type" content="website"><meta property="og:title" content="AutoHook — эвакуатор 24/7 в Туле · демо"><meta property="og:description" content="AutoHook, Тула: легковой, грузовой эвакуатор, мотоэвакуатор, автовозы. Круглосуточно. Вызов с геопозицией в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/autohook/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="AutoHook, Тула: легковой, грузовой эвакуатор, мотоэвакуатор, автовозы. Круглосуточно. Вызов с геопозицией в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700;800&family=Inter+Tight:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700;800&family=Inter+Tight:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--asph:#15171A;--asph2:#1F2226;--line:#2E3237;--red:#E2431E;--red-d:#C23514;--paper:#EEF0F2;--white:#fff;--ink:#121417;--muted:#5C636B;--mut2:#A3A9B0;--d:'Tektur','Arial Narrow',sans-serif;--t:'Inter Tight',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.55 var(--t);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{width:min(1320px,100% - 48px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;font:600 16px/1 var(--t);text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);transition:background .2s,color .2s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.b-red{background:var(--red);color:#fff}.b-red:hover{background:#fff;color:var(--ink)}
+.b-wh{background:#fff;color:var(--ink)}.b-wh:hover{background:var(--red);color:#fff}
+.b-dk{background:var(--asph2);color:#fff;box-shadow:inset 0 0 0 1px var(--line)}.b-dk:hover{background:#2b2f34}
+.b-ink{background:var(--ink);color:#fff}.b-ink:hover{background:var(--red)}
+.kick{font:700 12px/1 var(--d);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.h2{font:800 clamp(34px,4.6vw,64px)/.98 var(--d);letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.nw{white-space:nowrap}
+
+/* hero */
+.hero{background:var(--asph);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-58deg,transparent 0 22px,rgba(255,255,255,.018) 22px 23px);pointer-events:none}
+.demo{position:relative;font:500 12px/1.4 var(--t);color:var(--mut2);padding:10px 0 0;text-align:center}
+.top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font:800 22px/1 var(--d);text-decoration:none;letter-spacing:.02em}
+.logo svg{width:28px;height:28px;color:var(--red)}
+.top-r{display:flex;align-items:center;gap:24px;font-size:15px;color:var(--mut2)}
+.top-r a{text-decoration:none;color:#fff;font-weight:600}
+.st{display:inline-flex;align-items:center;gap:8px}
+.st::before{content:"";width:8px;height:8px;border-radius:50%;background:#3ED17A;box-shadow:0 0 0 4px rgba(62,209,122,.18)}
+.h-grid{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);padding:clamp(28px,5vh,64px) 0 clamp(32px,5vh,64px);align-items:center}
+.hero h1{font:800 clamp(46px,6.2vw,104px)/.9 var(--d);text-transform:uppercase;letter-spacing:-.015em;margin:18px 0 0}
+.hero h1 em{font-style:normal;color:var(--red)}
+.lead{margin:22px 0 0;max-width:30em;color:#C9CDD2;font-size:clamp(16px,1.25vw,19px)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.h-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;height:clamp(380px,44vw,600px)}
+.h-strip figure{position:relative;overflow:hidden;background:var(--asph2)}
+.h-strip figure:nth-child(2){transform:translateY(-28px)}
+.h-strip figure:nth-child(3){transform:translateY(20px)}
+.h-strip img{width:100%;height:100%;object-fit:cover}
+.h-strip figcaption,.card figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(10,11,13,.85));font:600 13px/1.3 var(--t);color:#fff}
+.h-strip figcaption b,.card figcaption b{display:block;font:700 11px/1 var(--d);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.ramp{position:relative;height:14px;background:var(--red);clip-path:polygon(0 100%,100% 0,100% 100%)}
+
+/* что везём */
+.what{padding:clamp(72px,9vw,128px) 0 clamp(48px,6vw,80px)}
+.w-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:end}
+.w-head p{color:var(--muted);max-width:32em}
+.scene{width:100%;height:auto;margin-top:clamp(32px,4vw,56px);overflow:visible}
+.scene .plat{transform-origin:520px 128px;transform:rotate(0)}
+.scene .car{transform:translateX(0)}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .scene .plat{animation:tilt linear both;animation-timeline:view();animation-range:entry 10% cover 55%}
+    .scene .car{animation:drive linear both;animation-timeline:view();animation-range:entry 10% cover 55%}
+  }
+}
+@keyframes tilt{0%{transform:rotate(-7deg)}55%{transform:rotate(-7deg)}100%{transform:rotate(0)}}
+@keyframes drive{0%{transform:translate(-380px,0)}55%{transform:translate(-120px,26px)}100%{transform:translate(0,0)}}
+.svc{list-style:none;padding:0;margin-top:clamp(28px,4vw,48px);border-top:2px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:56px minmax(0,1.2fr) minmax(0,2fr) auto;gap:20px;align-items:center;padding:22px 0;border-bottom:1px solid #CDD2D7;transition:background .2s}
+.svc li:hover{background:#E4E7EA}
+.svc .n{font:700 14px/1 var(--d);color:var(--muted)}
+.svc h3{font:700 clamp(20px,2vw,28px)/1.1 var(--d);text-transform:uppercase}
+.svc p{color:var(--muted);font-size:15px}
+.svc a{font:600 15px/1 var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;border-bottom:2px solid var(--red)}
+.svc a:hover{color:var(--red)}
+
+/* витрина рейсов */
+.cat{background:var(--asph);color:#fff;padding:clamp(72px,9vw,128px) 0}
+.cat-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
+.cat-h p{color:var(--mut2);max-width:28em}
+.flt{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 28px}
+.flt button{min-height:44px;padding:0 16px;background:transparent;border:1px solid var(--line);color:#D5D9DD;font:600 14px/1 var(--t);cursor:pointer;transition:all .2s}
+.flt button:hover{border-color:#6a7178;color:#fff}
+.flt button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.flt button span{opacity:.6;margin-left:6px;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--asph2);cursor:zoom-in;border:0;padding:0;text-align:left}
+.card.wide{grid-column:span 2;aspect-ratio:auto}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.card:hover img{transform:scale(1.05)}
+.card[hidden]{display:none}
+.card .z{position:absolute;top:12px;right:12px;width:36px;height:36px;display:grid;place-items:center;background:rgba(10,11,13,.6);opacity:0;transition:opacity .2s}
+.card:hover .z,.card:focus-visible .z{opacity:1}
+.card .z svg{width:16px;height:16px}
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,1100px);max-height:94svh;color:#fff}
+dialog::backdrop{background:rgba(8,9,10,.88)}
+.qv{display:grid;grid-template-columns:minmax(0,auto) minmax(0,320px);gap:0;background:var(--asph)}
+.qv img{max-height:88svh;width:auto;max-width:100%;object-fit:contain;background:#000}
+.qv-t{padding:28px;display:flex;flex-direction:column;gap:14px}
+.qv-t b{font:700 12px/1 var(--d);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.qv-t h3{font:700 26px/1.1 var(--d);text-transform:uppercase}
+.qv-t p{color:var(--mut2);font-size:15px}
+.qv-t .btn{margin-top:auto}
+.x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:rgba(0,0,0,.6);color:#fff;font-size:26px;cursor:pointer;z-index:2}
+
+/* отзывы */
+.rev{padding:clamp(72px,9vw,128px) 0}
+.rv{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,5vw,80px)}
+.sc{border-left:6px solid var(--red);padding-left:24px}
+.sc .big{font:800 clamp(88px,10vw,150px)/.85 var(--d);letter-spacing:-.03em}
+.sc p{margin-top:14px;color:var(--muted);font-size:15px}
+.sc a{color:var(--ink);font-weight:600}
+.rl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:#CDD2D7;border:2px solid #CDD2D7}
+.rl li{background:var(--paper);padding:28px}
+.rl li:first-child{grid-column:span 2;background:var(--ink);color:#fff}
+.rl li:first-child p{color:#BFC4C9}
+.rl h3{font:700 clamp(20px,1.8vw,26px)/1.15 var(--d);text-transform:uppercase;margin-bottom:10px}
+.rl p{color:var(--muted)}
+
+/* вызов */
+.call-f{background:var(--red);color:#fff;padding:clamp(72px,9vw,128px) 0}
+.call-f .kick{color:#fff;opacity:.8}
+.call-f .h2{margin:14px 0 14px}
+.call-f .sub{max-width:34em;color:#FFE3DA}
+.cf{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.q{padding:20px 0;border-top:1px solid rgba(255,255,255,.3)}
+.q>span{display:block;font:700 12px/1 var(--d);letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;opacity:.85}
+.ch{display:flex;flex-wrap:wrap;gap:8px}
+.ch button{min-height:46px;padding:0 16px;background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;font:600 14px/1 var(--t);cursor:pointer;transition:all .2s}
+.ch button:hover{border-color:#fff}
+.ch button[aria-pressed=true]{background:var(--ink);border-color:var(--ink)}
+.inp{width:100%;min-height:52px;padding:0 16px;border:0;background:#fff;color:var(--ink);font:500 16px var(--t)}
+.inp::placeholder{color:#7a8087}
+.geo{display:flex;gap:8px;flex-wrap:wrap}
+.geo .inp{flex:1 1 220px}
+.geo button{min-height:52px;padding:0 18px;border:0;background:var(--ink);color:#fff;font:600 14px var(--t);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.geo button:hover{background:#000}
+.geo button svg{width:18px;height:18px}
+.gs{font-size:13px;margin-top:8px;min-height:18px;color:#FFE3DA}
+.slip{background:var(--ink);color:#fff;padding:28px;position:sticky;top:24px}
+.slip h3{font:700 13px/1 var(--d);letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.slip pre{white-space:pre-wrap;font:500 15px/1.6 var(--t);margin:18px 0 22px;color:#DADDE0;min-height:150px}
+.slip .btn{width:100%}
+.slip .btn+.btn{margin-top:10px}
+
+/* контакты */
+.where{padding:clamp(72px,9vw,128px) 0}
+.wh{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px)}
+.wh .h2{margin:14px 0 28px}
+.info{list-style:none;padding:0;border-top:2px solid var(--ink)}
+.info li{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid #CDD2D7}
+.info span{color:var(--muted);font-size:14px}
+.info a{font-weight:600;text-decoration:none;border-bottom:1px solid var(--red)}
+.map{min-height:440px;background:#dfe3e7}
+.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0}
+.fin{background:var(--asph);color:#fff;padding:clamp(72px,9vw,120px) 0}
+.fin .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:28px}
+.fin .h2{max-width:12em}
+.fin .h2 em{font-style:normal;color:var(--red)}
+footer{background:var(--asph);color:#7d848b;font-size:13px;padding:0 0 32px}
+footer .wrap{border-top:1px solid var(--line);padding-top:20px}
+.fcall{display:none}
+
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  .h-grid,.w-head,.rv,.cf,.wh{grid-template-columns:minmax(0,1fr)}
+  .h-strip{height:clamp(240px,58vw,440px);grid-template-columns:repeat(3,minmax(0,1fr))}
+  .h-strip figure:nth-child(n){transform:none}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .slip{position:static}
+  .qv{grid-template-columns:minmax(0,1fr)}
+  .qv img{max-height:62svh;width:100%}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 40px)}
+  body{font-size:16px}
+  .top-r .ph{display:none}
+  .h-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .h-strip figcaption{padding:28px 8px 8px;font-size:11px}
+  .h-strip figcaption b{font-size:9px;letter-spacing:.1em}
+  .acts .btn{flex:1 1 100%}
+  .svc li{grid-template-columns:36px minmax(0,1fr);gap:6px 12px}
+  .svc p,.svc li>a{grid-column:2}
+  .svc li>a{justify-self:start}
+  .grid{gap:8px}
+  .card.wide{grid-column:span 2;aspect-ratio:4/3}
+  .card figcaption{padding:28px 10px 10px;font-size:12px}
+  .rl{grid-template-columns:minmax(0,1fr)}
+  .rl li:first-child{grid-column:auto}
+  .info li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .map,.map iframe{min-height:320px}
+  .fcall{display:flex;position:fixed;right:16px;bottom:16px;z-index:30;width:60px;height:60px;background:var(--red);color:#fff;align-items:center;justify-content:center;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .fcall svg{width:26px;height:26px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<header class="hero">
+  <p class="demo wrap">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</p>
+  <div class="wrap top">
+    <a class="logo" href="#"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M16 3v12a7 7 0 1 1-7-7"/><path d="M5 8l4 0 0 4"/></svg>AutoHook</a>
+    <div class="top-r"><span class="st" data-status>Открыто круглосуточно</span><a class="ph nw" href="tel:+79935361196">+7&nbsp;993&nbsp;536-11-96</a></div>
+  </div>
+  <div class="wrap h-grid">
+    <div>
+      <span class="kick">Тула · 24/7 · без выходных</span>
+      <h1>Эвакуатор <em>24/7</em> в&nbsp;Туле</h1>
+      <p class="lead">Легковые, грузовые, мотоциклы и&nbsp;квадроциклы. По&nbsp;городу и&nbsp;в&nbsp;дальнюю дорогу&nbsp;— в&nbsp;отзывах машину везли из&nbsp;Воронежа в&nbsp;Тулу в&nbsp;целости.</p>
+      <div class="acts">
+        <a class="btn b-red" href="tel:+79935361196"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn b-wh" href="#call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Отправить, где я</a>
+      </div>
+    </div>
+    <div class="h-strip">
+      <figure><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 506w, img/p7.jpg 1012w" sizes="(max-width:1000px) 33vw, 22vw" alt="Эвакуатор AutoHook с легковой машиной на платформе" style="object-position:40% 60%"><figcaption><b>Легковая</b>Седан на&nbsp;платформе</figcaption></figure>
+      <figure><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 506w, img/p3.jpg 1012w" sizes="(max-width:1000px) 33vw, 22vw" alt="Ночной вызов: квадроцикл на платформе у заправки" style="object-position:45% 62%"><figcaption><b>Ночью</b>Квадроцикл у&nbsp;заправки</figcaption></figure>
+      <figure><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 1012w" sizes="(max-width:1000px) 33vw, 22vw" alt="Эвакуатор везёт внедорожник" style="object-position:30% 58%"><figcaption><b>Внедорожник</b>Город, днём</figcaption></figure>
+    </div>
+  </div>
+  <div class="ramp" aria-hidden="true"></div>
+</header>
+
+<main>
+<section class="what" aria-label="Что везём">
+  <div class="wrap">
+    <div class="w-head">
+      <div><span class="kick">Что везём</span><h2 class="h2" style="margin-top:14px">Платформа под&nbsp;любую поломку</h2></div>
+      <p>Закончился бензин посреди дороги, машина не&nbsp;заводится, нужно доставить её в&nbsp;сервис или перегнать в&nbsp;другой город&nbsp;— выберите, что везти, и&nbsp;позвоните или отправьте точку в&nbsp;WhatsApp.</p>
+    </div>
+    <svg class="scene" viewBox="0 0 900 190" role="img" aria-label="Схема: машина заезжает на платформу эвакуатора">
+      <path d="M0 176H900" stroke="#121417" stroke-width="2"/>
+      <path d="M0 182H900" stroke="#121417" stroke-width="1" stroke-dasharray="26 18" opacity=".35"/>
+      <g class="plat"><path d="M520 128H860V140H520Z" fill="#E2431E"/><path d="M520 140L496 176H520Z" fill="#C23514"/></g>
+      <g fill="#fff" stroke="#121417" stroke-width="2.5" stroke-linejoin="round">
+        <path d="M790 140V80Q790 70 800 70H836Q850 70 856 84L874 118Q880 126 880 136V150H790Z"/>
+        <path d="M806 80H834Q842 80 846 88L858 110H806Z" fill="#D7E4F2"/>
+        <path d="M560 140H790V156H560Z" fill="#E2431E"/>
+      </g>
+      <g fill="#121417"><circle cx="608" cy="160" r="15"/><circle cx="836" cy="160" r="15"/></g>
+      <g fill="#EEF0F2"><circle cx="608" cy="160" r="6"/><circle cx="836" cy="160" r="6"/></g>
+      <g class="car">
+        <g transform="translate(548 -9)">
+          <path d="M8 120Q8 110 18 108L52 102L82 80Q90 74 102 74H160Q174 74 184 84L204 104L222 108Q232 110 232 120V126H8Z" fill="#121417"/>
+          <path d="M92 84H128V102H70Z M136 84H164Q172 84 178 92L188 102H136Z" fill="#9FB3C8"/>
+          <circle cx="56" cy="124" r="13" fill="#121417" stroke="#EEF0F2" stroke-width="3"/><circle cx="186" cy="124" r="13" fill="#121417" stroke="#EEF0F2" stroke-width="3"/>
+        </g>
+      </g>
+      <text x="0" y="30" style="font:700 12px Tektur,sans-serif;letter-spacing:.2em;fill:#5C636B">ПОГРУЗКА · ПЕРЕВОЗКА · РАЗГРУЗКА</text>
+    </svg>
+    <ul class="svc">
+      <li data-r><span class="n">01</span><h3>Легковой эвакуатор</h3><p>Седаны, хэтчбеки, кроссоверы и&nbsp;внедорожники&nbsp;— в&nbsp;сервис, домой, на&nbsp;стоянку.</p><a href="#call" data-pick="Легковая">Вызвать <span aria-hidden="true">→</span></a></li>
+      <li data-r><span class="n">02</span><h3>Грузовой эвакуатор</h3><p>Например, грузовой фургон&nbsp;— как на&nbsp;фото в&nbsp;витрине.</p><a href="#call" data-pick="Грузовая">Вызвать <span aria-hidden="true">→</span></a></li>
+      <li data-r><span class="n">03</span><h3>Мотоэвакуатор</h3><p>Мотоциклы и&nbsp;квадроциклы.</p><a href="#call" data-pick="Мото / квадро">Вызвать <span aria-hidden="true">→</span></a></li>
+      <li data-r><span class="n">04</span><h3>Автовозы</h3><p>Если машину нужно доставить в&nbsp;другой город.</p><a href="#call" data-pick="Перегон в другой город">Вызвать <span aria-hidden="true">→</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cat" id="cat" aria-label="Витрина рейсов">
+  <div class="wrap">
+    <div class="cat-h">
+      <div><span class="kick">Витрина рейсов</span><h2 class="h2" style="margin-top:14px">Что уже везли</h2></div>
+      <p>Фото с&nbsp;реальных вызовов. Отфильтруйте по&nbsp;типу машины, нажмите на&nbsp;карточку, чтобы рассмотреть.</p>
+    </div>
+    <div class="flt" role="group" aria-label="Фильтр по типу">
+      <button type="button" data-f="all" aria-pressed="true">Все<span>11</span></button>
+      <button type="button" data-f="car" aria-pressed="false">Легковые<span>5</span></button>
+      <button type="button" data-f="suv" aria-pressed="false">Внедорожники<span>3</span></button>
+      <button type="button" data-f="truck" aria-pressed="false">Грузовые<span>2</span></button>
+      <button type="button" data-f="moto" aria-pressed="false">Мото и&nbsp;квадро<span>1</span></button>
+    </div>
+    <div class="grid" id="grid">
+      <button type="button" class="card wide" data-t="truck" data-src="img/p6.jpg" data-h="Фургон" data-p="Грузовой фургон на платформе эвакуатора."><img src="img/p6-m.jpg" alt="Грузовой фургон на эвакуаторе" loading="lazy" style="object-position:60% 60%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Грузовая</b>Фургон</figcaption></button>
+      <button type="button" class="card" data-t="suv" data-src="img/p1.jpg" data-h="Внедорожник" data-p="Внедорожник на платформе, город."><img src="img/p1-m.jpg" alt="Внедорожник на эвакуаторе" loading="lazy" style="object-position:30% 58%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Внедорожник</b>Город, днём</figcaption></button>
+      <button type="button" class="card" data-t="moto" data-src="img/p3.jpg" data-h="Квадроцикл ночью" data-p="Ночной вызов: квадроцикл у заправки."><img src="img/p3-m.jpg" alt="Квадроцикл на эвакуаторе ночью" loading="lazy" style="object-position:45% 62%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Мото и квадро</b>Ночной вызов</figcaption></button>
+      <button type="button" class="card" data-t="car" data-src="img/p9.jpg" data-h="Хэтчбек" data-p="Красный хэтчбек: погрузка по наклонной платформе."><img src="img/p9-m.jpg" alt="Красный хэтчбек на эвакуаторе" loading="lazy" style="object-position:55% 62%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Легковая</b>Хэтчбек</figcaption></button>
+      <button type="button" class="card" data-t="suv" data-src="img/p10.jpg" data-h="Кроссовер" data-p="Крупный кроссовер на опущенной платформе."><img src="img/p10-m.jpg" alt="Кроссовер на эвакуаторе" loading="lazy" style="object-position:50% 70%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Внедорожник</b>Кроссовер</figcaption></button>
+      <button type="button" class="card" data-t="truck" data-src="img/p13.jpg" data-h="Ретро-грузовик" data-p="Старый армейский грузовик на платформе, зима."><img src="img/p13-m.jpg" alt="Ретро-грузовик на эвакуаторе" loading="lazy" style="object-position:45% 58%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Грузовая</b>Ретро-грузовик</figcaption></button>
+      <button type="button" class="card" data-t="car" data-src="img/p8.jpg" data-h="Минивэн зимой" data-p="Минивэн на платформе, зима."><img src="img/p8-m.jpg" alt="Минивэн на эвакуаторе зимой" loading="lazy" style="object-position:50% 58%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Легковая</b>Зима</figcaption></button>
+      <button type="button" class="card" data-t="suv" data-src="img/p11.jpg" data-h="Внедорожник" data-p="Тёмный внедорожник на платформе."><img src="img/p11-m.jpg" alt="Тёмный внедорожник на эвакуаторе" loading="lazy" style="object-position:50% 60%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Внедорожник</b>Тёмный кузов</figcaption></button>
+      <button type="button" class="card" data-t="car" data-src="img/p5.jpg" data-h="Седан" data-p="Седан на платформе, открытая площадка."><img src="img/p5-m.jpg" alt="Седан на эвакуаторе" loading="lazy" style="object-position:50% 60%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Легковая</b>Седан</figcaption></button>
+      <button type="button" class="card" data-t="car" data-src="img/p12.jpg" data-h="Седан" data-p="Седан на платформе, пасмурный день."><img src="img/p12-m.jpg" alt="Седан на эвакуаторе в пасмурный день" loading="lazy" style="object-position:50% 62%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Легковая</b>Пасмурно</figcaption></button>
+      <button type="button" class="card" data-t="car" data-src="img/p7.jpg" data-h="Седан" data-p="Седан на платформе."><img src="img/p7-m.jpg" alt="Седан на эвакуаторе" loading="lazy" style="object-position:40% 60%"><span class="z"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6M20 20l-6-6"/></svg></span><figcaption><b>Легковая</b>Седан</figcaption></button>
+    </div>
+  </div>
+</section>
+<dialog id="qv" aria-label="Просмотр фото"><button class="x" type="button" aria-label="Закрыть">×</button><div class="qv"><img id="qv-i" src="img/p6-m.jpg" alt=""><div class="qv-t"><b id="qv-b"></b><h3 id="qv-h"></h3><p id="qv-p"></p><a class="btn b-red" href="#call" id="qv-a">Нужно так&nbsp;же</a></div></div></dialog>
+
+<section class="rev" aria-label="За что хвалят">
+  <div class="wrap rv">
+    <div class="sc" data-r>
+      <span class="kick">Отзывы 2ГИС</span>
+      <div class="big">5,0</div>
+      <p>112 оценок. Водителя Михаила в&nbsp;отзывах называют мастером своего дела. <a href="https://2gis.ru/tula/firm/70000001087424706" target="_blank" rel="noopener">Читать в&nbsp;2ГИС</a></p>
+    </div>
+    <ul class="rl">
+      <li data-r><h3>Приезжает быстро</h3><p>Закончился бензин посреди дороги, сломались по&nbsp;пути&nbsp;— пишут, что помощь приехала оперативно, а&nbsp;до&nbsp;автосервиса машину доставили очень быстро.</p></li>
+      <li data-r><h3>Аккуратно</h3><p>Погрузка, перевозка и&nbsp;разгрузка без суеты. Машину из&nbsp;Воронежа привезли в&nbsp;целости и&nbsp;сохранности.</p></li>
+      <li data-r><h3>Честная цена</h3><p>Цену в&nbsp;отзывах называют адекватной и&nbsp;приемлемой, а&nbsp;договориться, куда и&nbsp;когда, легко.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="call-f" id="call" aria-label="Вызов эвакуатора">
+  <div class="wrap">
+    <span class="kick">Вызов за&nbsp;минуту</span>
+    <h2 class="h2">Отправьте, где&nbsp;вы и&nbsp;что&nbsp;везти</h2>
+    <p class="sub">Три ответа и&nbsp;точка на&nbsp;карте&nbsp;— сообщение для водителя соберётся само. Стоимость назовут в&nbsp;ответ.</p>
+    <div class="cf">
+      <div>
+        <div class="q"><span>Что везём</span><div class="ch" data-k="what"><button type="button" aria-pressed="true">Легковая</button><button type="button" aria-pressed="false">Внедорожник</button><button type="button" aria-pressed="false">Грузовая</button><button type="button" aria-pressed="false">Мото / квадро</button><button type="button" aria-pressed="false">Перегон в другой город</button></div></div>
+        <div class="q"><span>Что случилось</span><div class="ch" data-k="why"><button type="button" aria-pressed="false">Не заводится</button><button type="button" aria-pressed="false">После ДТП</button><button type="button" aria-pressed="false">Закончилось топливо</button><button type="button" aria-pressed="false">Просто перевезти</button></div></div>
+        <div class="q"><span>Откуда забрать</span><div class="geo"><input class="inp" id="from" placeholder="Адрес или ориентир" autocomplete="street-address"><button type="button" id="gbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>Я здесь</button></div><p class="gs" id="gs" aria-live="polite"></p></div>
+        <div class="q"><span>Куда везти</span><input class="inp" id="to" placeholder="Сервис, дом, стоянка, другой город"></div>
+        <div class="q"><span>Когда</span><div class="ch" data-k="when"><button type="button" aria-pressed="true">Сейчас</button><button type="button" aria-pressed="false">Ко времени</button></div></div>
+      </div>
+      <aside class="slip" aria-live="polite">
+        <h3>Сообщение водителю</h3>
+        <pre id="msg"></pre>
+        <a class="btn b-red" id="wa" href="https://wa.me/79935361196" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+        <a class="btn b-dk" href="tel:+79935361196">Или позвонить</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="where" aria-label="Контакты">
+  <div class="wrap wh">
+    <div data-r>
+      <span class="kick">Контакты</span>
+      <h2 class="h2">Тула и&nbsp;дальние перегоны</h2>
+      <ul class="info">
+        <li><span>Работаем</span><b data-status>Круглосуточно</b></li>
+        <li><span>Телефон</span><a class="nw" href="tel:+79935361196">+7&nbsp;993&nbsp;536-11-96</a></li>
+        <li><span>Мессенджеры</span><div><a href="https://wa.me/79935361196" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/evakuator_incognito" target="_blank" rel="noopener">Telegram</a></div></li>
+        <li><span>ВКонтакте</span><a href="https://vk.ru/club226276369" target="_blank" rel="noopener">vk.ru/club226276369</a></li>
+        <li><span>Оплата</span>Наличные, перевод с&nbsp;карты, через банк</li>
+      </ul>
+      <div class="acts"><a class="btn b-ink" href="tel:+79935361196">Позвонить</a><a class="btn b-red" href="#call">Отправить, где я</a></div>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Карта Тулы" src="https://yandex.ru/map-widget/v1/?ll=37.617635,54.193122&amp;z=11"></iframe></div>
+  </div>
+</section>
+
+<section class="fin">
+  <div class="wrap" data-r>
+    <h2 class="h2">Сломались ночью? <em>Звоните</em>, мы на&nbsp;связи</h2>
+    <div class="acts" style="margin:0"><a class="btn b-red" href="tel:+79935361196">+7&nbsp;993&nbsp;536-11-96</a><a class="btn b-dk" href="#call">Вызов в&nbsp;WhatsApp</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">AutoHook, эвакуатор в&nbsp;Туле · Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div></footer>
+<a class="fcall" href="tel:+79935361196" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+  /* фильтр витрины */
+  var cards=document.querySelectorAll('.card');
+  document.querySelectorAll('.flt button').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.flt button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    var f=b.dataset.f;cards.forEach(function(c){c.hidden=!(f==='all'||c.dataset.t===f);c.classList.toggle('wide',f==='all'&&c.dataset.src==='img/p6.jpg')})})});
+  /* быстрый просмотр */
+  var dlg=document.getElementById('qv');
+  cards.forEach(function(c){c.addEventListener('click',function(){
+    document.getElementById('qv-i').src=c.dataset.src;document.getElementById('qv-i').alt=c.querySelector('img').alt;
+    document.getElementById('qv-b').textContent=c.querySelector('figcaption b').textContent;document.getElementById('qv-h').textContent=c.dataset.h;document.getElementById('qv-p').textContent=c.dataset.p;
+    var t={car:'Легковая',suv:'Внедорожник',truck:'Грузовая',moto:'Мото / квадро'}[c.dataset.t];document.getElementById('qv-a').dataset.pick=t;
+    if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','')})});
+  dlg.querySelector('.x').addEventListener('click',function(){dlg.close()});
+  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+  /* вызов */
+  var S={what:'Легковая',why:'',when:'Сейчас',geo:''};
+  function pick(k,v){document.querySelectorAll('[data-k="'+k+'"] button').forEach(function(x){x.setAttribute('aria-pressed',x.textContent===v?'true':'false')});S[k]=v;up()}
+  document.querySelectorAll('.ch button').forEach(function(b){b.addEventListener('click',function(){var k=b.parentNode.dataset.k;pick(k,S[k]===b.textContent&&k==='why'?'':b.textContent)})});
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){if(dlg.open)dlg.close();pick('what',a.dataset.pick)})});
+  var from=document.getElementById('from'),to=document.getElementById('to'),gs=document.getElementById('gs');
+  from.addEventListener('input',up);to.addEventListener('input',up);
+  document.getElementById('gbtn').addEventListener('click',function(){
+    if(!navigator.geolocation){gs.textContent='Телефон не даёт геопозицию — впишите адрес.';return}
+    gs.textContent='Определяем…';
+    navigator.geolocation.getCurrentPosition(function(p){var la=p.coords.latitude.toFixed(5),lo=p.coords.longitude.toFixed(5);S.geo='https://yandex.ru/maps/?pt='+lo+','+la+'&z=17';gs.textContent='Точка добавлена в сообщение';up()},function(){gs.textContent='Не получилось определить — впишите адрес или ориентир.'},{enableHighAccuracy:true,timeout:10000})});
+  function up(){
+    var m='Здравствуйте! Нужен эвакуатор.\nЧто везти: '+S.what+(S.why?'\nСитуация: '+S.why.toLowerCase():'')+'\nОткуда: '+(from.value.trim()||(S.geo?'по точке ниже':'—'))+(S.geo?'\nТочка: '+S.geo:'')+'\nКуда: '+(to.value.trim()||'—')+'\nКогда: '+S.when.toLowerCase()+'\nСколько будет стоить?';
+    document.getElementById('msg').textContent=m;document.getElementById('wa').href='https://wa.me/79935361196?text='+encodeURIComponent(m)}
+  up();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

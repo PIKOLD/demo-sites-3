@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Эдельвейс — гостевой дом у вокзала в Ижевске · демо</title><meta property="og:type" content="website"><meta property="og:title" content="Эдельвейс — гостевой дом у вокзала в Ижевске · демо"><meta property="og:description" content="Гостевой дом «Эдельвейс» в Ижевске: 11 номеров на Казанской улице, 134, рядом вокзал. Завтраки, своя парковка, заезд круглосуточно. Запрос номера в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/edelveys/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Гостевой дом «Эдельвейс» в Ижевске: 11 номеров на Казанской улице, 134, рядом вокзал. Завтраки, своя парковка, заезд круглосуточно. Запрос номера в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300;500;700&family=Wix+Madefor+Text:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300;500;700&family=Wix+Madefor+Text:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--night:#0E1A2B;--night2:#162740;--ice:#EEF3F7;--snow:#fff;--blue:#2F6DB5;--blue-d:#1D4F8C;--lamp:#F2C46D;--ink:#132033;--muted:#55657A;--line:#D5DFE8;--d:'Ysabeau Infant',Georgia,serif;--t:'Wix Madefor Text',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 var(--t);color:var(--ink);background:var(--ice);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:3px;font:600 15px/1 var(--t);letter-spacing:.02em;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.b-lamp{background:var(--lamp);color:var(--night)}.b-lamp:hover{background:#fff}
+.b-line{border-color:rgba(255,255,255,.35);color:#fff}.b-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.b-blue{background:var(--blue-d);color:#fff}.b-blue:hover{background:var(--night)}
+.b-ghost{border-color:var(--line);color:var(--ink);background:#fff}.b-ghost:hover{border-color:var(--ink)}
+.kick{font:600 12px/1.2 var(--t);letter-spacing:.22em;text-transform:uppercase;color:var(--blue)}
+.h2{font:300 clamp(36px,5vw,68px)/1.02 var(--d);letter-spacing:-.01em;text-wrap:balance}
+.h2 b{font-weight:700}
+
+/* hero: ночь, дом, 11 окон */
+.hero{position:relative;background:radial-gradient(120% 80% at 50% 0%,#203a5c 0%,var(--night2) 38%,var(--night) 75%);color:#fff;overflow:hidden;min-height:100svh;display:flex;flex-direction:column}
+.demo{font:500 12px/1.4 var(--t);color:rgba(255,255,255,.62);text-align:center;padding:12px 16px 0;letter-spacing:.03em}
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:14px;font-size:14px;color:rgba(255,255,255,.75)}
+.top a{text-decoration:none;white-space:nowrap}.top a:hover{color:#fff}
+.st{display:inline-flex;align-items:center;gap:8px}
+.st::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lamp);box-shadow:0 0 0 4px rgba(242,196,109,.18)}
+.hero-c{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:clamp(20px,4vh,48px)}
+.hero h1{font:300 clamp(58px,11.5vw,176px)/.9 var(--d);letter-spacing:-.02em}
+.hero h1 span{display:block;font:600 clamp(12px,1.1vw,14px)/1 var(--t);letter-spacing:.32em;text-transform:uppercase;color:var(--lamp);margin-bottom:clamp(14px,2vh,24px)}
+.lead{max-width:34em;margin:clamp(14px,2.2vh,24px) auto 0;color:rgba(255,255,255,.78);font-size:clamp(16px,1.3vw,19px);text-wrap:balance}
+.house{width:min(720px,94%);height:clamp(170px,30vh,330px);margin-top:clamp(12px,2vh,28px)}
+.house .w{fill:#22385a;transition:fill .6s}
+.js .house .w{animation:lit .9s ease forwards;animation-delay:calc(.5s + var(--i) * .22s)}
+.no-js .house .w,.house.on .w{fill:var(--lamp)}
+@keyframes lit{to{fill:var(--lamp);filter:drop-shadow(0 0 6px rgba(242,196,109,.7))}}
+.house .glass{fill:#2a5c95;opacity:.85}
+.house .snow{fill:#fff}
+.house text{font:600 11px var(--t);letter-spacing:.2em;fill:rgba(255,255,255,.55)}
+.hero-b{border-top:1px solid rgba(255,255,255,.12);padding:20px 0 24px}
+.hero-b .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
+.addr{font-size:15px;color:rgba(255,255,255,.75);line-height:1.45}
+.addr b{display:block;color:#fff;font-weight:500}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+
+/* история со sticky-кадром */
+.story{padding:clamp(72px,10vw,140px) 0 40px}
+.story-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px)}
+.frame-col{position:relative}
+.frame{position:sticky;top:max(40px,calc(50svh - 300px));height:min(600px,78svh);max-width:480px;border-radius:2px;overflow:hidden;background:var(--night)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.14);transition:opacity .8s ease,transform 1.6s ease}
+.frame img.on{opacity:1;transform:scale(1.08)}
+.frame img[data-k="1"]{object-position:50% 30%;transform-origin:50% 25%}
+.frame img[data-k="2"]{object-position:28% 30%;transform-origin:30% 20%}
+.frame img[data-k="3"]{object-position:62% 40%;transform-origin:60% 20%}
+.frame img[data-k="4"]{object-position:50% 25%;transform-origin:50% 15%}
+.cnt{position:absolute;left:16px;bottom:16px;z-index:2;font:500 13px/1 var(--t);color:#fff;background:rgba(14,26,43,.72);padding:9px 12px;letter-spacing:.12em}
+.bar{position:absolute;left:0;top:0;bottom:0;width:3px;z-index:2;background:var(--lamp);transform-origin:top;transform:scaleY(.25)}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){.bar{animation:grow linear both;animation-timeline:--story;animation-range:contain 0% contain 100%}.story{view-timeline-name:--story}}
+}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.ch{min-height:78svh;display:flex;flex-direction:column;justify-content:center;padding:40px 0;border-top:1px solid var(--line)}
+.ch:first-child{border-top:0}
+.ch .no{font:300 15px/1 var(--d);color:var(--blue);letter-spacing:.1em}
+.ch h3{font:300 clamp(32px,3.6vw,52px)/1.05 var(--d);margin:14px 0 18px;text-wrap:balance}
+.ch h3 b{font-weight:700}
+.ch p{max-width:33em;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.tags li{font-size:14px;padding:7px 12px;border:1px solid var(--line);background:#fff;border-radius:2px}
+.ch-img{display:none}
+
+/* за что хвалят */
+.praise{background:var(--snow);padding:clamp(72px,9vw,128px) 0}
+.pr-in{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:40px}
+.score .big{font:300 clamp(96px,12vw,170px)/.85 var(--d);color:var(--blue-d);letter-spacing:-.04em}
+.score p{margin-top:16px;color:var(--muted);font-size:15px}
+.score a{color:var(--blue-d)}
+.flower{width:72px;height:72px;margin-bottom:24px;color:var(--blue)}
+.pr-list{list-style:none;padding:0}
+.pr-list li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:32px 0;border-top:1px solid var(--line)}
+.pr-list li:last-child{border-bottom:1px solid var(--line)}
+.pr-list i{font:300 40px/1 var(--d);font-style:normal;color:var(--lamp);-webkit-text-stroke:.6px #c99a3c}
+.pr-list h3{font:500 clamp(22px,2vw,28px)/1.2 var(--d);margin-bottom:8px}
+.pr-list p{color:var(--muted)}
+
+/* запрос номера */
+.book{background:var(--night);color:#fff;padding:clamp(72px,9vw,128px) 0}
+.book .kick{color:var(--lamp)}
+.book .h2{margin:14px 0 12px}
+.book .sub{color:rgba(255,255,255,.7);max-width:36em}
+.bk{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(24px,4vw,56px);margin-top:48px;align-items:start}
+.fld{padding:22px 0;border-top:1px solid rgba(255,255,255,.12)}
+.fld>span{display:block;font:600 12px/1 var(--t);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:14px}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;max-width:620px}
+.day{min-width:0;min-height:72px;padding:0;border:1px solid rgba(255,255,255,.16);background:transparent;color:#fff;border-radius:3px;font:500 13px/1.25 var(--t);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;transition:border-color .2s,background .2s}
+.day b{font:300 clamp(20px,5vw,26px)/1 var(--d)}
+.day small{font-size:11px;white-space:nowrap}
+.day small{font-size:11px;color:rgba(255,255,255,.55)}
+.day:hover{border-color:rgba(255,255,255,.5)}
+.day[aria-pressed=true]{background:var(--lamp);border-color:var(--lamp);color:var(--night)}
+.day[aria-pressed=true] small{color:var(--night)}
+.row{display:flex;flex-wrap:wrap;gap:12px 32px}
+.step{display:flex;align-items:center;gap:4px}
+.step button{width:48px;height:48px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;font:400 22px/1 var(--t);cursor:pointer;border-radius:3px}
+.step button:hover{border-color:#fff}
+.step output{min-width:92px;text-align:center;font:300 22px/1 var(--d)}
+.step label{font-size:14px;color:rgba(255,255,255,.65);margin-right:10px;min-width:56px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;padding:0 16px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;border-radius:3px;font:500 14px/1 var(--t);cursor:pointer;transition:border-color .2s,background .2s}
+.chip:hover{border-color:rgba(255,255,255,.5)}
+.chip[aria-pressed=true]{background:#fff;color:var(--night);border-color:#fff}
+.ticket{position:sticky;top:32px;background:var(--ice);color:var(--ink);padding:28px;border-radius:3px}
+.ticket::before{content:"";display:block;height:6px;margin:-28px -28px 24px;background:repeating-linear-gradient(90deg,var(--blue) 0 18px,transparent 18px 26px)}
+.ticket h3{font:500 15px/1 var(--t);letter-spacing:.16em;text-transform:uppercase;color:var(--blue-d)}
+.ticket dl{margin:18px 0 22px}
+.ticket dl div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.ticket dt{color:var(--muted)}
+.ticket dd{text-align:right;font-weight:500}
+.ticket .btn{width:100%}
+.ticket .btn+.btn{margin-top:10px}
+.ticket small{display:block;margin-top:14px;color:var(--muted);font-size:13px;line-height:1.45}
+
+/* контакты */
+.where{padding:clamp(72px,9vw,128px) 0}
+.wh{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:stretch}
+.wh .h2{margin:14px 0 28px}
+.info{list-style:none;padding:0;border-top:1px solid var(--line)}
+.info li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+.info span{color:var(--muted);font-size:14px}
+.info a{text-decoration:none;border-bottom:1px solid var(--line)}.info a:hover{border-color:var(--blue)}
+.nw{white-space:nowrap}
+.wh .acts{margin-top:28px}
+.map{min-height:420px;border-radius:2px;overflow:hidden;background:#dfe7ee}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+.fin{background:var(--night);color:#fff;text-align:center;padding:clamp(72px,9vw,120px) 0 clamp(96px,10vw,120px);position:relative;overflow:hidden}
+.fin .h2{max-width:14em;margin:0 auto 28px}
+.fin .acts{justify-content:center}
+.fin .win{display:inline-grid;grid-template-columns:repeat(4,14px);gap:8px;margin-bottom:32px}
+.fin .win i{height:20px;background:#22385a}.fin .win i:nth-child(3n+1),.fin .win i:nth-child(7){background:var(--lamp)}
+footer{background:var(--night);color:rgba(255,255,255,.55);font-size:13px;padding:0 0 32px;text-align:center}
+.call{display:none}
+
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .story-in,.pr-in,.bk,.wh{grid-template-columns:minmax(0,1fr)}
+  .frame-col{display:none}
+  .ch{min-height:0;padding:44px 0}
+  .ch-img{display:block;height:min(62vw,360px);margin:0 0 22px;overflow:hidden;border-radius:2px}
+  .ch-img img{width:100%;height:100%;object-fit:cover}
+  .score{position:static}
+  .ticket{position:static}
+  .map,.map iframe{min-height:340px}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 40px)}
+  body{font-size:16px}
+  .top .tel{display:none}
+  .hero-b .wrap{flex-direction:column;align-items:stretch}
+  .acts .btn{flex:1 1 140px}
+  .hero .acts .btn:first-child,.fin .acts .btn:first-child{flex-basis:100%}
+  .pr-list li{grid-template-columns:44px minmax(0,1fr);gap:12px}
+  .pr-list i{font-size:30px}
+  .info li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .step output{min-width:72px}
+  .call{display:flex;position:fixed;right:16px;bottom:16px;z-index:20;width:58px;height:58px;border-radius:50%;background:var(--lamp);color:var(--night);align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+  .call svg{width:24px;height:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .house .w{fill:var(--lamp)}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<header class="hero">
+  <p class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</p>
+  <div class="wrap top">
+    <span class="st" data-status>Открыто круглосуточно</span>
+    <a class="tel" href="tel:+79630308971">+7&nbsp;963&nbsp;030-89-71</a>
+  </div>
+  <div class="hero-c wrap">
+    <h1><span>Гостевой дом · Ижевск</span>Эдельвейс</h1>
+    <p class="lead">Одиннадцать номеров на&nbsp;Казанской улице, рядом с&nbsp;вокзалом. Тихо, чисто, завтрак приносят в&nbsp;номер, а&nbsp;хозяин, как пишут гости, заселяет даже в&nbsp;три часа ночи.</p>
+    <svg class="house" viewBox="0 0 640 330" role="img" aria-label="Рисунок дома: в 11 окнах по очереди загорается свет">
+      <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b4569"/><stop offset="1" stop-color="#1b2f4c"/></linearGradient></defs>
+      <path d="M0 312 Q160 300 320 306 T640 304 V330 H0Z" class="snow" opacity=".12"/>
+      <rect x="96" y="150" width="70" height="152" fill="#1a2c46"/>
+      <path d="M90 152 L131 126 L172 152Z" fill="#14243a"/>
+      <rect x="474" y="158" width="74" height="144" fill="#1a2c46"/>
+      <path d="M468 160 L511 132 L554 160Z" fill="#14243a"/>
+      <rect x="170" y="92" width="300" height="210" fill="url(#wall)"/>
+      <path d="M156 96 L320 22 L484 96Z" fill="#1f3555"/>
+      <path d="M156 96 L320 22 L484 96" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+      <rect x="292" y="52" width="56" height="250" class="glass"/>
+      <g stroke="#9cc0e8" stroke-opacity=".5" stroke-width="1.5"><path d="M292 108H348M292 164H348M292 220H348M320 52V302"/></g>
+      <rect x="302" y="252" width="36" height="50" fill="#0e1a2b"/>
+      <text x="320" y="88" text-anchor="middle" style="font:italic 500 15px Georgia,serif;fill:#8fbaf0;letter-spacing:0">Эдельвейс</text>
+      <g>
+        <rect class="w" style="--i:0" x="192" y="118" width="28" height="40"/>
+        <rect class="w" style="--i:5" x="240" y="118" width="28" height="40"/>
+        <rect class="w" style="--i:2" x="372" y="118" width="28" height="40"/>
+        <rect class="w" style="--i:8" x="420" y="118" width="28" height="40"/>
+        <rect class="w" style="--i:3" x="192" y="182" width="28" height="40"/>
+        <rect class="w" style="--i:9" x="240" y="182" width="28" height="40"/>
+        <rect class="w" style="--i:1" x="372" y="182" width="28" height="40"/>
+        <rect class="w" style="--i:6" x="420" y="182" width="28" height="40"/>
+        <rect class="w" style="--i:4" x="192" y="246" width="28" height="40"/>
+        <rect class="w" style="--i:10" x="240" y="246" width="28" height="40"/>
+        <rect class="w" style="--i:7" x="420" y="246" width="28" height="40"/>
+      </g>
+      <g fill="#14243a"><rect x="372" y="246" width="28" height="40"/><rect x="112" y="186" width="18" height="26"/><rect x="138" y="186" width="18" height="26"/><rect x="492" y="190" width="18" height="26"/><rect x="518" y="190" width="18" height="26"/></g>
+      <path d="M40 302H600" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>
+      <path d="M60 302 Q200 290 300 297 T600 296 V306 H60Z" class="snow" opacity=".22"/>
+      <text x="612" y="300" text-anchor="end">11 НОМЕРОВ</text>
+    </svg>
+  </div>
+  <div class="hero-b">
+    <div class="wrap">
+      <p class="addr"><b>Казанская улица, 134, Ижевск</b>Заезд в&nbsp;любое время суток · своя парковка</p>
+      <div class="acts">
+        <a class="btn b-lamp" href="#book">Запросить номер</a>
+        <a class="btn b-line" href="tel:+79630308971"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn b-line" href="https://yandex.ru/maps/?rtext=~56.79957,53.184802" target="_blank" rel="noopener">Маршрут</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="story" id="story" aria-label="Как здесь живётся">
+  <div class="wrap story-in">
+    <div class="frame-col">
+      <div class="frame" aria-hidden="true">
+        <span class="bar"></span>
+        <img class="on" data-k="1" src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1280w" sizes="480px" alt="">
+        <img data-k="2" src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="480px" alt="" loading="lazy">
+        <img data-k="3" src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1024w" sizes="480px" alt="" loading="lazy">
+        <img data-k="4" src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="480px" alt="" loading="lazy">
+        <span class="cnt"><span data-n>01</span> / 04</span>
+      </div>
+    </div>
+    <div class="chs">
+      <article class="ch" data-k="1">
+        <div class="ch-img"><img src="img/p1-m.jpg" alt="Фасад гостевого дома «Эдельвейс» с синей вывеской" style="object-position:50% 35%" loading="lazy"></div>
+        <span class="no">01 — Дом</span>
+        <h3>Белый дом с&nbsp;синей вывеской <b>у&nbsp;вокзала</b></h3>
+        <p>Казанская улица, 134. Гости пишут, что рядом железнодорожный вокзал, кафе и&nbsp;магазины. У&nbsp;дома своя парковка, с&nbsp;детьми можно.</p>
+        <ul class="tags"><li>11 номеров</li><li>Своя парковка</li><li>Можно с&nbsp;детьми</li><li>Wi-Fi</li></ul>
+      </article>
+      <article class="ch" data-k="2">
+        <div class="ch-img"><img src="img/p2-m.jpg" alt="Номер с двумя кроватями" style="object-position:30% 40%" loading="lazy"></div>
+        <span class="no">02 — Номер</span>
+        <h3>Тихо. Так тихо, что <b>об&nbsp;этом пишут</b></h3>
+        <p>Из&nbsp;отзывов: в&nbsp;номере чисто и&nbsp;просторно, удобная кровать и&nbsp;есть всё необходимое для комфортного проживания.</p>
+        <ul class="tags"><li>Телевизор</li><li>Холодильник</li><li>Чайник и&nbsp;чашки</li><li>Фен</li><li>Тапочки</li></ul>
+      </article>
+      <article class="ch" data-k="3">
+        <div class="ch-img"><img src="img/p3-m.jpg" alt="Ванная с душевой и стиральной машиной" style="object-position:60% 45%" loading="lazy"></div>
+        <span class="no">03 — Ванная</span>
+        <h3>Стиральная машина <b>прямо в&nbsp;номере</b></h3>
+        <p>Гости отмечают в&nbsp;отзывах: постирать можно, не&nbsp;выходя из&nbsp;номера. Душевая, полотенца и&nbsp;всё необходимое в&nbsp;ванной.</p>
+      </article>
+      <article class="ch" data-k="4">
+        <div class="ch-img"><img src="img/p4-m.jpg" alt="Завтрак на подносе: блины, каша, тосты" style="object-position:50% 30%" loading="lazy"></div>
+        <span class="no">04 — Утро</span>
+        <h3>Завтрак <b>приносят в&nbsp;номер</b></h3>
+        <p>Завтрак можно взять к&nbsp;проживанию. Гости хвалят, что готовят вкусно, и&nbsp;возвращаются в&nbsp;том числе ради него.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="praise" aria-label="За что хвалят">
+  <div class="wrap pr-in">
+    <div class="score" data-r>
+      <svg class="flower" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><g transform="translate(40 40)"><g id="pt"><path d="M0-6C-5-14-6-26 0-36C6-26 5-14 0-6Z"/></g><use href="#pt" transform="rotate(45)"/><use href="#pt" transform="rotate(90)"/><use href="#pt" transform="rotate(135)"/><use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(225)"/><use href="#pt" transform="rotate(270)"/><use href="#pt" transform="rotate(315)"/><circle r="6"/><circle r="2" fill="currentColor"/></g></svg>
+      <span class="kick">Отзывы 2ГИС</span>
+      <div class="big">5,0</div>
+      <p>95 оценок. Гости пишут, что возвращаются снова. <a href="https://2gis.ru/izhevsk/firm/70000001044983294" target="_blank" rel="noopener">Читать в&nbsp;2ГИС</a></p>
+    </div>
+    <ol class="pr-list">
+      <li data-r><i>I</i><div><h3>Хозяин отвечает сам</h3><p>Звонишь — бронирует сам владелец. Гостья из&nbsp;другого города рассказывает, что заехала и&nbsp;выехала в&nbsp;три часа ночи, и&nbsp;это не&nbsp;стало проблемой.</p></div></li>
+      <li data-r><i>II</i><div><h3>Чисто, уютно и&nbsp;очень тихо</h3><p>Тишину гости отмечают отдельно. Семьям с&nbsp;детьми здесь тоже удобно&nbsp;— об&nbsp;этом пишут в&nbsp;отзывах.</p></div></li>
+      <li data-r><i>III</i><div><h3>Вкусные завтраки</h3><p>Хвалят, что всё очень вкусно приготовлено, а&nbsp;завтрак приносят прямо в&nbsp;номер. Ради него некоторые возвращаются.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="book" id="book" aria-label="Запрос номера">
+  <div class="wrap">
+    <span class="kick">Запрос номера</span>
+    <h2 class="h2">Выберите даты, <b>хозяин ответит</b> в&nbsp;WhatsApp</h2>
+    <p class="sub">Отметьте день заезда, сколько ночей и&nbsp;гостей, во&nbsp;сколько приедете. Получится готовое сообщение, останется отправить.</p>
+    <div class="bk">
+      <div>
+        <div class="fld"><span>Заезд</span><div class="days" id="days" role="group" aria-label="День заезда"></div></div>
+        <div class="fld"><span>Ночи и гости</span>
+          <div class="row">
+            <div class="step"><label>Ночей</label><button type="button" data-s="n" data-d="-1" aria-label="Меньше ночей">−</button><output id="n">1</output><button type="button" data-s="n" data-d="1" aria-label="Больше ночей">+</button></div>
+            <div class="step"><label>Гостей</label><button type="button" data-s="g" data-d="-1" aria-label="Меньше гостей">−</button><output id="g">1</output><button type="button" data-s="g" data-d="1" aria-label="Больше гостей">+</button></div>
+          </div>
+        </div>
+        <div class="fld"><span>Когда приедете</span>
+          <div class="chips" data-one="t"><button type="button" class="chip" aria-pressed="false">Утром</button><button type="button" class="chip" aria-pressed="true">Днём</button><button type="button" class="chip" aria-pressed="false">Вечером</button><button type="button" class="chip" aria-pressed="false">Ночью</button></div>
+        </div>
+        <div class="fld"><span>Пожелания</span>
+          <div class="chips" data-many="w"><button type="button" class="chip" aria-pressed="false">С завтраком</button><button type="button" class="chip" aria-pressed="false">Нужна парковка</button><button type="button" class="chip" aria-pressed="false">Едем с ребёнком</button></div>
+        </div>
+      </div>
+      <aside class="ticket" aria-live="polite">
+        <h3>Ваш запрос</h3>
+        <dl>
+          <div><dt>Заезд</dt><dd id="o-in">—</dd></div>
+          <div><dt>Выезд</dt><dd id="o-out">—</dd></div>
+          <div><dt>Гостей</dt><dd id="o-g">1</dd></div>
+          <div><dt>Приезд</dt><dd id="o-t">днём</dd></div>
+          <div><dt>Ещё</dt><dd id="o-w">—</dd></div>
+        </dl>
+        <a class="btn b-blue" id="wa" href="https://wa.me/79630308971" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+        <a class="btn b-ghost" id="tg" href="https://t.me/+79630308971" target="_blank" rel="noopener">Написать в&nbsp;Telegram</a>
+        <small>Стоимость и&nbsp;свободные номера подтвердит хозяин в&nbsp;ответ на&nbsp;сообщение.</small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="where" aria-label="Адрес и контакты">
+  <div class="wrap wh">
+    <div data-r>
+      <span class="kick">Как добраться</span>
+      <h2 class="h2">Казанская, <b>134</b></h2>
+      <ul class="info">
+        <li><span>Адрес</span>Казанская улица, 134, Ижевск</li>
+        <li><span>Работаем</span><b data-status>Круглосуточно</b></li>
+        <li><span>Телефон</span><a class="nw" href="tel:+79630308971">+7&nbsp;963&nbsp;030-89-71</a></li>
+        <li><span>Мессенджеры</span><span style="color:inherit;font-size:16px"><a href="https://wa.me/79630308971" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/+79630308971" target="_blank" rel="noopener">Telegram</a></span></li>
+        <li><span>Оплата</span>Наличные, перевод с&nbsp;карты, через банк, электронный кошелёк</li>
+      </ul>
+      <div class="acts">
+        <a class="btn b-blue" href="tel:+79630308971">Позвонить</a>
+        <a class="btn b-ghost" href="https://yandex.ru/maps/?rtext=~56.79957,53.184802" target="_blank" rel="noopener">Маршрут</a>
+      </div>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Карта: Казанская улица, 134, Ижевск" src="https://yandex.ru/map-widget/v1/?ll=53.184802,56.79957&amp;z=16&amp;pt=53.184802,56.79957,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="fin">
+  <div class="wrap" data-r>
+    <div class="win" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <h2 class="h2">Свет в&nbsp;окнах горит <b>круглосуточно</b></h2>
+    <div class="acts">
+      <a class="btn b-lamp" href="#book">Запросить номер</a>
+      <a class="btn b-line" href="tel:+79630308971">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Гостевой дом «Эдельвейс», Ижевск · Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</footer>
+<a class="call" href="tel:+79630308971" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+  /* sticky-кадр: меняется по главе */
+  var imgs=document.querySelectorAll('.frame img'),num=document.querySelector('[data-n]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var k=e.target.getAttribute('data-k');imgs.forEach(function(i){i.classList.toggle('on',i.getAttribute('data-k')===k)});if(num)num.textContent='0'+k})},{rootMargin:'-45% 0px -45% 0px'});
+    document.querySelectorAll('.ch').forEach(function(c){io.observe(c)});
+  }
+  /* запрос номера */
+  var S={n:1,g:1,t:'днём',w:[],d:null},days=document.getElementById('days'),base=new Date();base.setHours(12,0,0,0);
+  var fmt=function(d,o){return d.toLocaleDateString('ru-RU',o)};
+  for(var i=0;i<14;i++){var d=new Date(base);d.setDate(base.getDate()+i);var b=document.createElement('button');b.type='button';b.className='day';b.setAttribute('aria-pressed',i===0?'true':'false');b.dataset.i=i;
+    b.innerHTML='<small>'+(i===0?'сегодня':i===1?'завтра':fmt(d,{weekday:'short'}))+'</small><b>'+d.getDate()+'</b><small>'+fmt(d,{month:'short'}).replace('.','')+'</small>';days.appendChild(b)}
+  S.d=0;
+  days.addEventListener('click',function(e){var b=e.target.closest('.day');if(!b)return;days.querySelectorAll('.day').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});S.d=+b.dataset.i;up()});
+  document.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.s;S[k]=Math.min(k==='n'?30:8,Math.max(1,S[k]+ +b.dataset.d));document.getElementById(k).textContent=S[k];up()})});
+  document.querySelectorAll('[data-one] .chip').forEach(function(c){c.addEventListener('click',function(){c.parentNode.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});S.t=c.textContent.toLowerCase();up()})});
+  document.querySelectorAll('[data-many] .chip').forEach(function(c){c.addEventListener('click',function(){c.setAttribute('aria-pressed',c.getAttribute('aria-pressed')==='true'?'false':'true');S.w=[].map.call(c.parentNode.querySelectorAll('[aria-pressed=true]'),function(x){return x.textContent.toLowerCase()});up()})});
+  function nights(n){return n+' '+(n%10===1&&n%100!==11?'ночь':n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?'ночи':'ночей')}
+  function up(){var a=new Date(base);a.setDate(base.getDate()+S.d);var o=new Date(a);o.setDate(a.getDate()+S.n);var F={weekday:'short',day:'numeric',month:'long'};
+    var ai=fmt(a,F),oo=fmt(o,F);document.getElementById('o-in').textContent=ai;document.getElementById('o-out').textContent=oo+' · '+nights(S.n);document.getElementById('o-g').textContent=S.g;document.getElementById('o-t').textContent=S.t;document.getElementById('o-w').textContent=S.w.length?S.w.join(', '):'—';
+    var txt='Здравствуйте! Хочу забронировать номер в «Эдельвейсе».\nЗаезд: '+ai+' ('+S.t+')\nВыезд: '+oo+', '+nights(S.n)+'\nГостей: '+S.g+(S.w.length?'\nПожелания: '+S.w.join(', '):'')+'\nЕсть ли свободный номер и сколько это будет стоить?';
+    document.getElementById('wa').href='https://wa.me/79630308971?text='+encodeURIComponent(txt)}
+  up();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

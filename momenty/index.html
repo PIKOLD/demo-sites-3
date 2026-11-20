@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Моменты — кафе и банкетный зал в центре Ижевска</title><meta property="og:type" content="website"><meta property="og:title" content="Моменты — кафе и банкетный зал в центре Ижевска"><meta property="og:description" content="«Моменты» — кафе, банкетный зал и кейтеринг на Советской, 13 в Ижевске. Завтраки, обеды, вечера и праздники. Ежедневно 10:00–24:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-3/momenty/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="«Моменты» — кафе, банкетный зал и кейтеринг на Советской, 13 в Ижевске. Завтраки, обеды, вечера и праздники. Ежедневно 10:00–24:00.">
+<meta name="theme-color" content="#0f0c0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{--bg:#0f0c0a;--bg2:#17120f;--ink:#f1e8d8;--mute:#b9ab95;--amber:#e3a35a;--wine:#8a2a36;--demo:30px;
+--d:'Oranienbaum',Georgia,serif;--m:'IBM Plex Mono',ui-monospace,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.65 var(--m);overflow-x:hidden}
+a{color:inherit}
+img,svg{display:block}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+/* зерно плёнки */
+body::after{content:"";position:fixed;inset:-50%;z-index:60;pointer-events:none;opacity:.09;
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .95 0 0 0 0 .85 0 0 0 1.1 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-4%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+.demo{min-height:var(--demo);padding-block:4px!important;display:flex;align-items:center;justify-content:center;background:var(--ink);color:#2a211a;font:500 11px/1.2 var(--m);letter-spacing:.04em;text-align:center;padding:0 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:500 13px/1 var(--m);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:active{transform:translateY(1px)}
+.b1{background:var(--amber);color:#1a120a}
+.b1:hover{background:var(--ink)}
+.b2{background:rgba(241,232,216,.08);color:var(--ink);box-shadow:inset 0 0 0 1px rgba(241,232,216,.28)}
+.b2:hover{background:var(--ink);color:var(--bg)}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.k{font:500 12px/1.4 var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+h2{font:400 clamp(2.4rem,6vw,5.2rem)/.98 var(--d);letter-spacing:-.01em;text-wrap:balance}
+/* ===== плёнка ===== */
+.cine{position:relative;height:calc(100svh - var(--demo));min-height:560px;max-height:1100px;overflow:hidden}
+.top{position:absolute;z-index:5;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,4vw,56px);pointer-events:none}
+.top>*{pointer-events:auto}
+.logo{font:400 26px/1 var(--d);text-decoration:none;letter-spacing:.02em}
+.logo small{font:500 10px/1 var(--m);letter-spacing:.2em;color:var(--mute);margin-left:10px;text-transform:uppercase}
+.top a.tel{font:500 13px/1 var(--m);letter-spacing:.06em;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(241,232,216,.3)}
+.top a.tel:hover{border-color:var(--amber);color:var(--amber)}
+.reel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.reel::-webkit-scrollbar{display:none}
+.fr{flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;overflow:hidden;display:flex;align-items:center}
+.fr::before{content:"";position:absolute;inset:0;background:var(--leak)}
+.fr::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 50%,transparent 45%,rgba(0,0,0,.75) 100%)}
+.f0{--leak:radial-gradient(60% 80% at 88% 18%,rgba(227,163,90,.55),transparent 60%),radial-gradient(50% 60% at 8% 100%,rgba(138,42,54,.5),transparent 70%)}
+.f1{--leak:radial-gradient(70% 70% at 80% 30%,rgba(246,214,150,.42),transparent 60%),radial-gradient(40% 50% at 10% 10%,rgba(227,163,90,.18),transparent 70%)}
+.f2{--leak:radial-gradient(70% 90% at 20% 80%,rgba(227,163,90,.45),transparent 62%),radial-gradient(40% 40% at 95% 5%,rgba(246,214,150,.2),transparent 70%)}
+.f3{--leak:radial-gradient(70% 90% at 85% 75%,rgba(138,42,54,.75),transparent 65%),radial-gradient(45% 50% at 15% 10%,rgba(227,163,90,.3),transparent 70%)}
+.f4{--leak:radial-gradient(60% 80% at 50% 0%,rgba(200,120,70,.45),transparent 65%),radial-gradient(40% 50% at 100% 100%,rgba(138,42,54,.35),transparent 70%)}
+.sc{position:relative;z-index:2;width:min(1240px,100% - 40px);margin-inline:auto;padding:88px 0 120px}
+.num{position:absolute;z-index:1;right:clamp(10px,4vw,60px);bottom:clamp(70px,10vh,120px);font:400 clamp(9rem,28vw,26rem)/.8 var(--d);color:rgba(241,232,216,.06);user-select:none}
+.tc{font:500 12px/1 var(--m);letter-spacing:.18em;color:var(--mute);display:flex;gap:14px;align-items:center;margin-bottom:22px;text-transform:uppercase}
+.tc i{width:8px;height:8px;border-radius:50%;background:#e2483d;box-shadow:0 0 12px #e2483d}
+.fr h1,.fr h3{font:400 clamp(3.6rem,12vw,10.5rem)/.86 var(--d);letter-spacing:-.02em;margin-bottom:26px}
+.fr h3{font-size:clamp(3.2rem,10vw,9rem)}
+.lead{font-size:clamp(15px,1.25vw,18px);max-width:34em;color:var(--ink)}
+.lead b{font-weight:500;color:var(--amber)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin:22px 0 30px;font-size:13px;color:var(--mute)}
+.meta span{white-space:nowrap}
+.st.is-open{color:#9fd59a}
+.st.is-closed{color:var(--amber)}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+.line{display:grid;gap:8px;margin-top:28px;max-width:34em}
+.line p{display:flex;gap:16px;font-size:14px;color:var(--mute);padding-top:8px}
+.line p b{color:var(--ink);font-weight:500;min-width:7.5em}
+.go{display:inline-flex;align-items:center;gap:12px;margin-top:30px;font:500 13px/1 var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--amber);text-decoration:none;min-height:44px}
+.go:hover span{transform:translateX(6px)}
+.go span{transition:transform .25s}
+/* лента-навигатор */
+.strip{position:absolute;z-index:6;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:10px 12px;background:rgba(15,12,10,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.strip::before,.strip::after{content:"";position:absolute;left:8px;right:8px;height:4px;background:repeating-linear-gradient(90deg,rgba(241,232,216,.35) 0 6px,transparent 6px 14px)}
+.strip::before{top:3px}.strip::after{bottom:3px}
+.strip button{appearance:none;border:0;cursor:pointer;background:rgba(241,232,216,.08);color:var(--mute);font:500 11px/1 var(--m);letter-spacing:.08em;min-width:44px;height:44px;padding:0 12px;transition:background .25s,color .25s}
+.strip button[aria-current="true"]{background:var(--amber);color:#1a120a}
+.strip button:hover{color:var(--ink)}
+.strip .ar{font-size:16px;background:none;color:var(--ink)}
+.strip .lb{display:inline}
+.hint{position:absolute;z-index:5;right:clamp(20px,4vw,56px);bottom:34px;font:500 11px/1 var(--m);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+@supports (animation-timeline:view()){
+@media (prefers-reduced-motion:no-preference){
+.fr .sc{animation:drift linear both;animation-timeline:view(inline);animation-range:cover 0% cover 100%}
+.fr .num{animation:drift2 linear both;animation-timeline:view(inline)}
+@keyframes drift{0%{transform:translateX(18vw);opacity:0}35%,65%{transform:none;opacity:1}100%{transform:translateX(-18vw);opacity:0}}
+@keyframes drift2{0%{transform:translateX(40vw)}100%{transform:translateX(-40vw)}}
+}}
+/* ===== субтитры ===== */
+.sec{padding:clamp(80px,11vw,150px) 0}
+.praise{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:40px}
+.score .big{font:400 clamp(6rem,14vw,12rem)/.8 var(--d);color:var(--amber);margin:22px 0 14px}
+.score p{color:var(--mute);font-size:14px}
+.subs{display:grid;gap:clamp(36px,5vw,64px);padding-top:20px}
+.sub{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px}
+.sub time{font:500 12px/1.9 var(--m);color:var(--amber);letter-spacing:.06em;white-space:nowrap}
+.sub p{font:400 clamp(1.5rem,2.6vw,2.3rem)/1.15 var(--d);text-wrap:pretty}
+.sub p span{background:rgba(241,232,216,.07);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:2px 10px}
+/* ===== планировщик ===== */
+.plan{background:var(--bg2)}
+.ph{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,64px)}
+.ph p{max-width:32em;color:var(--mute)}
+.pg{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q{display:grid;gap:30px}
+fieldset{border:0;display:grid;gap:12px}
+legend{font:500 12px/1 var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;font-size:14px;background:rgba(241,232,216,.06);box-shadow:inset 0 0 0 1px rgba(241,232,216,.14);transition:background .2s,color .2s}
+.chips label:hover span{box-shadow:inset 0 0 0 1px var(--amber)}
+.chips input:checked+span{background:var(--ink);color:var(--bg)}
+.chips input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.inp{width:100%;min-height:52px;padding:0 14px;background:rgba(241,232,216,.06);border:0;box-shadow:inset 0 0 0 1px rgba(241,232,216,.14);color:var(--ink);font:400 15px var(--m);color-scheme:dark}
+.step{display:flex;align-items:stretch;min-height:52px;box-shadow:inset 0 0 0 1px rgba(241,232,216,.14)}
+.step button{width:52px;border:0;background:rgba(241,232,216,.06);color:var(--ink);font:400 22px/1 var(--m);cursor:pointer}
+.step button:hover{background:var(--amber);color:#1a120a}
+.step output{flex:1;display:flex;align-items:center;justify-content:center;font:400 28px/1 var(--d)}
+.screen{position:sticky;top:24px;background:var(--bg);padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.screen .tc{margin-bottom:12px}
+.screen svg{width:100%;height:auto;background:radial-gradient(80% 70% at 50% 40%,rgba(227,163,90,.12),transparent 70%),#120e0b}
+.cap{font-size:12px;color:var(--mute);margin:12px 0 18px}
+.sum{font:400 clamp(1.3rem,2vw,1.6rem)/1.25 var(--d);margin-bottom:18px;min-height:3.75em}
+.screen .btn{width:100%}
+/* ===== как проходит ===== */
+.how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:clamp(36px,5vw,56px);counter-reset:s}
+.how li{list-style:none;padding:26px 24px 30px 0;margin-right:24px;border-top:2px solid rgba(241,232,216,.16);position:relative}
+.how li::before{counter-increment:s;content:"0" counter(s);display:block;font:400 3rem/1 var(--d);color:var(--amber);margin-bottom:14px}
+.how li:first-child{border-color:var(--amber)}
+.how b{display:block;font-weight:500;margin-bottom:6px}
+.how p{color:var(--mute);font-size:14px}
+/* ===== контакты ===== */
+.ct{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;background:var(--bg2)}
+.ci{padding:clamp(32px,5vw,72px)}
+.ci dl{display:grid;gap:22px;margin:30px 0 36px}
+.ci dt{font:500 11px/1 var(--m);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.ci dd{font:400 clamp(1.4rem,2.2vw,1.9rem)/1.15 var(--d)}
+.ci dd a{text-decoration:none}
+.ci dd a:hover{color:var(--amber)}
+.ci dd small{display:block;font:400 13px/1.5 var(--m);color:var(--mute);margin-top:4px}
+.map{min-height:420px;position:relative;filter:grayscale(.6) contrast(1.05)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.end{text-align:center;padding:clamp(90px,13vw,170px) 0}
+.end h2{font-size:clamp(3rem,9vw,8rem);margin:18px 0 34px}
+.end .acts{justify-content:center}
+footer{padding:28px 0 100px;color:var(--mute);font-size:12px;border-top:1px solid rgba(241,232,216,.1)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.fab{display:none}
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:900px){
+.praise,.pg,.ct{grid-template-columns:minmax(0,1fr)}
+.score,.screen{position:static}
+.how{grid-template-columns:repeat(2,minmax(0,1fr))}
+.map{min-height:340px}
+}
+@media (max-width:600px){
+body{font-size:14px}
+.top{padding:16px 20px}
+.logo small{display:none}
+.sc{padding:76px 0 112px}
+.fr{align-items:flex-start}
+.acts .btn{flex:1 1 100%}
+.strip{gap:4px;padding:10px 8px;bottom:22px;left:20px;transform:none}.strip .ar{display:none}
+.strip .lb{display:none}
+.strip button{min-width:40px;padding:0 8px}
+.hint{display:none}
+.line p b{min-width:6.5em}
+.row2{grid-template-columns:minmax(0,1fr)}.how li{margin-right:16px;padding-right:0}.how li::before{font-size:2.2rem}
+.sub{grid-template-columns:minmax(0,1fr);gap:8px}
+.fab{display:flex;position:fixed;z-index:50;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:var(--amber);color:#1a120a;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+}
+@media (max-height:700px) and (min-width:601px){.fr h1{font-size:clamp(3.4rem,9vw,7rem)}.sc{padding:76px 0 100px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div>
+
+<section class="cine" aria-label="Моменты: кадры дня">
+  <div class="top">
+    <a class="logo" href="#">Моменты<small>Ижевск · Советская, 13</small></a>
+    <a class="tel" href="tel:+79828300101">+7 982 830-01-01</a>
+  </div>
+  <div class="reel" id="reel" tabindex="0" aria-label="Листайте вбок">
+    <article class="fr f0" id="k0" aria-label="Кадр 1 из 5">
+      <span class="num" aria-hidden="true">00</span>
+      <div class="sc">
+        <div class="tc"><i></i>Кафе · банкетный зал · кейтеринг</div>
+        <h1>Моменты</h1>
+        <p class="lead">Тихое уютное место в&nbsp;центре Ижевска с&nbsp;итальянским интерьером. Завтраки и&nbsp;обеды каждый день, а&nbsp;вечером&nbsp;— <b>ваш праздник</b>.</p>
+        <div class="meta"><span class="st" data-status></span><span>Советская улица, 13, 1&nbsp;этаж</span><span>4,9 в&nbsp;2ГИС · 178 оценок</span></div>
+        <div class="acts">
+          <a class="btn b1" href="#plan">Собрать банкет</a>
+          <a class="btn b2" href="tel:+79828300101">Позвонить</a>
+          <a class="btn b2" href="https://yandex.ru/maps/?rtext=~56.845588,53.208335" target="_blank" rel="noopener">Маршрут</a>
+        </div>
+      </div>
+    </article>
+    <article class="fr f1" id="k1" aria-label="Кадр 2 из 5" data-qa-skip>
+      <span class="num" aria-hidden="true">10:00</span>
+      <div class="sc">
+        <div class="tc"><i></i>Кадр 01 · утро</div>
+        <h3>Завтрак</h3>
+        <p class="lead">Завтраки с&nbsp;10:00 до&nbsp;12:00, есть английский. Гости отдельно хвалят <b>выпечку и&nbsp;круассаны</b>.</p>
+        <div class="line"><p><b>Когда</b>ежедневно, <span style="white-space:nowrap">10:00–12:00</span></p><p><b>Что взять</b>английский завтрак, круассаны</p></div>
+      </div>
+    </article>
+    <article class="fr f2" id="k2" aria-label="Кадр 3 из 5" data-qa-skip>
+      <span class="num" aria-hidden="true">13:00</span>
+      <div class="sc">
+        <div class="tc"><i></i>Кадр 02 · день</div>
+        <h3>Обед</h3>
+        <p class="lead">Бизнес-ланч в&nbsp;будни и&nbsp;неспешный обед в&nbsp;выходной. Меню для взрослых и&nbsp;для&nbsp;детей&nbsp;— сюда приходят <b>всей семьёй</b>.</p>
+        <div class="line"><p><b>Попробовать</b>пиццу с&nbsp;грушей</p><p><b>Средний чек</b><span style="white-space:nowrap">550&nbsp;₽</span></p></div>
+      </div>
+    </article>
+    <article class="fr f3" id="k3" aria-label="Кадр 4 из 5" data-qa-skip>
+      <span class="num" aria-hidden="true">19:00</span>
+      <div class="sc">
+        <div class="tc"><i></i>Кадр 03 · вечер</div>
+        <h3>Банкет</h3>
+        <p class="lead">Банкетный зал для вечеров и&nbsp;праздников. В&nbsp;отзывах пишут: <b>кухня на&nbsp;высшем уровне</b>, а&nbsp;к&nbsp;столу&nbsp;— коктейли.</p>
+        <a class="go" href="#plan">Соберите свой вечер <span>→</span></a>
+      </div>
+    </article>
+    <article class="fr f4" id="k4" aria-label="Кадр 5 из 5" data-qa-skip>
+      <span class="num" aria-hidden="true">24:00</span>
+      <div class="sc">
+        <div class="tc"><i></i>Кадр 04 · с&nbsp;собой</div>
+        <h3>Кейтеринг</h3>
+        <p class="lead">Привезут к&nbsp;вам. По&nbsp;отзывам&nbsp;— <b>всё доставили в&nbsp;срок</b>, в&nbsp;хорошем виде и&nbsp;очень вкусно, а&nbsp;на&nbsp;связи были всё время.</p>
+        <a class="go" href="#plan">Заказать выездное меню <span>→</span></a>
+      </div>
+    </article>
+  </div>
+  <nav class="strip" aria-label="Кадры">
+    <button class="ar" type="button" data-step="-1" aria-label="Предыдущий кадр">←</button>
+    <button type="button" data-go="0" aria-current="true">00<span class="lb">&nbsp;Моменты</span></button>
+    <button type="button" data-go="1">01<span class="lb">&nbsp;Утро</span></button>
+    <button type="button" data-go="2">02<span class="lb">&nbsp;День</span></button>
+    <button type="button" data-go="3">03<span class="lb">&nbsp;Вечер</span></button>
+    <button type="button" data-go="4">04<span class="lb">&nbsp;С&nbsp;собой</span></button>
+    <button class="ar" type="button" data-step="1" aria-label="Следующий кадр">→</button>
+  </nav>
+  <span class="hint" aria-hidden="true">Листайте вбок</span>
+</section>
+
+<section class="sec">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <span class="k">За что хвалят</span>
+      <div class="big">4,9</div>
+      <p>Рейтинг в&nbsp;2ГИС по&nbsp;178 оценкам.<br>Ниже&nbsp;— пересказ отзывов гостей.</p>
+    </div>
+    <div class="subs">
+      <div class="sub" data-r><time>00:12:04</time><p><span>Тихо и&nbsp;уютно в&nbsp;самом центре города, интерьер в&nbsp;итальянском стиле&nbsp;— сюда возвращаются снова.</span></p></div>
+      <div class="sub" data-r><time>00:37:51</time><p><span>Для вечеров и&nbsp;праздников&nbsp;— отличное место: кухню называют кухней высшего уровня.</span></p></div>
+      <div class="sub" data-r><time>01:05:19</time><p><span>Кейтеринг привезли вовремя и&nbsp;в&nbsp;хорошем виде, а&nbsp;с&nbsp;заказчиком всё время были на&nbsp;связи.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec plan" id="plan">
+  <div class="wrap">
+    <div class="ph" data-r>
+      <div><span class="k">Банкет за минуту</span><h2>Соберите свой вечер</h2></div>
+      <p>Выберите повод, дату, число гостей и&nbsp;формат. Мы&nbsp;соберём из&nbsp;этого сообщение&nbsp;— администратор ответит в&nbsp;WhatsApp и&nbsp;предложит меню и&nbsp;рассадку.</p>
+    </div>
+    <div class="pg">
+      <form class="q" id="q" onsubmit="return false">
+        <fieldset><legend>Повод</legend><div class="chips">
+          <label><input type="radio" name="why" value="день рождения" checked><span>День рождения</span></label>
+          <label><input type="radio" name="why" value="юбилей"><span>Юбилей</span></label>
+          <label><input type="radio" name="why" value="свадьба"><span>Свадьба</span></label>
+          <label><input type="radio" name="why" value="корпоратив"><span>Корпоратив</span></label>
+          <label><input type="radio" name="why" value="выпускной"><span>Выпускной</span></label>
+          <label><input type="radio" name="why" value="семейный вечер"><span>Семейный вечер</span></label>
+        </div></fieldset>
+        <fieldset><legend>Формат</legend><div class="chips">
+          <label><input type="radio" name="fmt" value="banket" checked><span>Банкет за&nbsp;столами</span></label>
+          <label><input type="radio" name="fmt" value="furshet"><span>Фуршет</span></label>
+          <label><input type="radio" name="fmt" value="cater"><span>Кейтеринг с&nbsp;доставкой</span></label>
+        </div></fieldset>
+        <div class="row2">
+          <fieldset><legend><label for="dt">Дата</label></legend><input class="inp" type="date" id="dt"></fieldset>
+          <fieldset><legend>Гостей</legend><div class="step"><button type="button" data-g="-1" aria-label="Меньше гостей">−</button><output id="gn" aria-live="polite">20</output><button type="button" data-g="1" aria-label="Больше гостей">+</button></div></fieldset>
+        </div>
+        <fieldset><legend>Время</legend><div class="chips">
+          <label><input type="radio" name="tm" value="днём"><span>Днём</span></label>
+          <label><input type="radio" name="tm" value="вечером" checked><span>Вечером</span></label>
+          <label><input type="radio" name="tm" value="время обсудим"><span>Обсудим</span></label>
+        </div></fieldset>
+      </form>
+      <div class="screen" data-r>
+        <div class="tc"><i></i><span id="sl">Схема зала · вид сверху</span></div>
+        <svg id="sv" viewBox="0 0 400 260" role="img" aria-label="Схема рассадки гостей"></svg>
+        <p class="cap">Схема для наглядности. Рассадку под ваш праздник предложит администратор.</p>
+        <p class="sum" id="sum"></p>
+        <a class="btn b1" id="wa" href="https://wa.me/79828300101" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+      </div>
+    </div>
+    <ol class="how">
+      <li data-r><b>Заявка</b><p>Сообщение из&nbsp;формы или звонок.</p></li>
+      <li data-r><b>Меню и&nbsp;формат</b><p>Обсуждаем с&nbsp;администратором блюда и&nbsp;рассадку.</p></li>
+      <li data-r><b>Бронь</b><p>Закрепляем дату и&nbsp;время.</p></li>
+      <li data-r><b>Ваш вечер</b><p>Вы&nbsp;с&nbsp;гостями, остальное на&nbsp;нас.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="ct" id="kontakty">
+  <div class="ci" data-r>
+    <span class="k">Как найти</span>
+    <dl>
+      <div><dt>Адрес</dt><dd>Ижевск, Советская улица, 13<small>1 этаж, центр города</small></dd></div>
+      <div><dt>Часы</dt><dd><span style="white-space:nowrap">Ежедневно 10:00–24:00</span><small class="st" data-status></small></dd></div>
+      <div><dt>Телефон</dt><dd><a href="tel:+79828300101" style="white-space:nowrap">+7 982 830-01-01</a><small>Оплата картой, наличными и&nbsp;по&nbsp;QR-коду</small></dd></div>
+    </dl>
+    <div class="acts">
+      <a class="btn b1" href="https://yandex.ru/maps/?rtext=~56.845588,53.208335" target="_blank" rel="noopener">Маршрут</a>
+      <a class="btn b2" href="https://vk.ru/moments_18" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+  </div>
+  <div class="map"><iframe loading="lazy" title="Моменты на карте" src="https://yandex.ru/map-widget/v1/?ll=53.208335,56.845588&z=16&pt=53.208335,56.845588,pm2rdm"></iframe></div>
+</section>
+
+<section class="end">
+  <div class="wrap" data-r>
+    <span class="k">Следующий кадр — ваш</span>
+    <h2>Отметим вместе?</h2>
+    <div class="acts">
+      <a class="btn b1" href="https://wa.me/79828300101?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%20%D0%B2%20%C2%AB%D0%9C%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%85%C2%BB." target="_blank" rel="noopener">Написать в&nbsp;WhatsApp</a>
+      <a class="btn b2" href="tel:+79828300101">Позвонить</a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>«Моменты» · кафе и&nbsp;банкетный зал · Ижевск</span><span>Демо-концепт по&nbsp;данным 2ГИС</span></div></footer>
+<a class="fab" href="tel:+79828300101" aria-label="Позвонить"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+var reel=document.getElementById('reel'),fr=[].slice.call(reel.children),bs=[].slice.call(document.querySelectorAll('[data-go]')),cur=0;
+function go(i){i=Math.max(0,Math.min(fr.length-1,i));reel.scrollTo({left:fr[i].offsetLeft,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
+bs.forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+document.querySelectorAll('[data-step]').forEach(function(b){b.onclick=function(){go(cur+ +b.dataset.step)}});
+reel.addEventListener('scroll',function(){var i=Math.round(reel.scrollLeft/reel.clientWidth);if(i!==cur){cur=i;bs.forEach(function(b,k){b.setAttribute('aria-current',k===i?'true':'false')})}},{passive:true});
+reel.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1)}});
+/* планировщик */
+var f=document.getElementById('q'),g=20,sv=document.getElementById('sv'),out=document.getElementById('gn'),dt=document.getElementById('dt');
+var d0=new Date();d0.setDate(d0.getDate()+1);dt.min=d0.toISOString().slice(0,10);
+document.querySelectorAll('[data-g]').forEach(function(b){b.onclick=function(){var s=g<20?1:5;g=Math.max(2,Math.min(300,g+ +b.dataset.g*s));draw()}});
+f.addEventListener('change',draw);dt.addEventListener('input',draw);
+function v(n){var x=f.querySelector('[name='+n+']:checked');return x?x.value:''}
+function c(x,y,r,cl){return '<circle cx="'+x+'" cy="'+y+'" r="'+r+'" class="'+cl+'"/>'}
+function draw(){
+  out.textContent=g;var fm=v('fmt'),h='<style>.t{fill:#2a211a;stroke:#e3a35a;stroke-width:1.2}.s{fill:#f1e8d8}.b{fill:#2a211a;stroke:#e3a35a}</style>',per=fm==='furshet'?5:8,n=Math.ceil(g/per),show=Math.min(n,15),cols=show<=3?show:show<=8?4:5,rows=Math.ceil(show/cols),W=400,H=260;
+  document.getElementById('sl').textContent=fm==='cater'?'Выездное меню · доставка':'Схема зала · вид сверху';
+  if(fm==='cater'){var bx=Math.min(Math.ceil(g/10),12);for(var i=0;i<bx;i++){var x=60+(i%4)*80,y=50+Math.floor(i/4)*70;h+='<rect x="'+x+'" y="'+y+'" width="60" height="44" class="b"/><path d="M'+(x+8)+' '+(y+22)+'h44" stroke="#e3a35a" stroke-dasharray="3 4"/>'}}
+  else{var cw=W/cols,ch=H/rows,R=Math.min(cw,ch)*(fm==='furshet'?.16:.22),left=g;
+    for(var i=0;i<show;i++){var cx=cw*(i%cols+.5),cy=ch*(Math.floor(i/cols)+.5),k=i===show-1&&n<=15?left:Math.min(per,left);left-=k;h+=c(cx,cy,R,'t');
+      for(var j=0;j<k;j++){var a=j/per*Math.PI*2-Math.PI/2;h+=c(cx+Math.cos(a)*(R+8),cy+Math.sin(a)*(R+8),3.6,'s')}}
+    if(n>15)h+='<text x="392" y="252" text-anchor="end" fill="#e3a35a" font-family="IBM Plex Mono,monospace" font-size="12">+ ещё '+(n-15)+'</text>'}
+  sv.innerHTML=h;
+  var fmt={banket:'банкет за столами',furshet:'фуршет',cater:'кейтеринг с доставкой'}[fm],d=dt.value?dt.value.split('-').reverse().join('.'):'дату уточню';
+  var t='Здравствуйте! Хочу '+(fm==='cater'?'заказать ':'провести в «Моментах» ')+fmt+': '+v('why')+', '+d+', '+v('tm')+', гостей — '+g+'. Подскажите по меню и свободным датам.';
+  document.getElementById('sum').textContent=v('why').replace(/^./,function(s){return s.toUpperCase()})+' · '+fmt+' · '+g+' гост'+(g%10===1&&g%100!==11?'ь':(g%10>=2&&g%10<=4&&(g%100<10||g%100>=20))?'я':'ей')+' · '+d;
+  document.getElementById('wa').href='https://wa.me/79828300101?text='+encodeURIComponent(t);
+}
+draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","24:00"]],"tue":[["10:00","24:00"]],"wed":[["10:00","24:00"]],"thu":[["10:00","24:00"]],"fri":[["10:00","24:00"]],"sat":[["10:00","24:00"]],"sun":[["10:00","24:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>
